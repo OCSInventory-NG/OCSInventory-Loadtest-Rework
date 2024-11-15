@@ -14,13 +14,13 @@ class AssetBaseAPITest(HttpUser):
         self.token = Auth.get_token(self)
 
     @task(3)
-    def create_asset(self):
+    def post_asset(self):
         """
         POST /asset/bases
         """
         if self.token:
             # Generate random num between 0001 and 9999
-            random_number = f"{random.randint(1, 9999):04}"
+            random_number = f"{random.randint(1, 99999):04}"
             # Random selection of an operating system for osname
             osname = random.choice(self.os_options)
 
