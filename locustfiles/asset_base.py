@@ -20,7 +20,7 @@ class AssetBaseAPITest(HttpUser):
         """
         if self.token:
             # Generate random num between 0001 and 9999
-            random_number = f"{random.randint(1, 99999):04}"
+            random_number = f"{random.randint(1, 99999):05}"
             # Random selection of an operating system for osname
             osname = random.choice(self.os_options)
 
@@ -28,7 +28,7 @@ class AssetBaseAPITest(HttpUser):
             data = {
                 "name": f"PC-{random_number}",
                 "description": "Dummy Computer System Product for API test",
-                "serial": f"00000-00000-00000-0{random_number}",
+                "serial": f"00000-00000-00000-{random_number}",
                 "osname": osname,
                 "osversion": "1.0.0",
                 "uuid": f"DUMMY-UUID{random_number}",
