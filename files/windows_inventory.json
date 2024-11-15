@@ -1,0 +1,680 @@
+{
+	"template_inventory": {
+		"BATTERIES": [
+			{
+				"CHEMISTRY": null,
+				"DESIGN_CAPACITY": null,
+				"DESIGN_VOLTAGE": null,
+				"LOCATION": null,
+				"MANUFACTURER": null,
+				"MANUFACTURER_DATE": null,
+				"MAXIMUM_ERROR": null,
+				"NAME": null,
+				"SBDS_VERSION": null,
+				"SERIAL_NUMBER": "0innotek1"
+			}
+		],
+		"CPUS": [
+			{
+				"ARCHITECTURE": "64-bit",
+				"CORES": 4,
+				"CURRENT_SPEED": 1996,
+				"L2_CACHE_SIZE": null,
+				"MANUFACTURER": "AuthenticAMD",
+				"SPEED": 1996,
+				"THREADS": null,
+				"TYPE": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx"
+			}
+		],
+		"GROUPS": [
+			{
+				"GROUP_ID": "S-1-5-32-579",
+				"MEMBER": null,
+				"NAME": "Access Control Assistance Operators"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-544",
+				"MEMBER": null,
+				"NAME": "Administrators"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-551",
+				"MEMBER": null,
+				"NAME": "Backup Operators"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-569",
+				"MEMBER": null,
+				"NAME": "Cryptographic Operators"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-583",
+				"MEMBER": null,
+				"NAME": "Device Owners"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-562",
+				"MEMBER": null,
+				"NAME": "Distributed COM Users"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-573",
+				"MEMBER": null,
+				"NAME": "Event Log Readers"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-546",
+				"MEMBER": null,
+				"NAME": "Guests"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-578",
+				"MEMBER": null,
+				"NAME": "Hyper-V Administrators"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-568",
+				"MEMBER": null,
+				"NAME": "IIS_IUSRS"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-556",
+				"MEMBER": null,
+				"NAME": "Network Configuration Operators"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-559",
+				"MEMBER": null,
+				"NAME": "Performance Log Users"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-558",
+				"MEMBER": null,
+				"NAME": "Performance Monitor Users"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-547",
+				"MEMBER": null,
+				"NAME": "Power Users"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-555",
+				"MEMBER": null,
+				"NAME": "Remote Desktop Users"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-580",
+				"MEMBER": null,
+				"NAME": "Remote Management Users"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-552",
+				"MEMBER": null,
+				"NAME": "Replicator"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-581",
+				"MEMBER": null,
+				"NAME": "System Managed Accounts Group"
+			},
+			{
+				"GROUP_ID": "S-1-5-32-545",
+				"MEMBER": null,
+				"NAME": "Users"
+			}
+		],
+		"INPUTS": [
+			{
+				"DESCRIPTION": "Microsoft AC Adapter",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft AC Adapter",
+				"TYPE": "Battery"
+			},
+			{
+				"DESCRIPTION": "Direct memory access controller",
+				"MANUFACTURER": "(Standard system devices)",
+				"NAME": "Direct memory access controller",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "Microsoft ACPI-Compliant Control Method Battery",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft ACPI-Compliant Control Method Battery",
+				"TYPE": "Battery"
+			},
+			{
+				"DESCRIPTION": "Local Print Queue",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Root Print Queue",
+				"TYPE": "PrintQueue"
+			},
+			{
+				"DESCRIPTION": "Volume Manager",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Volume Manager",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "VirtualBox Graphics Adapter (WDDM)",
+				"MANUFACTURER": "Oracle Corporation",
+				"NAME": "VirtualBox Graphics Adapter (WDDM)",
+				"TYPE": "Display"
+			},
+			{
+				"DESCRIPTION": "Audio Endpoint",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Speakers (High Definition Audio Device)",
+				"TYPE": "AudioEndpoint"
+			},
+			{
+				"DESCRIPTION": "AMD Processor",
+				"MANUFACTURER": "Advanced Micro Devices",
+				"NAME": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx",
+				"TYPE": "Processor"
+			},
+			{
+				"DESCRIPTION": "AMD Processor",
+				"MANUFACTURER": "Advanced Micro Devices",
+				"NAME": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx",
+				"TYPE": "Processor"
+			},
+			{
+				"DESCRIPTION": "AMD Processor",
+				"MANUFACTURER": "Advanced Micro Devices",
+				"NAME": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx",
+				"TYPE": "Processor"
+			},
+			{
+				"DESCRIPTION": "AMD Processor",
+				"MANUFACTURER": "Advanced Micro Devices",
+				"NAME": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx",
+				"TYPE": "Processor"
+			},
+			{
+				"DESCRIPTION": "Volume",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Volume",
+				"TYPE": "Volume"
+			},
+			{
+				"DESCRIPTION": "Local Print Queue",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Fax",
+				"TYPE": "PrintQueue"
+			},
+			{
+				"DESCRIPTION": "WAN Miniport (PPPOE)",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "WAN Miniport (PPPOE)",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "High Definition Audio Device",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "High Definition Audio Device",
+				"TYPE": "MEDIA"
+			},
+			{
+				"DESCRIPTION": "Microsoft Basic Display Driver",
+				"MANUFACTURER": "(Standard display types)",
+				"NAME": "Microsoft Basic Display Driver",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "HID-compliant mouse",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "HID-compliant mouse",
+				"TYPE": "Mouse"
+			},
+			{
+				"DESCRIPTION": "Local Print Queue",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft XPS Document Writer",
+				"TYPE": "PrintQueue"
+			},
+			{
+				"DESCRIPTION": "Generic software device",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft RRAS Root Enumerator",
+				"TYPE": "SoftwareDevice"
+			},
+			{
+				"DESCRIPTION": "WAN Miniport (PPTP)",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "WAN Miniport (PPTP)",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "Microsoft Hyper-V Virtualization Infrastructure Driver",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft Hyper-V Virtualization Infrastructure Driver",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "PCI to ISA Bridge",
+				"MANUFACTURER": "Intel",
+				"NAME": "PCI to ISA Bridge",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "WAN Miniport (IKEv2)",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "WAN Miniport (IKEv2)",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "Composite Bus Enumerator",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Composite Bus Enumerator",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "Microsoft Virtual Drive Enumerator",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft Virtual Drive Enumerator",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "Microsoft Storage Spaces Controller",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft Storage Spaces Controller",
+				"TYPE": "SCSIAdapter"
+			},
+			{
+				"DESCRIPTION": "Microsoft Kernel Debug Network Adapter",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft Kernel Debug Network Adapter",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "Volume",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Volume",
+				"TYPE": "Volume"
+			},
+			{
+				"DESCRIPTION": "Volume",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Volume",
+				"TYPE": "Volume"
+			},
+			{
+				"DESCRIPTION": "Microsoft PS/2 Mouse",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft PS/2 Mouse",
+				"TYPE": "Mouse"
+			},
+			{
+				"DESCRIPTION": "UMBus Root Bus Enumerator",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "UMBus Root Bus Enumerator",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "USB Input Device",
+				"MANUFACTURER": "(Standard system devices)",
+				"NAME": "USB Input Device",
+				"TYPE": "HIDClass"
+			},
+			{
+				"DESCRIPTION": "Charge Arbitration Driver",
+				"MANUFACTURER": "(Standard system devices)",
+				"NAME": "Charge Arbitration Driver",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "Generic software device",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft Radio Device Enumeration Bus",
+				"TYPE": "SoftwareDevice"
+			},
+			{
+				"DESCRIPTION": "System timer",
+				"MANUFACTURER": "(Standard system devices)",
+				"NAME": "System timer",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "ACPI x64-based PC",
+				"MANUFACTURER": "(Standard computers)",
+				"NAME": "ACPI x64-based PC",
+				"TYPE": "Computer"
+			},
+			{
+				"DESCRIPTION": "PCI Bus",
+				"MANUFACTURER": "(Standard system devices)",
+				"NAME": "PCI Bus",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "VirtualBox Guest Device",
+				"MANUFACTURER": "Oracle Corporation",
+				"NAME": "VirtualBox Guest Device",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "WAN Miniport (Network Monitor)",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "WAN Miniport (Network Monitor)",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "WAN Miniport (IP)",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "WAN Miniport (IP)",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "Standard SATA AHCI Controller",
+				"MANUFACTURER": "Standard SATA AHCI Controller",
+				"NAME": "Standard SATA AHCI Controller",
+				"TYPE": "HDC"
+			},
+			{
+				"DESCRIPTION": "Local Print Queue",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "OneNote (Desktop)",
+				"TYPE": "PrintQueue"
+			},
+			{
+				"DESCRIPTION": "Microsoft ACPI-Compliant System",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft ACPI-Compliant System",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": null,
+				"MANUFACTURER": null,
+				"NAME": null,
+				"TYPE": null
+			},
+			{
+				"DESCRIPTION": "Microsoft Basic Render Driver",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft Basic Render Driver",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "WAN Miniport (SSTP)",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "WAN Miniport (SSTP)",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "ACPI Fixed Feature Button",
+				"MANUFACTURER": "(Standard system devices)",
+				"NAME": "ACPI Fixed Feature Button",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "USB Root Hub (USB 3.0)",
+				"MANUFACTURER": "(Standard USB HUBs)",
+				"NAME": "USB Root Hub (USB 3.0)",
+				"TYPE": "USB"
+			},
+			{
+				"DESCRIPTION": "Disk drive",
+				"MANUFACTURER": "(Standard disk drives)",
+				"NAME": "VBOX HARDDISK",
+				"TYPE": "DiskDrive"
+			},
+			{
+				"DESCRIPTION": "CPU to PCI Bridge",
+				"MANUFACTURER": "Intel",
+				"NAME": "CPU to PCI Bridge",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "Generic software device",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft GS Wavetable Synth",
+				"TYPE": "SoftwareDevice"
+			},
+			{
+				"DESCRIPTION": "Audio Endpoint",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microphone (High Definition Audio Device)",
+				"TYPE": "AudioEndpoint"
+			},
+			{
+				"DESCRIPTION": "NDIS Virtual Network Adapter Enumerator",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "NDIS Virtual Network Adapter Enumerator",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "USB xHCI Compliant Host Controller",
+				"MANUFACTURER": "Generic USB xHCI Host Controller",
+				"NAME": "Intel(R) USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)",
+				"TYPE": "USB"
+			},
+			{
+				"DESCRIPTION": "High Definition Audio Controller",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "High Definition Audio Controller",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "Microsoft System Management BIOS Driver",
+				"MANUFACTURER": "(Standard system devices)",
+				"NAME": "Microsoft System Management BIOS Driver",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "Intel(R) PRO/1000 MT Desktop Adapter",
+				"MANUFACTURER": "Intel",
+				"NAME": "Intel(R) PRO/1000 MT Desktop Adapter",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "Intel(R) PRO/1000 MT Desktop Adapter",
+				"MANUFACTURER": "Intel",
+				"NAME": "Intel(R) PRO/1000 MT Desktop Adapter #2",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "Programmable interrupt controller",
+				"MANUFACTURER": "(Standard system devices)",
+				"NAME": "Programmable interrupt controller",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "Standard PS/2 Keyboard",
+				"MANUFACTURER": "(Standard keyboards)",
+				"NAME": "Standard PS/2 Keyboard",
+				"TYPE": "Keyboard"
+			},
+			{
+				"DESCRIPTION": "Local Print Queue",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "OneNote for Windows 10",
+				"TYPE": "PrintQueue"
+			},
+			{
+				"DESCRIPTION": "Plug and Play Software Device Enumerator",
+				"MANUFACTURER": "(Standard system devices)",
+				"NAME": "Plug and Play Software Device Enumerator",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "CD-ROM Drive",
+				"MANUFACTURER": "(Standard CD-ROM drives)",
+				"NAME": "VBOX CD-ROM",
+				"TYPE": "CDROM"
+			},
+			{
+				"DESCRIPTION": "Remote Desktop Device Redirector Bus",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Remote Desktop Device Redirector Bus",
+				"TYPE": "System"
+			},
+			{
+				"DESCRIPTION": "Local Print Queue",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Send To OneNote 2013",
+				"TYPE": "PrintQueue"
+			},
+			{
+				"DESCRIPTION": "Generic Non-PnP Monitor",
+				"MANUFACTURER": "(Standard monitor types)",
+				"NAME": "Generic Non-PnP Monitor",
+				"TYPE": "Monitor"
+			},
+			{
+				"DESCRIPTION": "Generic Non-PnP Monitor",
+				"MANUFACTURER": "(Standard monitor types)",
+				"NAME": "Generic Non-PnP Monitor",
+				"TYPE": "Monitor"
+			},
+			{
+				"DESCRIPTION": "WAN Miniport (IPv6)",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "WAN Miniport (IPv6)",
+				"TYPE": "Net"
+			},
+			{
+				"DESCRIPTION": "Local Print Queue",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft Print to PDF",
+				"TYPE": "PrintQueue"
+			},
+			{
+				"DESCRIPTION": "WAN Miniport (L2TP)",
+				"MANUFACTURER": "Microsoft",
+				"NAME": "WAN Miniport (L2TP)",
+				"TYPE": "Net"
+			}
+		],
+		"MOTHERBOARD": [
+			{
+				"BIOS_ASSETTAG": "",
+				"BIOS_DATE": "20061201000000.000000+000",
+				"BIOS_MANUFACTURER": "innotek GmbH",
+				"BIOS_VERSION": "VirtualBox",
+				"MOTHERBOARD_MANUFACTURER": "Oracle Corporation",
+				"MOTHERBOARD_MODEL": null,
+				"MOTHERBOARD_SERIAL_NUMBER": "",
+				"MOTHERBOARD_TYPE": [
+					1
+				]
+			}
+		],
+		"NETWORKS": [
+			{
+				"DEFAULT_GATEWAY": [
+					"10.0.2.2"
+				],
+				"DESCRIPTION": "Intel(R) PRO/1000 MT Desktop Adapter",
+				"DHCP_ENABLED": true,
+				"DHCP_SERVER": "10.0.2.2",
+				"DNS_DOMAIN": "factorfx.com",
+				"DNS_SERVER": [
+					"10.0.2.3"
+				],
+				"IP_ADDRESS": [
+					"10.0.2.15",
+					"fe80::522b:bf9d:3d92:8a45"
+				],
+				"IP_SUBNET": [
+					"255.255.255.0",
+					"64"
+				],
+				"MAC_ADDRESS": "08:00:27:23:E5:4D"
+			},
+			{
+				"DEFAULT_GATEWAY": null,
+				"DESCRIPTION": "Intel(R) PRO/1000 MT Desktop Adapter #2",
+				"DHCP_ENABLED": true,
+				"DHCP_SERVER": "192.168.56.100",
+				"DNS_DOMAIN": null,
+				"DNS_SERVER": null,
+				"IP_ADDRESS": [
+					"192.168.56.104",
+					"fe80::ccf3:1dd7:8ed3:759"
+				],
+				"IP_SUBNET": [
+					"255.255.255.0",
+					"64"
+				],
+				"MAC_ADDRESS": "08:00:27:60:2F:16"
+			}
+		],
+		"OPERATING_SYSTEM": [
+			{
+				"DESCRIPTION": "test",
+				"HOSTNAME": "Antoine-VM-Windows",
+				"MANUFACTURER": "Microsoft Corporation",
+				"MODEL": "VirtualBox",
+				"NAME": "Microsoft Windows 10 Pro",
+				"SERIAL_NUMBER": "0",
+				"VERSION": "10.0.19045"
+			}
+		],
+		"RAM": [
+			{
+				"CAPACITY": null,
+				"LOCATOR": null,
+				"MANUFACTURER": null,
+				"SERIAL_NUMBER": null,
+				"SPEED": null
+			}
+		],
+		"ROM": [
+			{
+				"FILE_SYSTEM": "C:",
+				"FREE": 22473068544,
+				"TOTAL": 106754490368,
+				"TYPE": "NTFS",
+				"VOLUME": "C:"
+			},
+			{
+				"FILE_SYSTEM": "D:",
+				"FREE": 0,
+				"TOTAL": 6113187840,
+				"TYPE": "UDF",
+				"VOLUME": "D:"
+			},
+			{
+				"FILE_SYSTEM": "Z:",
+				"FREE": 881812373504,
+				"TOTAL": 983349346304,
+				"TYPE": "VBoxSharedFolderFS",
+				"VOLUME": "Z:"
+			}
+		],
+		"SLOTS": [
+			{
+				"DESCRIPTION": null,
+				"NAME": null,
+				"STATUS": null
+			}
+		],
+		"USERS": [
+			{
+				"DOMAIN": "ANTOINE-VM-WIND",
+				"LOGGED_USER": "Administrator",
+				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-500"
+			},
+			{
+				"DOMAIN": "ANTOINE-VM-WIND",
+				"LOGGED_USER": "DefaultAccount",
+				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-503"
+			},
+			{
+				"DOMAIN": "ANTOINE-VM-WIND",
+				"LOGGED_USER": "Developpeur",
+				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-1001"
+			},
+			{
+				"DOMAIN": "ANTOINE-VM-WIND",
+				"LOGGED_USER": "Guest",
+				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-501"
+			},
+			{
+				"DOMAIN": "ANTOINE-VM-WIND",
+				"LOGGED_USER": "WDAGUtilityAccount",
+				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-504"
+			}
+		]
+	}
+}
