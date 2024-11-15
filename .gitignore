@@ -137,3 +137,6 @@ megalinter-reports/
 
 # Django logging
 logs/
+
+# Locust stat files
+*.csv
