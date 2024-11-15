@@ -3,7 +3,7 @@ from common.auth import Auth
 import json
 import random
 
-class InventoryAPITest(HttpUser):
+class AssetCollectionAPITest(HttpUser):
     wait_time = between(1, 5)
     token = None
     assets = None
