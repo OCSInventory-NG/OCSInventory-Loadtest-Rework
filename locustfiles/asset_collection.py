@@ -77,3 +77,23 @@ class AssetCollectionAPITest(HttpUser):
 
         else:
             print("Token not available, request not executed")
+            
+    @task
+    def get_asset(self):
+        """
+        GET /asset/bases
+        """
+        if self.token:
+            response = self.client.get(
+                "/asset/bases/",
+                headers={"Authorization": f"Token {self.token}"}
+            )
+            
+            if response.status_code == 200:
+                self.assets = response.json()
+                asset_count = len(self.assets) if isinstance(self.assets, list) else self.assets.get("count", "Assets not available")
+                print(f"Number of retrieved assets : {asset_count}")
+            else:
+                print("An error occured when attempt to retrieve asset base : ", response.text)
+        else:
+            print("Token not available, request not executed")
