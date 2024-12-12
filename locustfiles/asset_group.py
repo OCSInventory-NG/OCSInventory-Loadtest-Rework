@@ -4,7 +4,7 @@ import json
 import random
 
 
-class AssetAdministrationAPITest(HttpUser):
+class AssetGroupAPITest(HttpUser):
     wait_time = between(1, 5)
     token = None
 
