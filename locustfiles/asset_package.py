@@ -10,3 +10,7 @@ class AssetPackageAPITest(HttpUser):
     def on_start(self):
         # Retrieve auth token at startup
         self.token = Auth.get_token(self)
+
+    @task
+    def idle_task(self):
+        pass
