@@ -32,7 +32,7 @@ class AssetBaseAPITest(HttpUser):
                 "serial": f"00000-00000-00000-{random_number}",
                 "osname": osname,
                 "osversion": "1.0.0",
-                "uuid": f"DUMMY-UUID{random_number}",
+                "uuid": f"DUMMY-UUID-{random_number}",
                 "srcip": "127.0.0.1",
                 "srcmac": "XX-XX-XX-XX-XX-XX",
                 "domain": "WORKGROUP",
