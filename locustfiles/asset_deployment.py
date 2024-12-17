@@ -55,7 +55,7 @@ class AssetDeploymentAPITest(HttpUser):
                         "route": "asset/bases",
                         "field": "osname",
                         "fieldtype": "string",
-                        "operator": "iexact",
+                        "operator": "icontains",
                         "value": self.osname,
                         "link": "AND",
                     }
@@ -130,7 +130,7 @@ class AssetDeploymentAPITest(HttpUser):
                 data = {
                     "package": self.package_id,
                     "asset": asset,
-                    "name": f"Package {random_number}",
+                    "name": f"Asset package {random_number}",
                     "status": 0,
                     "comment": "In waiting",
                 }
@@ -169,7 +169,7 @@ class AssetDeploymentAPITest(HttpUser):
                 data = {
                     "package": self.package_id,
                     "group": group,
-                    "name": f"Package {random_number}",
+                    "name": f"Group package {random_number}",
                     "status": 0,
                     "comment": "In waiting",
                 }
@@ -205,12 +205,12 @@ class AssetDeploymentAPITest(HttpUser):
 
             # Data preparation with dynamic incrementation
             data = {
-                "name": f"Dummy Package {random_number}",
+                "name": f"Dummy Asset Package {random_number}",
                 "description": "Dummy Package for API test",
                 "target_os": self.osname,
             }
 
-            self.package_name = f"Dummy Package {random_number}"
+            self.package_name = f"Dummy Asset Package {random_number}"
 
             # Sending the POST request with the authentication token
             response = self.client.post(
@@ -246,12 +246,12 @@ class AssetDeploymentAPITest(HttpUser):
 
             # Data preparation with dynamic incrementation
             data = {
-                "name": f"Dummy Package {random_number}",
+                "name": f"Dummy Group Package {random_number}",
                 "description": "Dummy Package for API test",
                 "target_os": self.osname,
             }
 
-            self.package_name = f"Dummy Package {random_number}"
+            self.package_name = f"Dummy Group Package {random_number}"
 
             # Sending the POST request with the authentication token
             response = self.client.post(
