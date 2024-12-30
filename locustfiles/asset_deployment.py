@@ -131,7 +131,7 @@ class AssetDeploymentAPITest(HttpUser):
                     "package": self.package_id,
                     "asset": asset,
                     "name": f"Asset package {random_number}",
-                    "status": 0,
+                    "status": 1,
                     "comment": "In waiting",
                 }
                 # Sending the POST request with the authentication token
