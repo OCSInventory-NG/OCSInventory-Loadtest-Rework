@@ -31,7 +31,7 @@ class AssetGroupAPITest(HttpUser):
                 data=json.dumps(self.search),
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 assets = response.json()
                 for asset in assets:
                     self.assets.append(asset.get("pk"))
@@ -92,8 +92,8 @@ class AssetGroupAPITest(HttpUser):
                 },
                 data=json.dumps(data),
             )
-
-            if response.status_code != 200:
+            
+            if response.status_code not in (200, 201):
                 print(
                     "An error occured when attempt to POST asset group : ",
                     response.text,
