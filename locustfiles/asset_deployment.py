@@ -31,7 +31,7 @@ class AssetDeploymentAPITest(HttpUser):
                 },
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 self.package_id = response.json()[0].get("id")
             else:
                 print(
@@ -71,7 +71,7 @@ class AssetDeploymentAPITest(HttpUser):
                 data=json.dumps(search),
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 assets = response.json()
                 for asset in assets:
                     self.assets.append(asset.get("pk"))
@@ -97,7 +97,7 @@ class AssetDeploymentAPITest(HttpUser):
                 },
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 # For single group
                 # self.groups.append(response.json()[0].get("id"))
 
@@ -130,6 +130,7 @@ class AssetDeploymentAPITest(HttpUser):
                 data = {
                     "package": self.package_id,
                     "asset": asset,
+                    "group": None,
                     "name": f"Asset package {random_number}",
                     "status": 1,
                     "comment": "In waiting",
@@ -144,9 +145,9 @@ class AssetDeploymentAPITest(HttpUser):
                     data=json.dumps(data),
                 )
 
-                if response.status_code != 200:
+                if response.status_code not in (200, 201):
                     print(
-                        "An error occured when attempt to POST deployment result : ",
+                        "An error occured when attempt to POST asset deployment result : ",
                         response.text,
                     )
 
@@ -168,6 +169,7 @@ class AssetDeploymentAPITest(HttpUser):
             for group in self.groups:
                 data = {
                     "package": self.package_id,
+                    "asset": None,
                     "group": group,
                     "name": f"Group package {random_number}",
                     "status": 0,
@@ -183,9 +185,9 @@ class AssetDeploymentAPITest(HttpUser):
                     data=json.dumps(data),
                 )
 
-                if response.status_code != 200:
+                if response.status_code not in (200, 201):
                     print(
-                        "An error occured when attempt to POST deployment result : ",
+                        "An error occured when attempt to POST group deployment result : ",
                         response.text,
                     )
 
@@ -208,8 +210,10 @@ class AssetDeploymentAPITest(HttpUser):
                 "name": f"Dummy Asset Package {random_number}",
                 "description": "Dummy Package for API test",
                 "target_os": self.osname,
+                "actions_list": [],
+                "result": []
             }
-
+            
             self.package_name = f"Dummy Asset Package {random_number}"
 
             # Sending the POST request with the authentication token
@@ -222,7 +226,7 @@ class AssetDeploymentAPITest(HttpUser):
                 data=json.dumps(data),
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 self.create_asset_result()
             else:
                 print(
@@ -249,6 +253,8 @@ class AssetDeploymentAPITest(HttpUser):
                 "name": f"Dummy Group Package {random_number}",
                 "description": "Dummy Package for API test",
                 "target_os": self.osname,
+                "actions_list": [],
+                "result": []
             }
 
             self.package_name = f"Dummy Group Package {random_number}"
@@ -262,8 +268,8 @@ class AssetDeploymentAPITest(HttpUser):
                 },
                 data=json.dumps(data),
             )
-
-            if response.status_code == 200:
+            
+            if response.status_code in (200, 201):
                 self.create_group_result()
             else:
                 print(
