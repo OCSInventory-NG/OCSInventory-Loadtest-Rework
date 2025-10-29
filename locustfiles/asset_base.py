@@ -140,7 +140,7 @@ class AssetBaseAPITest(HttpUser):
                 data=json.dumps(data),
             )
 
-            if response.status_code != 200:
+            if response.status_code not in (200, 201):
                 print(
                     "An error occured when attempt to POST asset base : ", response.text
                 )
@@ -158,7 +158,7 @@ class AssetBaseAPITest(HttpUser):
                 "/asset/bases/", headers={"Authorization": f"Token {self.token}"}
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 self.assets = response.json()
                 asset_count = (
                     len(self.assets)
