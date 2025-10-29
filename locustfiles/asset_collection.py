@@ -119,15 +119,15 @@ class AssetCollectionAPITest(HttpUser):
             os_type = random.choice(list(self.os_options.keys()))
             os_details = random.choice(self.os_options[os_type])
             unique_uuid = str(uuid.uuid4())
-
-            template_map = {"windows": 4, "linux": 2, "mac": 3}
+            
+            template_map = {"windows": 5, "linux": 2, "mac": 4}
             template = template_map[os_type]
 
             file_path = f"files/{os_type}_inventory.json"
             template_inventory = self.load_template_inventory(file_path)
 
             if not template_inventory:
-                print("Unable to load 'template_inventory' from JSON file")
+                print(f"Unable to load 'template_inventory' from JSON file for OS : {os_type}")
                 return
 
             # Data preparation with dynamic incrementation
@@ -178,7 +178,7 @@ class AssetCollectionAPITest(HttpUser):
                 "/asset/bases/", headers={"Authorization": f"Token {self.token}"}
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 self.assets = response.json()
                 asset_count = (
                     len(self.assets)
