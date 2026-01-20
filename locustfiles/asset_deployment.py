@@ -9,6 +9,11 @@ class AssetDeploymentAPITest(HttpUser):
     token = None
     os_options = ["WIN", "LIN", "MAC"]
     osname = None
+    link_osname_osopt = {
+        "WIN": ["Windows"],
+        "LIN": ["Ubuntu", "Debian", "CentOS", "Fedora"],
+        "MAC": ["macOS"]
+    }
     package_id = None
     package_name = None
     groups = []
@@ -55,7 +60,7 @@ class AssetDeploymentAPITest(HttpUser):
                         "route": "asset/bases",
                         "field": "osname",
                         "fieldtype": "string",
-                        "operator": "icontains",
+                        "operator": "istartswith",
                         "value": self.osname,
                         "link": "AND",
                     }
@@ -74,7 +79,7 @@ class AssetDeploymentAPITest(HttpUser):
             if response.status_code in (200, 201):
                 assets = response.json()
                 for asset in assets:
-                    self.assets.append(asset.get("pk"))
+                    self.assets.append(asset.get("id"))
             else:
                 print(
                     "An error occured when attempt to retrieve assets : ",
@@ -89,9 +94,10 @@ class AssetDeploymentAPITest(HttpUser):
         """
         self.groups = []
         if self.token:
+            name = f"Dummy {self.osname} group"
             # Sending the GET request with the authentication token
             response = self.client.get(
-                f"/asset/groups/?name={self.osname}",
+                f"/asset/groups/?name={name}",
                 headers={
                     "Authorization": f"Token {self.token}",
                 },
@@ -127,13 +133,14 @@ class AssetDeploymentAPITest(HttpUser):
 
             # Data preparation with dynamic incrementation
             for asset in self.assets:
+                random_status = f"{random.randint(0, 3)}"
                 data = {
                     "package": self.package_id,
                     "asset": asset,
                     "group": None,
                     "name": f"Asset package {random_number}",
-                    "status": 1,
-                    "comment": "In waiting",
+                    "status": random_status,
+                    "comment": "Dummy comment",
                 }
                 # Sending the POST request with the authentication token
                 response = self.client.post(
@@ -167,13 +174,14 @@ class AssetDeploymentAPITest(HttpUser):
 
             # Data preparation with dynamic incrementation
             for group in self.groups:
+                random_status = f"{random.randint(0, 3)}"
                 data = {
                     "package": self.package_id,
                     "asset": None,
                     "group": group,
                     "name": f"Group package {random_number}",
-                    "status": 0,
-                    "comment": "In waiting",
+                    "status": random_status,
+                    "comment": "Dummy comment",
                 }
                 # Sending the POST request with the authentication token
                 response = self.client.post(
@@ -202,14 +210,14 @@ class AssetDeploymentAPITest(HttpUser):
         if self.token:
             # Generate random num between 00001 and 99999
             random_number = f"{random.randint(1, 99999):05}"
-            # Random selection of an operating system for osname
-            self.osname = random.choice(self.os_options)
+            ostarget = random.choice(self.os_options)
+            self.osname = random.choice(self.link_osname_osopt[ostarget])
 
             # Data preparation with dynamic incrementation
             data = {
                 "name": f"Dummy Asset Package {random_number}",
                 "description": "Dummy Package for API test",
-                "target_os": self.osname,
+                "target_os": ostarget,
                 "actions_list": [],
                 "result": []
             }
@@ -245,14 +253,14 @@ class AssetDeploymentAPITest(HttpUser):
         if self.token:
             # Generate random num between 00001 and 99999
             random_number = f"{random.randint(1, 99999):05}"
-            # Random selection of an operating system for osname
-            self.osname = random.choice(self.os_options)
+            ostarget = random.choice(self.os_options)
+            self.osname = random.choice(self.link_osname_osopt[ostarget])
 
             # Data preparation with dynamic incrementation
             data = {
                 "name": f"Dummy Group Package {random_number}",
                 "description": "Dummy Package for API test",
-                "target_os": self.osname,
+                "target_os": ostarget,
                 "actions_list": [],
                 "result": []
             }
