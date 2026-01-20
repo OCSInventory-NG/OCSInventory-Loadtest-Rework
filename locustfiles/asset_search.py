@@ -81,8 +81,8 @@ class AssetSearchAPITest(HttpUser):
                     "route": "asset/bases",
                     "field": "osname",
                     "fieldtype": "string",
-                    "operator": "iexact",
-                    "value": "windows",
+                    "operator": "istartswith",
+                    "value": "Windows",
                     "link": "AND",
                 },
             ]
