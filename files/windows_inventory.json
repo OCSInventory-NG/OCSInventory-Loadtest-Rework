@@ -2,679 +2,1549 @@
 	"template_inventory": {
 		"BATTERIES": [
 			{
-				"CHEMISTRY": null,
-				"DESIGN_CAPACITY": null,
-				"DESIGN_VOLTAGE": null,
-				"LOCATION": null,
-				"MANUFACTURER": null,
-				"MANUFACTURER_DATE": null,
-				"MAXIMUM_ERROR": null,
-				"NAME": null,
-				"SBDS_VERSION": null,
-				"SERIAL_NUMBER": "0innotek1"
+				"CHEMISTRY": "Unknown",
+				"DESCRIPTION": "Batterie interne",
+				"DESIGN CAPACITY": 0,
+				"DESIGN VOLTAGE": 11.71,
+				"ESTIMATED CHARGE REMAINING": 18,
+				"MANUFACTURER": "",
+				"NAME": "DELL CF5RH12",
+				"SERIAL NUMBER": "720",
+				"STATUS": "OK"
+			}
+		],
+		"BIOS": [
+			{
+				"MANUFACTURER": "Dell Inc.",
+				"MODEL": "Vostro 5402",
+				"SERIAL NUMBER": "FC7K0B3",
+				"TYPE": "Notebook",
+				"BIOS MANUFACTURER": "Dell Inc.",
+				"BIOS VERSION": "1.33.1",
+				"BIOS DATE": "15/11/2024 01:00:00",
+				"ASSET TAG": "",
+				"MOTHERBOARD MANUFACTURER": "Dell Inc.",
+				"MOTHERBOARD MODEL": "",
+				"MOTHERBOARD SERIAL NUMBER": "/FC7K0B3/CNWSC0013E11MP/"
+			}
+		],
+		"CONTROLLERS": [
+			{
+				"MANUFACTURER": "Generic USB xHCI Host Controller",
+				"NAME": "Contrôleur hôte Intel(R) USB 3.10 eXtensible - 1.20 (Microsoft)",
+				"CAPTION": "Contrôleur hôte Intel(R) USB 3.10 eXtensible - 1.20 (Microsoft)",
+				"DESCRIPTION": "USB xHCI Compliant Host Controller",
+				"VERSION": "",
+				"TYPE": "USB"
+			},
+			{
+				"MANUFACTURER": "Generic USB xHCI Host Controller",
+				"NAME": "Contrôleur hôte Intel(R) USB 3.10 eXtensible - 1.20 (Microsoft)",
+				"CAPTION": "Contrôleur hôte Intel(R) USB 3.10 eXtensible - 1.20 (Microsoft)",
+				"DESCRIPTION": "USB xHCI Compliant Host Controller",
+				"VERSION": "",
+				"TYPE": "USB"
+			},
+			{
+				"MANUFACTURER": "Intel Corporation",
+				"NAME": "Intel RST VMD Managed Controller 09AB",
+				"CAPTION": "Intel RST VMD Managed Controller 09AB",
+				"DESCRIPTION": "Intel RST VMD Managed Controller 09AB",
+				"VERSION": "",
+				"TYPE": "SCSI"
+			},
+			{
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Microsoft Storage Spaces Controller",
+				"CAPTION": "Microsoft Storage Spaces Controller",
+				"DESCRIPTION": "Microsoft Storage Spaces Controller",
+				"VERSION": "",
+				"TYPE": "SCSI"
+			},
+			{
+				"MANUFACTURER": "Intel Corporation",
+				"NAME": "Intel RST VMD Controller 9A0B",
+				"CAPTION": "Intel RST VMD Controller 9A0B",
+				"DESCRIPTION": "Intel RST VMD Controller 9A0B",
+				"VERSION": "",
+				"TYPE": "SCSI"
 			}
 		],
 		"CPUS": [
 			{
-				"ARCHITECTURE": "64-bit",
-				"CORES": 4,
-				"CURRENT_SPEED": 1996,
-				"L2_CACHE_SIZE": null,
-				"MANUFACTURER": "AuthenticAMD",
-				"SPEED": 1996,
-				"THREADS": null,
-				"TYPE": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx"
+				"MANUFACTURER": "GenuineIntel",
+				"TYPE": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+				"SERIAL NUMBER": " ",
+				"FREQUENCY": 1382,
+				"CORES NUMBER": 4,
+				"L2 CACHE SIZE": 5120,
+				"ARCHITECTURE": "x64",
+				"DATA WIDTH": 64,
+				"CURRENT ADDRESS WIDTH": 64,
+				"LOGICAL CPUS": 8,
+				"VOLTAGE": "",
+				"CURRENT SPEED": 1382,
+				"SOCKET TYPE": "CPU 1"
 			}
 		],
-		"GROUPS": [
+		"DRIVES": [
 			{
-				"GROUP_ID": "S-1-5-32-579",
-				"MEMBER": null,
-				"NAME": "Access Control Assistance Operators"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-544",
-				"MEMBER": null,
-				"NAME": "Administrators"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-551",
-				"MEMBER": null,
-				"NAME": "Backup Operators"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-569",
-				"MEMBER": null,
-				"NAME": "Cryptographic Operators"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-583",
-				"MEMBER": null,
-				"NAME": "Device Owners"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-562",
-				"MEMBER": null,
-				"NAME": "Distributed COM Users"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-573",
-				"MEMBER": null,
-				"NAME": "Event Log Readers"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-546",
-				"MEMBER": null,
-				"NAME": "Guests"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-578",
-				"MEMBER": null,
-				"NAME": "Hyper-V Administrators"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-568",
-				"MEMBER": null,
-				"NAME": "IIS_IUSRS"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-556",
-				"MEMBER": null,
-				"NAME": "Network Configuration Operators"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-559",
-				"MEMBER": null,
-				"NAME": "Performance Log Users"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-558",
-				"MEMBER": null,
-				"NAME": "Performance Monitor Users"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-547",
-				"MEMBER": null,
-				"NAME": "Power Users"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-555",
-				"MEMBER": null,
-				"NAME": "Remote Desktop Users"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-580",
-				"MEMBER": null,
-				"NAME": "Remote Management Users"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-552",
-				"MEMBER": null,
-				"NAME": "Replicator"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-581",
-				"MEMBER": null,
-				"NAME": "System Managed Accounts Group"
-			},
-			{
-				"GROUP_ID": "S-1-5-32-545",
-				"MEMBER": null,
-				"NAME": "Users"
+				"LETTER": "C:",
+				"TYPE": 12,
+				"FILE SYSTEM": "NTFS",
+				"TOTAL (MB)": 225810,
+				"FREE (MB)": 93756.98,
+				"CAPACITY": 58.48
 			}
 		],
 		"INPUTS": [
 			{
-				"DESCRIPTION": "Microsoft AC Adapter",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft AC Adapter",
-				"TYPE": "Battery"
+				"TYPE": "Keyboard",
+				"MANUFACTURER": "",
+				"CAPTION": "Étendu (101 ou 102 touches)",
+				"DESCRIPTION": "HID Keyboard Device",
+				"INTERFACE": {}
 			},
 			{
-				"DESCRIPTION": "Direct memory access controller",
-				"MANUFACTURER": "(Standard system devices)",
-				"NAME": "Direct memory access controller",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "Microsoft ACPI-Compliant Control Method Battery",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft ACPI-Compliant Control Method Battery",
-				"TYPE": "Battery"
-			},
-			{
-				"DESCRIPTION": "Local Print Queue",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Root Print Queue",
-				"TYPE": "PrintQueue"
-			},
-			{
-				"DESCRIPTION": "Volume Manager",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Volume Manager",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "VirtualBox Graphics Adapter (WDDM)",
-				"MANUFACTURER": "Oracle Corporation",
-				"NAME": "VirtualBox Graphics Adapter (WDDM)",
-				"TYPE": "Display"
-			},
-			{
-				"DESCRIPTION": "Audio Endpoint",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Speakers (High Definition Audio Device)",
-				"TYPE": "AudioEndpoint"
-			},
-			{
-				"DESCRIPTION": "AMD Processor",
-				"MANUFACTURER": "Advanced Micro Devices",
-				"NAME": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx",
-				"TYPE": "Processor"
-			},
-			{
-				"DESCRIPTION": "AMD Processor",
-				"MANUFACTURER": "Advanced Micro Devices",
-				"NAME": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx",
-				"TYPE": "Processor"
-			},
-			{
-				"DESCRIPTION": "AMD Processor",
-				"MANUFACTURER": "Advanced Micro Devices",
-				"NAME": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx",
-				"TYPE": "Processor"
-			},
-			{
-				"DESCRIPTION": "AMD Processor",
-				"MANUFACTURER": "Advanced Micro Devices",
-				"NAME": "AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx",
-				"TYPE": "Processor"
-			},
-			{
-				"DESCRIPTION": "Volume",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Volume",
-				"TYPE": "Volume"
-			},
-			{
-				"DESCRIPTION": "Local Print Queue",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Fax",
-				"TYPE": "PrintQueue"
-			},
-			{
-				"DESCRIPTION": "WAN Miniport (PPPOE)",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "WAN Miniport (PPPOE)",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "High Definition Audio Device",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "High Definition Audio Device",
-				"TYPE": "MEDIA"
-			},
-			{
-				"DESCRIPTION": "Microsoft Basic Display Driver",
-				"MANUFACTURER": "(Standard display types)",
-				"NAME": "Microsoft Basic Display Driver",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "HID-compliant mouse",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "HID-compliant mouse",
-				"TYPE": "Mouse"
-			},
-			{
-				"DESCRIPTION": "Local Print Queue",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft XPS Document Writer",
-				"TYPE": "PrintQueue"
-			},
-			{
-				"DESCRIPTION": "Generic software device",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft RRAS Root Enumerator",
-				"TYPE": "SoftwareDevice"
-			},
-			{
-				"DESCRIPTION": "WAN Miniport (PPTP)",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "WAN Miniport (PPTP)",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "Microsoft Hyper-V Virtualization Infrastructure Driver",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft Hyper-V Virtualization Infrastructure Driver",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "PCI to ISA Bridge",
-				"MANUFACTURER": "Intel",
-				"NAME": "PCI to ISA Bridge",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "WAN Miniport (IKEv2)",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "WAN Miniport (IKEv2)",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "Composite Bus Enumerator",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Composite Bus Enumerator",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "Microsoft Virtual Drive Enumerator",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft Virtual Drive Enumerator",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "Microsoft Storage Spaces Controller",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft Storage Spaces Controller",
-				"TYPE": "SCSIAdapter"
-			},
-			{
-				"DESCRIPTION": "Microsoft Kernel Debug Network Adapter",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft Kernel Debug Network Adapter",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "Volume",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Volume",
-				"TYPE": "Volume"
-			},
-			{
-				"DESCRIPTION": "Volume",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Volume",
-				"TYPE": "Volume"
-			},
-			{
-				"DESCRIPTION": "Microsoft PS/2 Mouse",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft PS/2 Mouse",
-				"TYPE": "Mouse"
-			},
-			{
-				"DESCRIPTION": "UMBus Root Bus Enumerator",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "UMBus Root Bus Enumerator",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "USB Input Device",
-				"MANUFACTURER": "(Standard system devices)",
-				"NAME": "USB Input Device",
-				"TYPE": "HIDClass"
-			},
-			{
-				"DESCRIPTION": "Charge Arbitration Driver",
-				"MANUFACTURER": "(Standard system devices)",
-				"NAME": "Charge Arbitration Driver",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "Generic software device",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft Radio Device Enumeration Bus",
-				"TYPE": "SoftwareDevice"
-			},
-			{
-				"DESCRIPTION": "System timer",
-				"MANUFACTURER": "(Standard system devices)",
-				"NAME": "System timer",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "ACPI x64-based PC",
-				"MANUFACTURER": "(Standard computers)",
-				"NAME": "ACPI x64-based PC",
-				"TYPE": "Computer"
-			},
-			{
-				"DESCRIPTION": "PCI Bus",
-				"MANUFACTURER": "(Standard system devices)",
-				"NAME": "PCI Bus",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "VirtualBox Guest Device",
-				"MANUFACTURER": "Oracle Corporation",
-				"NAME": "VirtualBox Guest Device",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "WAN Miniport (Network Monitor)",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "WAN Miniport (Network Monitor)",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "WAN Miniport (IP)",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "WAN Miniport (IP)",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "Standard SATA AHCI Controller",
-				"MANUFACTURER": "Standard SATA AHCI Controller",
-				"NAME": "Standard SATA AHCI Controller",
-				"TYPE": "HDC"
-			},
-			{
-				"DESCRIPTION": "Local Print Queue",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "OneNote (Desktop)",
-				"TYPE": "PrintQueue"
-			},
-			{
-				"DESCRIPTION": "Microsoft ACPI-Compliant System",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft ACPI-Compliant System",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": null,
-				"MANUFACTURER": null,
-				"NAME": null,
-				"TYPE": null
-			},
-			{
-				"DESCRIPTION": "Microsoft Basic Render Driver",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft Basic Render Driver",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "WAN Miniport (SSTP)",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "WAN Miniport (SSTP)",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "ACPI Fixed Feature Button",
-				"MANUFACTURER": "(Standard system devices)",
-				"NAME": "ACPI Fixed Feature Button",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "USB Root Hub (USB 3.0)",
-				"MANUFACTURER": "(Standard USB HUBs)",
-				"NAME": "USB Root Hub (USB 3.0)",
-				"TYPE": "USB"
-			},
-			{
-				"DESCRIPTION": "Disk drive",
-				"MANUFACTURER": "(Standard disk drives)",
-				"NAME": "VBOX HARDDISK",
-				"TYPE": "DiskDrive"
-			},
-			{
-				"DESCRIPTION": "CPU to PCI Bridge",
-				"MANUFACTURER": "Intel",
-				"NAME": "CPU to PCI Bridge",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "Generic software device",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft GS Wavetable Synth",
-				"TYPE": "SoftwareDevice"
-			},
-			{
-				"DESCRIPTION": "Audio Endpoint",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microphone (High Definition Audio Device)",
-				"TYPE": "AudioEndpoint"
-			},
-			{
-				"DESCRIPTION": "NDIS Virtual Network Adapter Enumerator",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "NDIS Virtual Network Adapter Enumerator",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "USB xHCI Compliant Host Controller",
-				"MANUFACTURER": "Generic USB xHCI Host Controller",
-				"NAME": "Intel(R) USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)",
-				"TYPE": "USB"
-			},
-			{
-				"DESCRIPTION": "High Definition Audio Controller",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "High Definition Audio Controller",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "Microsoft System Management BIOS Driver",
-				"MANUFACTURER": "(Standard system devices)",
-				"NAME": "Microsoft System Management BIOS Driver",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "Intel(R) PRO/1000 MT Desktop Adapter",
-				"MANUFACTURER": "Intel",
-				"NAME": "Intel(R) PRO/1000 MT Desktop Adapter",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "Intel(R) PRO/1000 MT Desktop Adapter",
-				"MANUFACTURER": "Intel",
-				"NAME": "Intel(R) PRO/1000 MT Desktop Adapter #2",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "Programmable interrupt controller",
-				"MANUFACTURER": "(Standard system devices)",
-				"NAME": "Programmable interrupt controller",
-				"TYPE": "System"
-			},
-			{
+				"TYPE": "Keyboard",
+				"MANUFACTURER": "",
+				"CAPTION": "Étendu (101 ou 102 touches)",
 				"DESCRIPTION": "Standard PS/2 Keyboard",
-				"MANUFACTURER": "(Standard keyboards)",
-				"NAME": "Standard PS/2 Keyboard",
-				"TYPE": "Keyboard"
+				"INTERFACE": {}
 			},
 			{
-				"DESCRIPTION": "Local Print Queue",
+				"TYPE": "Pointing Device",
 				"MANUFACTURER": "Microsoft",
-				"NAME": "OneNote for Windows 10",
-				"TYPE": "PrintQueue"
+				"CAPTION": "HID-compliant mouse",
+				"DESCRIPTION": "HID-compliant mouse",
+				"INTERFACE": "USB"
 			},
 			{
-				"DESCRIPTION": "Plug and Play Software Device Enumerator",
-				"MANUFACTURER": "(Standard system devices)",
-				"NAME": "Plug and Play Software Device Enumerator",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "CD-ROM Drive",
-				"MANUFACTURER": "(Standard CD-ROM drives)",
-				"NAME": "VBOX CD-ROM",
-				"TYPE": "CDROM"
-			},
-			{
-				"DESCRIPTION": "Remote Desktop Device Redirector Bus",
+				"TYPE": "Pointing Device",
 				"MANUFACTURER": "Microsoft",
-				"NAME": "Remote Desktop Device Redirector Bus",
-				"TYPE": "System"
-			},
-			{
-				"DESCRIPTION": "Local Print Queue",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Send To OneNote 2013",
-				"TYPE": "PrintQueue"
-			},
-			{
-				"DESCRIPTION": "Generic Non-PnP Monitor",
-				"MANUFACTURER": "(Standard monitor types)",
-				"NAME": "Generic Non-PnP Monitor",
-				"TYPE": "Monitor"
-			},
-			{
-				"DESCRIPTION": "Generic Non-PnP Monitor",
-				"MANUFACTURER": "(Standard monitor types)",
-				"NAME": "Generic Non-PnP Monitor",
-				"TYPE": "Monitor"
-			},
-			{
-				"DESCRIPTION": "WAN Miniport (IPv6)",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "WAN Miniport (IPv6)",
-				"TYPE": "Net"
-			},
-			{
-				"DESCRIPTION": "Local Print Queue",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "Microsoft Print to PDF",
-				"TYPE": "PrintQueue"
-			},
-			{
-				"DESCRIPTION": "WAN Miniport (L2TP)",
-				"MANUFACTURER": "Microsoft",
-				"NAME": "WAN Miniport (L2TP)",
-				"TYPE": "Net"
+				"CAPTION": "PS/2 Compatible Mouse",
+				"DESCRIPTION": "PS/2 Compatible Mouse",
+				"INTERFACE": "PS/2"
 			}
 		],
-		"MOTHERBOARD": [
+		"LOCAL GROUPS": [
 			{
-				"BIOS_ASSETTAG": "",
-				"BIOS_DATE": "20061201000000.000000+000",
-				"BIOS_MANUFACTURER": "innotek GmbH",
-				"BIOS_VERSION": "VirtualBox",
-				"MOTHERBOARD_MANUFACTURER": "Oracle Corporation",
-				"MOTHERBOARD_MODEL": null,
-				"MOTHERBOARD_SERIAL_NUMBER": "",
-				"MOTHERBOARD_TYPE": [
-					1
-				]
+				"SID": "S-1-5-32-544",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Administrateurs"
+			},
+			{
+				"SID": "S-1-5-32-578",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Administrateurs Hyper-V"
+			},
+			{
+				"SID": "S-1-5-32-552",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Duplicateurs"
+			},
+			{
+				"SID": "S-1-5-32-568",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "IIS_IUSRS"
+			},
+			{
+				"SID": "S-1-5-32-546",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Invités"
+			},
+			{
+				"SID": "S-1-5-32-573",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Lecteurs des journaux d’événements"
+			},
+			{
+				"SID": "S-1-5-32-579",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Opérateurs d'assistance de contrôle d'accès"
+			},
+			{
+				"SID": "S-1-5-32-569",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Opérateurs de chiffrement"
+			},
+			{
+				"SID": "S-1-5-32-556",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Opérateurs de configuration réseau"
+			},
+			{
+				"SID": "S-1-5-32-551",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Opérateurs de sauvegarde"
+			},
+			{
+				"SID": "S-1-5-32-584",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Opérateurs matériels en mode utilisateur"
+			},
+			{
+				"SID": "S-1-5-32-583",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Propriétaires d'appareils"
+			},
+			{
+				"SID": "S-1-5-32-581",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "System Managed Accounts Group"
+			},
+			{
+				"SID": "S-1-5-32-545",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Utilisateurs"
+			},
+			{
+				"SID": "S-1-5-32-547",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Utilisateurs avec pouvoir"
+			},
+			{
+				"SID": "S-1-5-32-580",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Utilisateurs de gestion à distance"
+			},
+			{
+				"SID": "S-1-5-32-558",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Utilisateurs de l’Analyseur de performances"
+			},
+			{
+				"SID": "S-1-5-32-555",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Utilisateurs du Bureau à distance"
+			},
+			{
+				"SID": "S-1-5-32-559",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Utilisateurs du journal de performances"
+			},
+			{
+				"SID": "S-1-5-32-562",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Utilisateurs du modèle COM distribué"
+			},
+			{
+				"SID": "S-1-5-32-585",
+				"DOMAIN": "DEV-WINDOWS",
+				"NAME": "Utilisateurs OpenSSH"
+			}
+		],
+		"LOCAL USERS": [
+			{
+				"SID": "S-1-5-21-3884342174-477366710-1408179555-500",
+				"NAME": "Administrateur",
+				"DESCRIPTION": "Compte d’utilisateur d’administration",
+				"TYPE": 512,
+				"CREATED": "",
+				"STATUS": "Degraded",
+				"CHANGE PASSWORD": true,
+				"PASSWORD EXPIRES": false
+			},
+			{
+				"SID": "S-1-5-21-3884342174-477366710-1408179555-503",
+				"NAME": "DefaultAccount",
+				"DESCRIPTION": "Compte utilisateur géré par le système.",
+				"TYPE": 512,
+				"CREATED": "",
+				"STATUS": "Degraded",
+				"CHANGE PASSWORD": true,
+				"PASSWORD EXPIRES": false
+			},
+			{
+				"SID": "S-1-5-21-3884342174-477366710-1408179555-1002",
+				"NAME": "devel",
+				"DESCRIPTION": "",
+				"TYPE": 512,
+				"CREATED": "",
+				"STATUS": "OK",
+				"CHANGE PASSWORD": true,
+				"PASSWORD EXPIRES": false
+			},
+			{
+				"SID": "S-1-5-21-3884342174-477366710-1408179555-501",
+				"NAME": "Invité",
+				"DESCRIPTION": "Compte d’utilisateur invité",
+				"TYPE": 512,
+				"CREATED": "",
+				"STATUS": "Degraded",
+				"CHANGE PASSWORD": false,
+				"PASSWORD EXPIRES": false
+			},
+			{
+				"SID": "S-1-5-21-3884342174-477366710-1408179555-504",
+				"NAME": "WDAGUtilityAccount",
+				"DESCRIPTION": "Compte d’utilisateur géré et utilisé par le système pour les scénarios Windows Defender Application Guard.",
+				"TYPE": 512,
+				"CREATED": "",
+				"STATUS": "Degraded",
+				"CHANGE PASSWORD": true,
+				"PASSWORD EXPIRES": true
+			}
+		],
+		"MEMORIES": [
+			{
+				"CAPTION": "Mémoire physique",
+				"DESCRIPTION": "BANK 0",
+				"CAPACITY": 8192,
+				"PURPOSE": "System memory",
+				"TYPE": "Unknown",
+				"SPEED": 3200,
+				"SLOT NUMBER": "DIMM 1",
+				"SERIAL NUMBER": "06BC19AF"
+			},
+			{
+				"CAPTION": "Mémoire physique",
+				"DESCRIPTION": "BANK 0",
+				"CAPACITY": 8192,
+				"PURPOSE": "System memory",
+				"TYPE": "Unknown",
+				"SPEED": 3200,
+				"SLOT NUMBER": "DIMM 2",
+				"SERIAL NUMBER": "E62BF66D"
+			}
+		],
+		"MONITORS": [
+			{
+				"MANUFACTURER": "BOE",
+				"INSTANCE NAME": "DISPLAY\\BOE082E\\4&1b0f1fef&0&UID8388688_0",
+				"MANUFACTURED ON (WEEK/YEAR)": "34/2018",
+				"TYPE": "Digital",
+				"SERIAL NUMBER": "0",
+				"ACTIVE": true
 			}
 		],
 		"NETWORKS": [
 			{
-				"DEFAULT_GATEWAY": [
-					"10.0.2.2"
+				"DESCRIPTION": "Qualcomm QCA61x4A 802.11ac Wireless Adapter",
+				"TYPE": "Wi-Fi",
+				"SPEED": "144.4 Mbps",
+				"MTU": 1500,
+				"MAC ADDRESS": "74-12-B3-40-D9-29",
+				"STATUS": "Up",
+				"IP ADDRESS": [
+					"192.14.32.181",
+					"fe80::c145:aa66:545f:ebf2"
 				],
-				"DESCRIPTION": "Intel(R) PRO/1000 MT Desktop Adapter",
-				"DHCP_ENABLED": true,
-				"DHCP_SERVER": "10.0.2.2",
-				"DNS_DOMAIN": "factorfx.com",
-				"DNS_SERVER": [
-					"10.0.2.3"
-				],
-				"IP_ADDRESS": [
-					"10.0.2.15",
-					"fe80::522b:bf9d:3d92:8a45"
-				],
-				"IP_SUBNET": [
+				"NETMASK": [
 					"255.255.255.0",
 					"64"
 				],
-				"MAC_ADDRESS": "08:00:27:23:E5:4D"
-			},
-			{
-				"DEFAULT_GATEWAY": null,
-				"DESCRIPTION": "Intel(R) PRO/1000 MT Desktop Adapter #2",
-				"DHCP_ENABLED": true,
-				"DHCP_SERVER": "192.168.56.100",
-				"DNS_DOMAIN": null,
-				"DNS_SERVER": null,
-				"IP_ADDRESS": [
-					"192.168.56.104",
-					"fe80::ccf3:1dd7:8ed3:759"
+				"GATEWAY": [
+					"192.14.32.254"
 				],
-				"IP_SUBNET": [
-					"255.255.255.0",
-					"64"
-				],
-				"MAC_ADDRESS": "08:00:27:60:2F:16"
-			}
-		],
-		"OPERATING_SYSTEM": [
-			{
-				"DESCRIPTION": "test",
-				"HOSTNAME": "Antoine-VM-Windows",
-				"MANUFACTURER": "Microsoft Corporation",
-				"MODEL": "VirtualBox",
-				"NAME": "Microsoft Windows 10 Pro",
-				"SERIAL_NUMBER": "0",
-				"VERSION": "10.0.19045"
-			}
-		],
-		"RAM": [
-			{
-				"CAPACITY": null,
-				"LOCATOR": null,
-				"MANUFACTURER": null,
-				"SERIAL_NUMBER": null,
-				"SPEED": null
-			}
-		],
-		"ROM": [
-			{
-				"FILE_SYSTEM": "C:",
-				"FREE": 22473068544,
-				"TOTAL": 106754490368,
-				"TYPE": "NTFS",
-				"VOLUME": "C:"
+				"NETWORK NUMBER": "192.14.32.0",
+				"DHCP IP": "192.14.32.254"
 			},
 			{
-				"FILE_SYSTEM": "D:",
-				"FREE": 0,
-				"TOTAL": 6113187840,
-				"TYPE": "UDF",
-				"VOLUME": "D:"
+				"DESCRIPTION": "TAP-Windows Adapter V9",
+				"TYPE": "OpenVPN TAP-Windows6",
+				"SPEED": "1 Gbps",
+				"MTU": 1500,
+				"MAC ADDRESS": "00-FF-6B-97-B6-CF",
+				"STATUS": "Disconnected",
+				"IP ADDRESS": "",
+				"NETMASK": "",
+				"GATEWAY": "",
+				"NETWORK NUMBER": "",
+				"DHCP IP": ""
 			},
 			{
-				"FILE_SYSTEM": "Z:",
-				"FREE": 881812373504,
-				"TOTAL": 983349346304,
-				"TYPE": "VBoxSharedFolderFS",
-				"VOLUME": "Z:"
+				"DESCRIPTION": "Wintun Userspace Tunnel",
+				"TYPE": "OpenVPN Wintun",
+				"SPEED": "100 Gbps",
+				"MTU": 65535,
+				"MAC ADDRESS": "",
+				"STATUS": "Disconnected",
+				"IP ADDRESS": "",
+				"NETMASK": "",
+				"GATEWAY": "",
+				"NETWORK NUMBER": "",
+				"DHCP IP": ""
+			},
+			{
+				"DESCRIPTION": "OpenVPN Data Channel Offload",
+				"TYPE": "OpenVPN Data Channel Offload",
+				"SPEED": "1 Gbps",
+				"MTU": 1500,
+				"MAC ADDRESS": "",
+				"STATUS": "Disconnected",
+				"IP ADDRESS": "",
+				"NETMASK": "",
+				"GATEWAY": "",
+				"NETWORK NUMBER": "",
+				"DHCP IP": ""
+			},
+			{
+				"DESCRIPTION": "Bluetooth Device (Personal Area Network)",
+				"TYPE": "Connexion réseau Bluetooth",
+				"SPEED": "3 Mbps",
+				"MTU": 1500,
+				"MAC ADDRESS": "74-12-B3-40-D9-2A",
+				"STATUS": "Disconnected",
+				"IP ADDRESS": "",
+				"NETMASK": "",
+				"GATEWAY": "",
+				"NETWORK NUMBER": "",
+				"DHCP IP": ""
+			},
+			{
+				"DESCRIPTION": "Realtek PCIe GbE Family Controller",
+				"TYPE": "Ethernet",
+				"SPEED": "0 bps",
+				"MTU": 1500,
+				"MAC ADDRESS": "34-73-5A-D6-FA-12",
+				"STATUS": "Disconnected",
+				"IP ADDRESS": "",
+				"NETMASK": "",
+				"GATEWAY": "",
+				"NETWORK NUMBER": "",
+				"DHCP IP": ""
+			}
+		],
+		"PORTS": [
+			{
+				"TYPE": "Keyboard Port",
+				"NAME": "None",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			},
+			{
+				"TYPE": "Mouse Port",
+				"NAME": "None",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			},
+			{
+				"TYPE": "USB",
+				"NAME": "USB1",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			},
+			{
+				"TYPE": "USB",
+				"NAME": "USB2",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			},
+			{
+				"TYPE": "None",
+				"NAME": "None",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			},
+			{
+				"TYPE": "None",
+				"NAME": "None",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			},
+			{
+				"TYPE": "None",
+				"NAME": "None",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			},
+			{
+				"TYPE": "None",
+				"NAME": "None",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			},
+			{
+				"TYPE": "None",
+				"NAME": "None",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			},
+			{
+				"TYPE": "None",
+				"NAME": "None",
+				"CAPTION": "Connecteur de ports",
+				"DESCRIPTION": "Connecteur de ports"
+			}
+		],
+		"PRINTERS": [
+			{
+				"NAME": "OneNote (Desktop)",
+				"DRIVER": "Send to Microsoft OneNote 16 Driver",
+				"PORT": "nul:",
+				"DESCRIPTION": "",
+				"SERVER PRINTER SHARING": "",
+				"SHARING PRINTER ON SERVER": "",
+				"SCREEN (HORIZONTAL / VERTICAL)": "600 x 600",
+				"COMMENT": "",
+				"SHARED": false,
+				"LOCAL / NETWORKS": false
+			},
+			{
+				"NAME": "Microsoft Print to PDF",
+				"DRIVER": "Microsoft Print To PDF",
+				"PORT": "PORTPROMPT:",
+				"DESCRIPTION": "",
+				"SERVER PRINTER SHARING": "",
+				"SHARING PRINTER ON SERVER": "",
+				"SCREEN (HORIZONTAL / VERTICAL)": "600 x 600",
+				"COMMENT": "",
+				"SHARED": false,
+				"LOCAL / NETWORKS": false
 			}
 		],
 		"SLOTS": [
 			{
-				"DESCRIPTION": null,
-				"NAME": null,
-				"STATUS": null
+				"NAME": "Connecteur système",
+				"DESCRIPTION": "Connecteur système",
+				"DESIGNATION": "PCI-Express 0",
+				"PURPOSE": "In Use",
+				"STATUS": "OK",
+				"SHARED": false
+			},
+			{
+				"NAME": "Connecteur système",
+				"DESCRIPTION": "Connecteur système",
+				"DESIGNATION": "PCI-Express 1",
+				"PURPOSE": "Available",
+				"STATUS": "OK",
+				"SHARED": false
 			}
 		],
-		"USERS": [
+		"SOFTWARES": [
 			{
-				"DOMAIN": "ANTOINE-VM-WIND",
-				"LOGGED_USER": "Administrator",
-				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-500"
+				"NAME": "Visual Studio Community 2022",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "17.14.13 (August 2025)",
+				"FOLDER": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+				"COMMENTS": "",
+				"FILE NAME": "devenv.exe",
+				"FILE SIZE": "",
+				"GUID": "89a3e6e4",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": "",
+				"MINOR VERSION": ""
 			},
 			{
-				"DOMAIN": "ANTOINE-VM-WIND",
-				"LOGGED_USER": "DefaultAccount",
-				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-503"
+				"NAME": "Inno Setup version 6.4.2",
+				"PUBLISHER": "jrsoftware.org",
+				"VERSION": "6.4.2",
+				"FOLDER": "C:\\Program Files (x86)\\Inno Setup 6\\",
+				"COMMENTS": "",
+				"FILE NAME": "Compil32.exe",
+				"FILE SIZE": 18884,
+				"GUID": "Inno Setup 6_is1",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "2025/04/16",
+				"MAJOR VERSION": 6,
+				"MINOR VERSION": 4
 			},
 			{
-				"DOMAIN": "ANTOINE-VM-WIND",
-				"LOGGED_USER": "Developpeur",
-				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-1001"
+				"NAME": "Microsoft Edge",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "140.0.3485.54",
+				"FOLDER": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application",
+				"COMMENTS": "",
+				"FILE NAME": "msedge.exe",
+				"FILE SIZE": "",
+				"GUID": "Microsoft Edge",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "2025/09/09",
+				"MAJOR VERSION": 3485,
+				"MINOR VERSION": 54
 			},
 			{
-				"DOMAIN": "ANTOINE-VM-WIND",
-				"LOGGED_USER": "Guest",
-				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-501"
+				"NAME": "Nullsoft Install System",
+				"PUBLISHER": "",
+				"VERSION": "3.02.1",
+				"FOLDER": "C:\\Program Files (x86)\\NSIS",
+				"COMMENTS": "",
+				"FILE NAME": "uninst-nsis.exe",
+				"FILE SIZE": "",
+				"GUID": "NSIS",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 3,
+				"MINOR VERSION": 2
 			},
 			{
-				"DOMAIN": "ANTOINE-VM-WIND",
-				"LOGGED_USER": "WDAGUtilityAccount",
-				"USER_ID": "S-1-5-21-3350451817-1048683208-743790416-504"
+				"NAME": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.44.35211",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "14.44.35211.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "VC_redist.x86.exe",
+				"FILE SIZE": 18673,
+				"GUID": "{0b5169e3-39da-4313-808e-1f9c0407f3bf}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 14,
+				"MINOR VERSION": 44
+			},
+			{
+				"NAME": "vs_CoreEditorFonts",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "17.7.40001",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 728,
+				"GUID": "{1851460E-0E63-4117-B5BA-25A2F045801B}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 17,
+				"MINOR VERSION": 7
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 29,
+				"GUID": "{1F2D665B-6D0E-4523-9246-D7E11821835E}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/06",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 29,
+				"GUID": "{1F4FEE68-A546-44AA-873F-E24801835AA7}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/06",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "WixEdit",
+				"PUBLISHER": "Jasper Keuper (jkeuper@gmail.com)",
+				"VERSION": "0.8.2712.17",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 23841,
+				"GUID": "{208AA18E-7196-4A39-8385-EF8B9020A31A}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/22",
+				"MAJOR VERSION": 0,
+				"MINOR VERSION": 8
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 29,
+				"GUID": "{29D91E06-21DF-4A27-8B64-8D0CF71EC956}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Dell SupportAssist OS Recovery Plugin for Dell Update",
+				"PUBLISHER": "Dell Inc.",
+				"VERSION": "5.5.13.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "DellUpdateSupportAssistPlugin.exe",
+				"FILE SIZE": 65654,
+				"GUID": "{2b5a1544-c837-4b31-acb8-cb096c96013f}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 5,
+				"MINOR VERSION": 5
+			},
+			{
+				"NAME": "Windows Software Development Kit - Windows 10.0.26100.4654",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.1.26100.4654",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "winsdksetup.exe",
+				"FILE SIZE": 2339388,
+				"GUID": "{2c1d2274-0b9c-437b-8937-60ed881f6678}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 10,
+				"MINOR VERSION": 1
+			},
+			{
+				"NAME": "WiX Toolset Additional Tools",
+				"PUBLISHER": "WiX Toolset",
+				"VERSION": "6.0.1",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "WixAdditionalTools.exe",
+				"FILE SIZE": 1478,
+				"GUID": "{46EFD8C0-233B-4E9A-9895-35A406AE7B2D}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 6,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Windows Software Development Kit - Windows 10.0.26100.3323",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.1.26100.3323",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "winsdksetup.exe",
+				"FILE SIZE": 3643371,
+				"GUID": "{4b6ab9d2-303f-4074-8d59-dd86adced94e}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 10,
+				"MINOR VERSION": 1
+			},
+			{
+				"NAME": "Windows Software Development Kit - Windows 10.0.19041.5609",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.1.19041.5609",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "winsdksetup.exe",
+				"FILE SIZE": 1963183,
+				"GUID": "{5f4dc51d-f151-4325-8ba1-8b26169529a9}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 10,
+				"MINOR VERSION": 1
+			},
+			{
+				"NAME": "Uninstall Java EBS",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 44,
+				"GUID": "{602FB6E5-B76F-4EE6-8D2D-3BE4692017DE}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 10,
+				"GUID": "{60616405-B478-423E-B790-467E5CE845DD}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/06",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Windows Software Development Kit - Windows 10.0.22621.3233",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.1.22621.3233",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "winsdksetup.exe",
+				"FILE SIZE": 2665813,
+				"GUID": "{71684ad3-afc2-4a65-9d45-92ef58510f18}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 10,
+				"MINOR VERSION": 1
+			},
+			{
+				"NAME": "Dell Digital Delivery",
+				"PUBLISHER": "Dell Products, LP",
+				"VERSION": "3.5.2015.0",
+				"FOLDER": "C:\\Program Files (x86)\\Dell Digital Delivery\\",
+				"COMMENTS": "Downloads and installs the applications that you purchased with your computer.  (Release Version 3.5.2015.0)",
+				"FILE NAME": "",
+				"FILE SIZE": 2564,
+				"GUID": "{7B2D0B6F-F02D-4363-ACDF-00DE6247ACBC}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/10/31",
+				"MAJOR VERSION": 3,
+				"MINOR VERSION": 5
+			},
+			{
+				"NAME": "Uninstall Java Other",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 44,
+				"GUID": "{7DD96DFA-985F-4D72-A61E-ED93B75F2918}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "WiX Toolset v3.14.1.8722",
+				"PUBLISHER": ".NET Foundation",
+				"VERSION": "3.14.1.8722",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "WiX314.exe",
+				"FILE SIZE": 282613,
+				"GUID": "{87475ca3-0418-47e5-a51f-de5bd3d0d9fb}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 3,
+				"MINOR VERSION": 14
+			},
+			{
+				"NAME": "Outlook GLPI Form Addon",
+				"PUBLISHER": "TonOrganisation",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 28,
+				"GUID": "{9635B7E9-80CF-48BD-8AA4-4CEC64605BC8}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/06",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 10,
+				"GUID": "{9669D64E-D8E1-41EB-B169-95B25E87AC5E}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/06",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "WiX Toolset Additional Tools",
+				"PUBLISHER": "WiX Toolset",
+				"VERSION": "5.0.2",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "WixAdditionalTools.exe",
+				"FILE SIZE": 1466,
+				"GUID": "{A3D129B7-B572-4312-A369-D0DB30713F18}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 5,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Microsoft Windows Desktop Runtime - 6.0.30 (x64)",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "6.0.30.33617",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "windowsdesktop-runtime-6.0.30-win-x64.exe",
+				"FILE SIZE": 215451,
+				"GUID": "{b2b66c6f-6c27-49d1-846a-6c27d322b9bb}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 6,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "12.0.30501.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "vcredist_x64.exe",
+				"FILE SIZE": 21062,
+				"GUID": "{b3c7f59f-dc40-4be9-829c-77dd292978ea}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": "",
+				"MINOR VERSION": ""
+			},
+			{
+				"NAME": "Windows Software Development Kit - Windows 10.0.22621.5040",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.1.22621.5040",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "winsdksetup.exe",
+				"FILE SIZE": 2453680,
+				"GUID": "{b72d4013-dd88-405a-9f9d-e88c278dcefe}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 10,
+				"MINOR VERSION": 1
+			},
+			{
+				"NAME": "Microsoft Windows Desktop Runtime - 8.0.11 (x64)",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "8.0.11.34221",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "windowsdesktop-runtime-8.0.11-win-x64.exe",
+				"FILE SIZE": 222331,
+				"GUID": "{bd40e761-3e88-4202-9b53-26c6bed3d467}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 8,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Uninstall Java Other",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 44,
+				"GUID": "{C28196E9-8778-46E8-9E26-5EE42DE6585D}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 13,
+				"GUID": "{C4D659DC-C880-4C83-B2A8-FF99CAAB85D1}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/06",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Dell SupportAssist Remediation",
+				"PUBLISHER": "Dell Inc.",
+				"VERSION": "5.5.13.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "DellSupportAssistRemediationServiceInstaller.exe",
+				"FILE SIZE": 102240,
+				"GUID": "{c7ccf084-ab05-431c-8474-6b66df04f996}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 5,
+				"MINOR VERSION": 5
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 10,
+				"GUID": "{D3C78377-4991-4954-B90D-7D3989674CE3}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/06",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "UninstallJavaOther",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 44,
+				"GUID": "{D6C1FB6B-0D45-4A02-AC53-6FD1A2717C28}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "14.44.35211.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "VC_redist.x64.exe",
+				"FILE SIZE": 21235,
+				"GUID": "{d8bbe9f9-7c5b-42c6-b715-9ee898a2e515}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 14,
+				"MINOR VERSION": 44
+			},
+			{
+				"NAME": "Uninstall Java Other",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 44,
+				"GUID": "{E3F3CBE2-0193-45FE-B158-47BEA23F37B1}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Windows SDK AddOn",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.1.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 152,
+				"GUID": "{F1E37C98-16B7-421F-BA33-6C5B5400012A}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 10,
+				"MINOR VERSION": 1
+			},
+			{
+				"NAME": "Git",
+				"PUBLISHER": "The Git Development Community",
+				"VERSION": "2.48.1",
+				"FOLDER": "C:\\Program Files\\Git\\",
+				"COMMENTS": "",
+				"FILE NAME": "unins000.exe",
+				"FILE SIZE": 356073,
+				"GUID": "Git_is1",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "2025/03/06",
+				"MAJOR VERSION": 2,
+				"MINOR VERSION": 48
+			},
+			{
+				"NAME": "Microsoft Visual Studio 2010 Tools for Office Runtime (x64)",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.0.60910",
+				"FOLDER": "c:\\Program Files\\Common Files\\Microsoft Shared\\VSTO\\10.0\\",
+				"COMMENTS": "",
+				"FILE NAME": "install.exe",
+				"FILE SIZE": "",
+				"GUID": "Microsoft Visual Studio 2010 Tools for Office Runtime (x64)",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": "4",
+				"MINOR VERSION": ""
+			},
+			{
+				"NAME": "Module linguistique Microsoft Visual Studio 2010 Tools pour Office Runtime (x64) - FRA",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.0.60910",
+				"FOLDER": "c:\\Program Files\\Common Files\\Microsoft Shared\\VSTO\\10.0\\",
+				"COMMENTS": "",
+				"FILE NAME": "install.exe",
+				"FILE SIZE": "",
+				"GUID": "Microsoft Visual Studio 2010 Tools for Office Runtime (x64) Language Pack - FRA",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": "4",
+				"MINOR VERSION": ""
+			},
+			{
+				"NAME": "Notepad++ (64-bit x64)",
+				"PUBLISHER": "Notepad++ Team",
+				"VERSION": "8.8.8",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "notepad++.exe",
+				"FILE SIZE": 18386,
+				"GUID": "Notepad++",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": 8,
+				"MINOR VERSION": 88
+			},
+			{
+				"NAME": "Microsoft 365 Apps for enterprise - fr-fr",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "16.0.19127.20192",
+				"FOLDER": "C:\\Program Files\\Microsoft Office",
+				"COMMENTS": "",
+				"FILE NAME": "OfficeClickToRun.exe",
+				"FILE SIZE": "",
+				"GUID": "O365ProPlusRetail - fr-fr",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": "",
+				"MINOR VERSION": ""
+			},
+			{
+				"NAME": "Microsoft OneDrive",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "25.238.1204.0001",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "OneDriveSetup.exe",
+				"FILE SIZE": 473097,
+				"GUID": "OneDriveSetup.exe",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "Unknown",
+				"MAJOR VERSION": "",
+				"MINOR VERSION": ""
+			},
+			{
+				"NAME": "Dell SupportAssist",
+				"PUBLISHER": "Dell Inc.",
+				"VERSION": "4.10.6.48716",
+				"FOLDER": "C:\\Program Files\\Dell\\SupportAssistAgent\\",
+				"COMMENTS": "Dell SupportAssist keeps your PC up to date and running at its best with recommended software and driver updates. It also helps resolve issues quickly by detecting common problems and sending issue details to Dell Technical Support agents on your behalf.",
+				"FILE NAME": "",
+				"FILE SIZE": 872016,
+				"GUID": "{00B9D238-5A72-4BD9-B2DC-0144D8DBD5C8}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2026/01/20",
+				"MAJOR VERSION": 4,
+				"MINOR VERSION": 10
+			},
+			{
+				"NAME": "IIS 10.0 Express",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.0.10007",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 55532,
+				"GUID": "{0F4F67F8-21E1-422D-B31C-B3800F4D6E36}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/05",
+				"MAJOR VERSION": 10,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Microsoft ODBC Driver 17 for SQL Server",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "17.10.6.1",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 7968,
+				"GUID": "{10FA6775-2F58-4EC4-94AF-4CFC58456BE2}",
+				"LANGUAGE": "Français (France)",
+				"INSTALLATION DATE": "2025/08/05",
+				"MAJOR VERSION": 17,
+				"MINOR VERSION": 10
+			},
+			{
+				"NAME": "Dell Update for Windows Universal",
+				"PUBLISHER": "Dell Inc.",
+				"VERSION": "5.0.0",
+				"FOLDER": "C:\\Program Files\\Dell\\Update\\",
+				"COMMENTS": "Scan your system, download, and apply the latest device driver and system bios updates.",
+				"FILE NAME": "",
+				"FILE SIZE": 22753,
+				"GUID": "{20E7100A-BADE-4287-8AAD-B498A1E51C13}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/10/31",
+				"MAJOR VERSION": 5,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OpenVPN 2.6.13-I002 amd64",
+				"PUBLISHER": "OpenVPN, Inc.",
+				"VERSION": "2.6.1302",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 10119,
+				"GUID": "{2A683384-562D-422F-8116-FA60F70C3740}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/03/25",
+				"MAJOR VERSION": 2,
+				"MINOR VERSION": 6
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 153,
+				"GUID": "{39FA89EA-0781-4251-9262-6F3CEDDDD1D0}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "SafeNet Authentication Client 10.9 R1",
+				"PUBLISHER": "Thales",
+				"VERSION": "10.9.4482.0",
+				"FOLDER": "C:\\Program Files\\SafeNet\\Authentication\\",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 46918,
+				"GUID": "{3F5D7752-7367-4E5F-B1D8-55CEA1654C73}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/04/11",
+				"MAJOR VERSION": 10,
+				"MINOR VERSION": 9
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 29,
+				"GUID": "{587744F7-737B-43B6-AFDE-86054B5BD232}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "WiX Toolset Command-Line Tools",
+				"PUBLISHER": "WiX Toolset",
+				"VERSION": "5.0.2.0",
+				"FOLDER": "C:\\Program Files\\WiX Toolset v5.0\\",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 26336,
+				"GUID": "{64F01EA3-1A9A-46D0-BAA9-BCB2EE6C73A7}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 5,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OCS Inventory Agent version 3.0.0",
+				"PUBLISHER": "OCS Inventory",
+				"VERSION": "3.0.0",
+				"FOLDER": "C:\\Program Files\\OCS Inventory Agent\\",
+				"COMMENTS": "",
+				"FILE NAME": "unins000.exe",
+				"FILE SIZE": 83790,
+				"GUID": "{652EB54C-0A14-46AF-9F06-3BA7C294AFC9}_is1",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "2026/01/20",
+				"MAJOR VERSION": 3,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Microsoft Visual Studio Installer",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "3.14.2084.208",
+				"FOLDER": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\"",
+				"COMMENTS": "",
+				"FILE NAME": "setup.exe",
+				"FILE SIZE": 0,
+				"GUID": "{6F320B93-EE3C-4826-85E0-ADF79F8D4C61}",
+				"LANGUAGE": "Unknown",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": "",
+				"MINOR VERSION": ""
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 149,
+				"GUID": "{6F8070BE-239F-4157-8CFD-7B3624CF717D}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/08",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Microsoft System CLR Types pour SQL Server 2019",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "15.0.2000.5",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 6728,
+				"GUID": "{72F6C1E8-F6B5-48C0-BF37-9606028A8F67}",
+				"LANGUAGE": "Français (France)",
+				"INSTALLATION DATE": "2024/11/04",
+				"MAJOR VERSION": 15,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Microsoft .NET SDK 9.0.304 (x64) from Visual Studio",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "9.3.425.36819",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 180,
+				"GUID": "{77D50DBE-C9D9-4EBF-9C54-172ACA940375}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/22",
+				"MAJOR VERSION": 9,
+				"MINOR VERSION": 3
+			},
+			{
+				"NAME": "Strawberry Perl (64-bit)",
+				"PUBLISHER": "strawberryperl.com project",
+				"VERSION": "5.38.2002",
+				"FOLDER": "C:\\Strawberry\\",
+				"COMMENTS": "Strawberry Perl (64-bit) version 5.38.2.2",
+				"FILE NAME": "",
+				"FILE SIZE": 893969,
+				"GUID": "{8075BCC9-804A-1014-97A8-A0999374D9D1}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/03/06",
+				"MAJOR VERSION": 5,
+				"MINOR VERSION": 38
+			},
+			{
+				"NAME": "SupportAssist Recovery Assistant",
+				"PUBLISHER": "Dell Inc.",
+				"VERSION": "5.5.12.0",
+				"FOLDER": "c:\\Program Files\\Dell\\SARemediation\\postosri\\",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 23574,
+				"GUID": "{818691EE-2FC0-43B2-AE6A-BBFCBBF43CE2}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2024/10/31",
+				"MAJOR VERSION": 5,
+				"MINOR VERSION": 5
+			},
+			{
+				"NAME": "WiX Toolset Command-Line Tools",
+				"PUBLISHER": "WiX Toolset",
+				"VERSION": "6.0.1.0",
+				"FOLDER": "C:\\Program Files\\WiX Toolset v6.0\\",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 27064,
+				"GUID": "{9C229372-F95A-49DE-9926-BD6DD1FF69FF}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 6,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "ILSpy",
+				"PUBLISHER": "ICSharpCode Team",
+				"VERSION": "9.1.0.7988",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 10506,
+				"GUID": "{A12FDAB1-731B-4A98-9749-D4815E96A1E0}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 9,
+				"MINOR VERSION": 1
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 29,
+				"GUID": "{BBD44C5F-AA1D-4320-A713-6A8528866FF8}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 149,
+				"GUID": "{BD065669-07AA-4279-8963-8CF4378A7C1A}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 29,
+				"GUID": "{CB1FA37C-4C00-478C-82D2-B10A6DB0779D}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.1",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 149,
+				"GUID": "{D19F64D6-5DD9-40FC-8D6B-B3D9BD19B8A6}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/28",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 149,
+				"GUID": "{D1E01D86-B86A-4562-B378-90ECC7B55922}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Microsoft Web Deploy 4.0",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "10.0.9419",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 14685,
+				"GUID": "{DE4FFB86-1944-4273-B040-92E920BD6861}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/05",
+				"MAJOR VERSION": 10,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "Microsoft SQL Server 2019 LocalDB ",
+				"PUBLISHER": "Microsoft Corporation",
+				"VERSION": "15.0.4382.1",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 266236,
+				"GUID": "{E5B3A478-C4C3-49E3-8384-A12D4B2008D4}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/05",
+				"MAJOR VERSION": 15,
+				"MINOR VERSION": 0
+			},
+			{
+				"NAME": "OutlookGlpiFormAddon",
+				"PUBLISHER": "FactorFX",
+				"VERSION": "1.0.0.0",
+				"FOLDER": "",
+				"COMMENTS": "",
+				"FILE NAME": "",
+				"FILE SIZE": 469,
+				"GUID": "{E7BEBECB-AB86-4A45-868F-1679896A723A}",
+				"LANGUAGE": "Anglais (États-Unis)",
+				"INSTALLATION DATE": "2025/08/07",
+				"MAJOR VERSION": 1,
+				"MINOR VERSION": 0
 			}
-		]
+		],
+		"SOUNDS": [
+			{
+				"MANUFACTURER": "Intel(R) Corporation",
+				"NAME": "Technologie Intel® Smart Sound pour audio USB",
+				"DESCRIPTION": "Technologie Intel® Smart Sound pour audio USB"
+			},
+			{
+				"MANUFACTURER": "Intel(R) Corporation",
+				"NAME": "Technologie Intel® Smart Sound pour audio Bluetooth®",
+				"DESCRIPTION": "Technologie Intel® Smart Sound pour audio Bluetooth®"
+			},
+			{
+				"MANUFACTURER": "Microsoft",
+				"NAME": "Realtek Audio",
+				"DESCRIPTION": "Realtek Audio"
+			},
+			{
+				"MANUFACTURER": "Intel(R) Corporation",
+				"NAME": "Technologie Intel® Smart Sound pour microphones numériques",
+				"DESCRIPTION": "Technologie Intel® Smart Sound pour microphones numériques"
+			}
+		],
+		"STORAGES": [
+			{
+				"MANUFACTURER": "(Standard disk drives)",
+				"NAME": "\\\\.\\PHYSICALDRIVE0",
+				"MODEL": "NVMe OM3PDP3-AD NVMe KDI 256GB",
+				"DESCRIPTION": "Disk drive",
+				"TYPE": "Fixed hard disk media",
+				"DISK SIZE": 244191.14,
+				"SERIAL NUMBER": "0026_B728_27EF_FD95.",
+				"FIRMWARE": "10100002"
+			}
+		],
+		"USB DEVICES": [
+			{
+				"DESCRIPTION": "USB Root Hub (USB 3.0)",
+				"SERVICE": "USBHUB3",
+				"MANUFACTURER": "(Standard USB HUBs)",
+				"DEVICE ID": "USB\\ROOT_HUB30\\4&3CE02D8&0&0",
+				"TYPE": "USB"
+			},
+			{
+				"DESCRIPTION": "Qualcomm QCA61x4A Bluetooth",
+				"SERVICE": "BTHUSB",
+				"MANUFACTURER": "Qualcomm",
+				"DEVICE ID": "USB\\VID_0CF3&PID_E007\\5&31036E8E&0&10",
+				"TYPE": "Bluetooth"
+			},
+			{
+				"DESCRIPTION": "USB Root Hub (USB 3.0)",
+				"SERVICE": "USBHUB3",
+				"MANUFACTURER": "(Standard USB HUBs)",
+				"DEVICE ID": "USB\\ROOT_HUB30\\4&C2333A7&0&0",
+				"TYPE": "USB"
+			},
+			{
+				"DESCRIPTION": "USB Video Device",
+				"SERVICE": "usbvideo",
+				"MANUFACTURER": "Microsoft",
+				"DEVICE ID": "USB\\VID_0C45&PID_671B&MI_00\\6&1FE0C5B&0&0000",
+				"TYPE": "Camera"
+			},
+			{
+				"DESCRIPTION": "USB Composite Device",
+				"SERVICE": "usbccgp",
+				"MANUFACTURER": "(Standard USB Host Controller)",
+				"DEVICE ID": "USB\\VID_0C45&PID_671B\\5&31036E8E&0&6",
+				"TYPE": "USB"
+			}
+		],
+		"VIDEOS": [
+			{
+				"NAME": "Intel(R) Iris(R) Xe Graphics",
+				"CHIPSET": "Intel(R) Iris(R) Xe Graphics Family",
+				"MEMORY": 128,
+				"RESOLUTION": "1920 x 1080"
+			}
+		],
+		"VIRTUAL MACHINES": []
 	}
 }
