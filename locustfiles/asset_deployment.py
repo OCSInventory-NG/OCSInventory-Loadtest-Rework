@@ -171,33 +171,43 @@ class AssetDeploymentAPITest(HttpUser):
 
             self.get_package_id()
             self.get_group_by_os()
+            self.get_assets()
+
+            if not self.groups:
+                print("create_group_result: no groups found, cannot assign machines")
+                return
+
+            if not self.assets:
+                print("create_group_result: no assets found for osname", self.osname)
+                return
 
             # Data preparation with dynamic incrementation
             for group in self.groups:
-                random_status = f"{random.randint(0, 3)}"
-                data = {
-                    "package": self.package_id,
-                    "asset": None,
-                    "group": group,
-                    "name": f"Group package {random_number}",
-                    "status": random_status,
-                    "comment": "Dummy comment",
-                }
-                # Sending the POST request with the authentication token
-                response = self.client.post(
-                    "/deployment/results/",
-                    headers={
-                        "Authorization": f"Token {self.token}",
-                        "Content-Type": "application/json",
-                    },
-                    data=json.dumps(data),
-                )
-
-                if response.status_code not in (200, 201):
-                    print(
-                        "An error occured when attempt to POST group deployment result : ",
-                        response.text,
+                for asset in self.assets:
+                    random_status = f"{random.randint(0, 3)}"
+                    data = {
+                        "package": self.package_id,
+                        "asset": asset,
+                        "group": group,
+                        "name": f"Group package {random_number}",
+                        "status": random_status,
+                        "comment": "Dummy comment",
+                    }
+                    # Sending the POST request with the authentication token
+                    response = self.client.post(
+                        "/deployment/results/",
+                        headers={
+                            "Authorization": f"Token {self.token}",
+                            "Content-Type": "application/json",
+                        },
+                        data=json.dumps(data),
                     )
+
+                    if response.status_code not in (200, 201):
+                        print(
+                            "An error occured when attempt to POST group deployment result : ",
+                            response.text,
+                        )
 
         else:
             print("Token not available, request not executed")
