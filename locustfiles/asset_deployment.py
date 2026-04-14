@@ -9,6 +9,11 @@ class AssetDeploymentAPITest(HttpUser):
     token = None
     os_options = ["WIN", "LIN", "MAC"]
     osname = None
+    link_osname_osopt = {
+        "WIN": ["Windows"],
+        "LIN": ["Ubuntu", "Debian", "CentOS", "Fedora"],
+        "MAC": ["macOS"]
+    }
     package_id = None
     package_name = None
     groups = []
@@ -31,7 +36,7 @@ class AssetDeploymentAPITest(HttpUser):
                 },
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 self.package_id = response.json()[0].get("id")
             else:
                 print(
@@ -55,7 +60,7 @@ class AssetDeploymentAPITest(HttpUser):
                         "route": "asset/bases",
                         "field": "osname",
                         "fieldtype": "string",
-                        "operator": "icontains",
+                        "operator": "istartswith",
                         "value": self.osname,
                         "link": "AND",
                     }
@@ -71,10 +76,10 @@ class AssetDeploymentAPITest(HttpUser):
                 data=json.dumps(search),
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 assets = response.json()
                 for asset in assets:
-                    self.assets.append(asset.get("pk"))
+                    self.assets.append(asset.get("id"))
             else:
                 print(
                     "An error occured when attempt to retrieve assets : ",
@@ -89,15 +94,16 @@ class AssetDeploymentAPITest(HttpUser):
         """
         self.groups = []
         if self.token:
+            name = f"Dummy {self.osname} group"
             # Sending the GET request with the authentication token
             response = self.client.get(
-                f"/asset/groups/?name={self.osname}",
+                f"/asset/groups/?name={name}",
                 headers={
                     "Authorization": f"Token {self.token}",
                 },
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 # For single group
                 # self.groups.append(response.json()[0].get("id"))
 
@@ -127,12 +133,14 @@ class AssetDeploymentAPITest(HttpUser):
 
             # Data preparation with dynamic incrementation
             for asset in self.assets:
+                random_status = f"{random.randint(0, 3)}"
                 data = {
                     "package": self.package_id,
                     "asset": asset,
+                    "group": None,
                     "name": f"Asset package {random_number}",
-                    "status": 1,
-                    "comment": "In waiting",
+                    "status": random_status,
+                    "comment": "Dummy comment",
                 }
                 # Sending the POST request with the authentication token
                 response = self.client.post(
@@ -144,9 +152,9 @@ class AssetDeploymentAPITest(HttpUser):
                     data=json.dumps(data),
                 )
 
-                if response.status_code != 200:
+                if response.status_code not in (200, 201):
                     print(
-                        "An error occured when attempt to POST deployment result : ",
+                        "An error occured when attempt to POST asset deployment result : ",
                         response.text,
                     )
 
@@ -163,31 +171,43 @@ class AssetDeploymentAPITest(HttpUser):
 
             self.get_package_id()
             self.get_group_by_os()
+            self.get_assets()
+
+            if not self.groups:
+                print("create_group_result: no groups found, cannot assign machines")
+                return
+
+            if not self.assets:
+                print("create_group_result: no assets found for osname", self.osname)
+                return
 
             # Data preparation with dynamic incrementation
             for group in self.groups:
-                data = {
-                    "package": self.package_id,
-                    "group": group,
-                    "name": f"Group package {random_number}",
-                    "status": 0,
-                    "comment": "In waiting",
-                }
-                # Sending the POST request with the authentication token
-                response = self.client.post(
-                    "/deployment/results/",
-                    headers={
-                        "Authorization": f"Token {self.token}",
-                        "Content-Type": "application/json",
-                    },
-                    data=json.dumps(data),
-                )
-
-                if response.status_code != 200:
-                    print(
-                        "An error occured when attempt to POST deployment result : ",
-                        response.text,
+                for asset in self.assets:
+                    random_status = f"{random.randint(0, 3)}"
+                    data = {
+                        "package": self.package_id,
+                        "asset": asset,
+                        "group": group,
+                        "name": f"Group package {random_number}",
+                        "status": random_status,
+                        "comment": "Dummy comment",
+                    }
+                    # Sending the POST request with the authentication token
+                    response = self.client.post(
+                        "/deployment/results/",
+                        headers={
+                            "Authorization": f"Token {self.token}",
+                            "Content-Type": "application/json",
+                        },
+                        data=json.dumps(data),
                     )
+
+                    if response.status_code not in (200, 201):
+                        print(
+                            "An error occured when attempt to POST group deployment result : ",
+                            response.text,
+                        )
 
         else:
             print("Token not available, request not executed")
@@ -200,16 +220,18 @@ class AssetDeploymentAPITest(HttpUser):
         if self.token:
             # Generate random num between 00001 and 99999
             random_number = f"{random.randint(1, 99999):05}"
-            # Random selection of an operating system for osname
-            self.osname = random.choice(self.os_options)
+            ostarget = random.choice(self.os_options)
+            self.osname = random.choice(self.link_osname_osopt[ostarget])
 
             # Data preparation with dynamic incrementation
             data = {
                 "name": f"Dummy Asset Package {random_number}",
                 "description": "Dummy Package for API test",
-                "target_os": self.osname,
+                "target_os": ostarget,
+                "actions_list": [],
+                "result": []
             }
-
+            
             self.package_name = f"Dummy Asset Package {random_number}"
 
             # Sending the POST request with the authentication token
@@ -222,7 +244,7 @@ class AssetDeploymentAPITest(HttpUser):
                 data=json.dumps(data),
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 self.create_asset_result()
             else:
                 print(
@@ -241,14 +263,16 @@ class AssetDeploymentAPITest(HttpUser):
         if self.token:
             # Generate random num between 00001 and 99999
             random_number = f"{random.randint(1, 99999):05}"
-            # Random selection of an operating system for osname
-            self.osname = random.choice(self.os_options)
+            ostarget = random.choice(self.os_options)
+            self.osname = random.choice(self.link_osname_osopt[ostarget])
 
             # Data preparation with dynamic incrementation
             data = {
                 "name": f"Dummy Group Package {random_number}",
                 "description": "Dummy Package for API test",
-                "target_os": self.osname,
+                "target_os": ostarget,
+                "actions_list": [],
+                "result": []
             }
 
             self.package_name = f"Dummy Group Package {random_number}"
@@ -262,8 +286,8 @@ class AssetDeploymentAPITest(HttpUser):
                 },
                 data=json.dumps(data),
             )
-
-            if response.status_code == 200:
+            
+            if response.status_code in (200, 201):
                 self.create_group_result()
             else:
                 print(

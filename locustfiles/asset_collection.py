@@ -39,7 +39,7 @@ class AssetCollectionAPITest(HttpUser):
                 "build": "1607",
             },
         ],
-        "linux": [
+        "debian": [
             {
                 "name": "Ubuntu 22.04 LTS",
                 "version": "22.04.3",
@@ -50,13 +50,15 @@ class AssetCollectionAPITest(HttpUser):
                 "version": "20.04.4",
                 "distribution": "Focal Fossa",
             },
+            {"name": "Debian 12", "version": "12.4", "distribution": "Bookworm"},
+            {"name": "Debian 11", "version": "11.2", "distribution": "Bullseye"},
+        ],
+        "rhel": [
             {
                 "name": "Red Hat Enterprise Linux 9.3",
                 "version": "9.3",
                 "distribution": "Plow",
             },
-            {"name": "Debian 12", "version": "12.4", "distribution": "Bookworm"},
-            {"name": "Debian 11", "version": "11.2", "distribution": "Bullseye"},
             {"name": "CentOS Stream 9", "version": "9", "distribution": "Stream"},
             {"name": "CentOS 8", "version": "8.5", "distribution": "CentOS"},
             {"name": "Fedora 39", "version": "39", "distribution": "Thirty Nine"},
@@ -81,7 +83,8 @@ class AssetCollectionAPITest(HttpUser):
         """Generate a realistic serial number based on OS type"""
         prefixes = {
             "windows": ["00331", "00426", "00512"],
-            "linux": ["LNX", "SRV", "DEB"],
+            "debian": ["LNX", "SRV", "DEB"],
+            "rhel": ["LNX", "SRV", "RHEL"],
             "mac": ["C02", "D25", "K02"],
         }
         prefix = random.choice(prefixes[os_type])
@@ -107,7 +110,7 @@ class AssetCollectionAPITest(HttpUser):
             print(f"An error occured whend attemps to load json inventory file : {e}")
             return None
 
-    @task
+    @task(10)
     def post_inventory(self):
         """
         POST /asset/collection
@@ -119,20 +122,20 @@ class AssetCollectionAPITest(HttpUser):
             os_type = random.choice(list(self.os_options.keys()))
             os_details = random.choice(self.os_options[os_type])
             unique_uuid = str(uuid.uuid4())
-
-            template_map = {"windows": 4, "linux": 2, "mac": 3}
+            
+            template_map = {"windows": 5, "debian": 2, "rhel": 3, "mac": 4}
             template = template_map[os_type]
 
             file_path = f"files/{os_type}_inventory.json"
             template_inventory = self.load_template_inventory(file_path)
 
             if not template_inventory:
-                print("Unable to load 'template_inventory' from JSON file")
+                print(f"Unable to load 'template_inventory' from JSON file for OS : {os_type}")
                 return
 
             # Data preparation with dynamic incrementation
             data = {
-                "name": f"PC-{os_type.upper()}-{random_number}",
+                "name": f"PC-{os_details['name'].upper()}-{random_number}",
                 "description": "System updated with template",
                 "serial": f"00000-00000-00000-{random_number}",
                 "osname": os_details["name"],
@@ -168,7 +171,7 @@ class AssetCollectionAPITest(HttpUser):
         else:
             print("Token not available, request not executed")
 
-    @task
+    @task(1)
     def get_asset(self):
         """
         GET /asset/bases
@@ -178,7 +181,7 @@ class AssetCollectionAPITest(HttpUser):
                 "/asset/bases/", headers={"Authorization": f"Token {self.token}"}
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 self.assets = response.json()
                 asset_count = (
                     len(self.assets)
@@ -193,3 +196,52 @@ class AssetCollectionAPITest(HttpUser):
                 )
         else:
             print("Token not available, request not executed")
+
+    @task(1)
+    def post_asset_log(self):
+        """
+        POST /asset/logs/
+        """
+        if not self.assets:
+            print("No assets available for post logs")
+            return
+
+        if not self.token:
+            print("Token not available, request not executed")
+            return
+
+        random_assets = random.sample(self.assets, min(10, len(self.assets)))
+        asset_ids = [asset["id"] for asset in random_assets]
+
+        for asset_id in asset_ids:
+            post_data = [
+                {
+                    "asset":asset_id,
+                    "scope":"CONFIG_UPDATE",
+                    "comment":"Template inventory updated successfully."
+                },
+                {
+                    "asset":asset_id,
+                    "scope":"INVENTORY_BASE_UPDATE",
+                    "comment":"Inventory updated successfully."
+                },
+                {
+                    "asset":asset_id,
+                    "scope":"INVENTORY_EXT_UPDATE",
+                    "comment":"Local configuration updated."
+                }
+            ]
+
+            response = self.client.post(
+                f"/asset/logs/",
+                headers={
+                    "Authorization": f"Token {self.token}",
+                    "Content-Type": "application/json",
+                },
+                data=json.dumps(post_data),
+            )
+
+            if response.status_code not in (200, 201):
+                print(
+                    f"An error occured when attempt to post logs for {asset_id} : {response.text}"
+                )

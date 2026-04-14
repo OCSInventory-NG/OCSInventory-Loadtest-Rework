@@ -43,7 +43,7 @@ class AssetSearchAPITest(HttpUser):
             data=json.dumps(search),
         )
 
-        if response.status_code == 200:
+        if response.status_code in (200, 201):
             self.assets = response.json()
             asset_count = (
                 len(self.assets)
@@ -81,8 +81,8 @@ class AssetSearchAPITest(HttpUser):
                     "route": "asset/bases",
                     "field": "osname",
                     "fieldtype": "string",
-                    "operator": "iexact",
-                    "value": "mac",
+                    "operator": "istartswith",
+                    "value": "Windows",
                     "link": "AND",
                 },
             ]
@@ -98,7 +98,7 @@ class AssetSearchAPITest(HttpUser):
             data=json.dumps(search),
         )
 
-        if response.status_code == 200:
+        if response.status_code in (200, 201):
             self.assets = response.json()
             asset_count = (
                 len(self.assets)
@@ -147,7 +147,7 @@ class AssetSearchAPITest(HttpUser):
             data=json.dumps(search),
         )
 
-        if response.status_code == 200:
+        if response.status_code in (200, 201):
             self.assets = response.json()
             asset_count = (
                 len(self.assets)

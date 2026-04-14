@@ -39,7 +39,7 @@ class AssetBaseAPITest(HttpUser):
                 "build": "1607",
             },
         ],
-        "linux": [
+        "debian": [
             {
                 "name": "Ubuntu 22.04 LTS",
                 "version": "22.04.3",
@@ -50,13 +50,15 @@ class AssetBaseAPITest(HttpUser):
                 "version": "20.04.4",
                 "distribution": "Focal Fossa",
             },
+            {"name": "Debian 12", "version": "12.4", "distribution": "Bookworm"},
+            {"name": "Debian 11", "version": "11.2", "distribution": "Bullseye"},
+        ],
+        "rhel": [
             {
                 "name": "Red Hat Enterprise Linux 9.3",
                 "version": "9.3",
                 "distribution": "Plow",
             },
-            {"name": "Debian 12", "version": "12.4", "distribution": "Bookworm"},
-            {"name": "Debian 11", "version": "11.2", "distribution": "Bullseye"},
             {"name": "CentOS Stream 9", "version": "9", "distribution": "Stream"},
             {"name": "CentOS 8", "version": "8.5", "distribution": "CentOS"},
             {"name": "Fedora 39", "version": "39", "distribution": "Thirty Nine"},
@@ -81,7 +83,8 @@ class AssetBaseAPITest(HttpUser):
         """Generate a realistic serial number based on OS type"""
         prefixes = {
             "windows": ["00331", "00426", "00512"],
-            "linux": ["LNX", "SRV", "DEB"],
+            "debian": ["LNX", "SRV", "DEB"],
+            "rhel": ["LNX", "SRV", "RHEL"],
             "mac": ["C02", "D25", "K02"],
         }
         prefix = random.choice(prefixes[os_type])
@@ -109,12 +112,12 @@ class AssetBaseAPITest(HttpUser):
             os_type = random.choice(list(self.os_options.keys()))
             os_details = random.choice(self.os_options[os_type])
             unique_uuid = str(uuid.uuid4())
-            template_map = {"windows": 4, "linux": 2, "mac": 3}
+            template_map = {"windows": 5, "debian": 2, "rhel": 3, "mac": 4}
             template = template_map[os_type]
 
             # Data preparation with dynamic incrementation
             data = {
-                "name": f"PC-{os_type.upper()}-{random_number}",
+                "name": f"PC-{os_details['name'].upper()}-{random_number}",
                 "description": "System not updated",
                 "serial": f"00000-00000-00000-{random_number}",
                 "osname": os_details["name"],
@@ -140,7 +143,7 @@ class AssetBaseAPITest(HttpUser):
                 data=json.dumps(data),
             )
 
-            if response.status_code != 200:
+            if response.status_code not in (200, 201):
                 print(
                     "An error occured when attempt to POST asset base : ", response.text
                 )
@@ -151,14 +154,14 @@ class AssetBaseAPITest(HttpUser):
     @task
     def get_asset(self):
         """
-        GET /asset/bases
+        GET /asset/bases/
         """
         if self.token:
             response = self.client.get(
                 "/asset/bases/", headers={"Authorization": f"Token {self.token}"}
             )
 
-            if response.status_code == 200:
+            if response.status_code in (200, 201):
                 self.assets = response.json()
                 asset_count = (
                     len(self.assets)

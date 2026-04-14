@@ -1,0 +1,5210 @@
+{
+	"template_inventory": {
+		"BATTERIES": [],
+		"BIOS": [
+			{
+				"BIOS MANUFACTURER": "0",
+				"BIOS VERSION": "13822.41.1",
+				"MANUFACTURER": "0",
+				"MODEL": "Mac14,3",
+				"MOTHERBOARD MANUFACTURER": "0",
+				"MOTHERBOARD MODEL": "MMFJ3FN/A",
+				"MOTHERBOARD SERIAL NUMBER": "XP4KPR4FX0",
+				"SERIAL NUMBER": "XP4KPR4FX0",
+				"TYPE": "Mac mini"
+			}
+		],
+		"CONTROLLERS": [],
+		"CPUS": [],
+		"DRIVES": [
+			{
+				"CAPACITY": "53",
+				"DESIGNATION": "APPLE_SSD_AP0256Z",
+				"FILE SYSTEM": "APFS",
+				"FREE (MB)": "109062",
+				"TOTAL (MB)": "233752",
+				"TYPE": "SSD"
+			}
+		],
+		"INPUTS": [],
+		"LOCAL GROUPS": [
+			{
+				"GROUP ID": "-2",
+				"MEMBER": "",
+				"NAME": "nobody"
+			},
+			{
+				"GROUP ID": "-1",
+				"MEMBER": "",
+				"NAME": "nogroup"
+			},
+			{
+				"GROUP ID": "0",
+				"MEMBER": "root",
+				"NAME": "wheel"
+			},
+			{
+				"GROUP ID": "1",
+				"MEMBER": "root",
+				"NAME": "daemon"
+			},
+			{
+				"GROUP ID": "2",
+				"MEMBER": "root",
+				"NAME": "kmem"
+			},
+			{
+				"GROUP ID": "3",
+				"MEMBER": "root",
+				"NAME": "sys"
+			},
+			{
+				"GROUP ID": "4",
+				"MEMBER": "root",
+				"NAME": "tty"
+			},
+			{
+				"GROUP ID": "5",
+				"MEMBER": "root",
+				"NAME": "operator"
+			},
+			{
+				"GROUP ID": "6",
+				"MEMBER": "_teamsserver",
+				"NAME": "mail"
+			},
+			{
+				"GROUP ID": "7",
+				"MEMBER": "",
+				"NAME": "bin"
+			},
+			{
+				"GROUP ID": "8",
+				"MEMBER": "root",
+				"NAME": "procview"
+			},
+			{
+				"GROUP ID": "9",
+				"MEMBER": "root",
+				"NAME": "procmod"
+			},
+			{
+				"GROUP ID": "10",
+				"MEMBER": "",
+				"NAME": "owner"
+			},
+			{
+				"GROUP ID": "12",
+				"MEMBER": "",
+				"NAME": "everyone"
+			},
+			{
+				"GROUP ID": "13",
+				"MEMBER": "_taskgated",
+				"NAME": "_taskgated"
+			},
+			{
+				"GROUP ID": "16",
+				"MEMBER": "",
+				"NAME": "group"
+			},
+			{
+				"GROUP ID": "20",
+				"MEMBER": "root",
+				"NAME": "staff"
+			},
+			{
+				"GROUP ID": "24",
+				"MEMBER": "",
+				"NAME": "_networkd"
+			},
+			{
+				"GROUP ID": "25",
+				"MEMBER": "",
+				"NAME": "_installassistant"
+			},
+			{
+				"GROUP ID": "26",
+				"MEMBER": "",
+				"NAME": "_lp"
+			},
+			{
+				"GROUP ID": "27",
+				"MEMBER": "",
+				"NAME": "_postfix"
+			},
+			{
+				"GROUP ID": "28",
+				"MEMBER": "",
+				"NAME": "_postdrop"
+			},
+			{
+				"GROUP ID": "29",
+				"MEMBER": "root,_jabber,_postfix,_cyrus,_calendar,_dovecot,_ftp",
+				"NAME": "certusers"
+			},
+			{
+				"GROUP ID": "30",
+				"MEMBER": "_calendar,_jabber,_postfix",
+				"NAME": "_keytabusers"
+			},
+			{
+				"GROUP ID": "31",
+				"MEMBER": "",
+				"NAME": "_scsd"
+			},
+			{
+				"GROUP ID": "32",
+				"MEMBER": "",
+				"NAME": "_ces"
+			},
+			{
+				"GROUP ID": "33",
+				"MEMBER": "_appstore",
+				"NAME": "_appstore"
+			},
+			{
+				"GROUP ID": "45",
+				"MEMBER": "",
+				"NAME": "utmp"
+			},
+			{
+				"GROUP ID": "50",
+				"MEMBER": "",
+				"NAME": "authedusers"
+			},
+			{
+				"GROUP ID": "51",
+				"MEMBER": "",
+				"NAME": "interactusers"
+			},
+			{
+				"GROUP ID": "52",
+				"MEMBER": "",
+				"NAME": "netusers"
+			},
+			{
+				"GROUP ID": "53",
+				"MEMBER": "",
+				"NAME": "consoleusers"
+			},
+			{
+				"GROUP ID": "54",
+				"MEMBER": "",
+				"NAME": "_mcxalr"
+			},
+			{
+				"GROUP ID": "55",
+				"MEMBER": "",
+				"NAME": "_appleevents"
+			},
+			{
+				"GROUP ID": "56",
+				"MEMBER": "",
+				"NAME": "_geod"
+			},
+			{
+				"GROUP ID": "59",
+				"MEMBER": "",
+				"NAME": "_devdocs"
+			},
+			{
+				"GROUP ID": "60",
+				"MEMBER": "",
+				"NAME": "_sandbox"
+			},
+			{
+				"GROUP ID": "61",
+				"MEMBER": "",
+				"NAME": "localaccounts"
+			},
+			{
+				"GROUP ID": "62",
+				"MEMBER": "",
+				"NAME": "netaccounts"
+			},
+			{
+				"GROUP ID": "65",
+				"MEMBER": "",
+				"NAME": "_mdnsresponder"
+			},
+			{
+				"GROUP ID": "66",
+				"MEMBER": "",
+				"NAME": "_uucp"
+			},
+			{
+				"GROUP ID": "67",
+				"MEMBER": "",
+				"NAME": "_ard"
+			},
+			{
+				"GROUP ID": "68",
+				"MEMBER": "",
+				"NAME": "dialer"
+			},
+			{
+				"GROUP ID": "69",
+				"MEMBER": "",
+				"NAME": "network"
+			},
+			{
+				"GROUP ID": "70",
+				"MEMBER": "_devicemgr,_teamsserver",
+				"NAME": "_www"
+			},
+			{
+				"GROUP ID": "71",
+				"MEMBER": "_eppc",
+				"NAME": "_eppc"
+			},
+			{
+				"GROUP ID": "72",
+				"MEMBER": "",
+				"NAME": "_cvs"
+			},
+			{
+				"GROUP ID": "73",
+				"MEMBER": "",
+				"NAME": "_svn"
+			},
+			{
+				"GROUP ID": "74",
+				"MEMBER": "",
+				"NAME": "_mysql"
+			},
+			{
+				"GROUP ID": "75",
+				"MEMBER": "",
+				"NAME": "_sshd"
+			},
+			{
+				"GROUP ID": "76",
+				"MEMBER": "",
+				"NAME": "_qtss"
+			},
+			{
+				"GROUP ID": "78",
+				"MEMBER": "",
+				"NAME": "_mailman"
+			},
+			{
+				"GROUP ID": "79",
+				"MEMBER": "",
+				"NAME": "_appserverusr"
+			},
+			{
+				"GROUP ID": "80",
+				"MEMBER": "root",
+				"NAME": "admin"
+			},
+			{
+				"GROUP ID": "81",
+				"MEMBER": "",
+				"NAME": "_appserveradm"
+			},
+			{
+				"GROUP ID": "82",
+				"MEMBER": "",
+				"NAME": "_clamav"
+			},
+			{
+				"GROUP ID": "83",
+				"MEMBER": "",
+				"NAME": "_amavisd"
+			},
+			{
+				"GROUP ID": "84",
+				"MEMBER": "",
+				"NAME": "_jabber"
+			},
+			{
+				"GROUP ID": "87",
+				"MEMBER": "",
+				"NAME": "_appowner"
+			},
+			{
+				"GROUP ID": "88",
+				"MEMBER": "",
+				"NAME": "_windowserver"
+			},
+			{
+				"GROUP ID": "89",
+				"MEMBER": "",
+				"NAME": "_spotlight"
+			},
+			{
+				"GROUP ID": "90",
+				"MEMBER": "",
+				"NAME": "accessibility"
+			},
+			{
+				"GROUP ID": "91",
+				"MEMBER": "",
+				"NAME": "_tokend"
+			},
+			{
+				"GROUP ID": "92",
+				"MEMBER": "",
+				"NAME": "_securityagent"
+			},
+			{
+				"GROUP ID": "93",
+				"MEMBER": "_teamsserver",
+				"NAME": "_calendar"
+			},
+			{
+				"GROUP ID": "94",
+				"MEMBER": "_devicemgr",
+				"NAME": "_teamsserver"
+			},
+			{
+				"GROUP ID": "95",
+				"MEMBER": "",
+				"NAME": "_update_sharing"
+			},
+			{
+				"GROUP ID": "96",
+				"MEMBER": "",
+				"NAME": "_installer"
+			},
+			{
+				"GROUP ID": "97",
+				"MEMBER": "",
+				"NAME": "_atsserver"
+			},
+			{
+				"GROUP ID": "98",
+				"MEMBER": "",
+				"NAME": "_lpadmin"
+			},
+			{
+				"GROUP ID": "99",
+				"MEMBER": "",
+				"NAME": "_unknown"
+			},
+			{
+				"GROUP ID": "100",
+				"MEMBER": "",
+				"NAME": "_lpoperator"
+			},
+			{
+				"GROUP ID": "200",
+				"MEMBER": "_softwareupdate",
+				"NAME": "_softwareupdate"
+			},
+			{
+				"GROUP ID": "201",
+				"MEMBER": "",
+				"NAME": "_guest"
+			},
+			{
+				"GROUP ID": "202",
+				"MEMBER": "",
+				"NAME": "_coreaudiod"
+			},
+			{
+				"GROUP ID": "203",
+				"MEMBER": "",
+				"NAME": "_screensaver"
+			},
+			{
+				"GROUP ID": "204",
+				"MEMBER": "",
+				"NAME": "_developer"
+			},
+			{
+				"GROUP ID": "205",
+				"MEMBER": "",
+				"NAME": "_locationd"
+			},
+			{
+				"GROUP ID": "207",
+				"MEMBER": "_locationd",
+				"NAME": "_detachedsig"
+			},
+			{
+				"GROUP ID": "208",
+				"MEMBER": "",
+				"NAME": "_trustevaluationagent"
+			},
+			{
+				"GROUP ID": "209",
+				"MEMBER": "_teamsserver",
+				"NAME": "_odchpass"
+			},
+			{
+				"GROUP ID": "210",
+				"MEMBER": "",
+				"NAME": "_timezone"
+			},
+			{
+				"GROUP ID": "211",
+				"MEMBER": "",
+				"NAME": "_lda"
+			},
+			{
+				"GROUP ID": "212",
+				"MEMBER": "",
+				"NAME": "_cvms"
+			},
+			{
+				"GROUP ID": "213",
+				"MEMBER": "",
+				"NAME": "_usbmuxd"
+			},
+			{
+				"GROUP ID": "215",
+				"MEMBER": "_dpaudio",
+				"NAME": "_dpaudio"
+			},
+			{
+				"GROUP ID": "216",
+				"MEMBER": "_devicemgr,_calendar,_teamsserver,_xserverdocs",
+				"NAME": "_postgres"
+			},
+			{
+				"GROUP ID": "220",
+				"MEMBER": "",
+				"NAME": "_devicemgr"
+			},
+			{
+				"GROUP ID": "221",
+				"MEMBER": "_teamsserver,_devicemgr",
+				"NAME": "_webauthserver"
+			},
+			{
+				"GROUP ID": "222",
+				"MEMBER": "",
+				"NAME": "_netbios"
+			},
+			{
+				"GROUP ID": "224",
+				"MEMBER": "_warmd",
+				"NAME": "_warmd"
+			},
+			{
+				"GROUP ID": "227",
+				"MEMBER": "",
+				"NAME": "_dovenull"
+			},
+			{
+				"GROUP ID": "228",
+				"MEMBER": "",
+				"NAME": "_netstatistics"
+			},
+			{
+				"GROUP ID": "235",
+				"MEMBER": "",
+				"NAME": "_assetcache"
+			},
+			{
+				"GROUP ID": "236",
+				"MEMBER": "",
+				"NAME": "_coremediaiod"
+			},
+			{
+				"GROUP ID": "239",
+				"MEMBER": "",
+				"NAME": "_launchservicesd"
+			},
+			{
+				"GROUP ID": "240",
+				"MEMBER": "",
+				"NAME": "_iconservices"
+			},
+			{
+				"GROUP ID": "241",
+				"MEMBER": "",
+				"NAME": "_distnote"
+			},
+			{
+				"GROUP ID": "242",
+				"MEMBER": "",
+				"NAME": "_nsurlsessiond"
+			},
+			{
+				"GROUP ID": "244",
+				"MEMBER": "",
+				"NAME": "_displaypolicyd"
+			},
+			{
+				"GROUP ID": "245",
+				"MEMBER": "",
+				"NAME": "_astris"
+			},
+			{
+				"GROUP ID": "247",
+				"MEMBER": "",
+				"NAME": "_gamecontrollerd"
+			},
+			{
+				"GROUP ID": "248",
+				"MEMBER": "",
+				"NAME": "_mbsetupuser"
+			},
+			{
+				"GROUP ID": "249",
+				"MEMBER": "",
+				"NAME": "_ondemand"
+			},
+			{
+				"GROUP ID": "250",
+				"MEMBER": "_analyticsd,_networkd,_timed,_reportmemoryexception,_mbsetupuser",
+				"NAME": "_analyticsusers"
+			},
+			{
+				"GROUP ID": "251",
+				"MEMBER": "",
+				"NAME": "_xserverdocs"
+			},
+			{
+				"GROUP ID": "252",
+				"MEMBER": "",
+				"NAME": "_wwwproxy"
+			},
+			{
+				"GROUP ID": "253",
+				"MEMBER": "",
+				"NAME": "_mobileasset"
+			},
+			{
+				"GROUP ID": "254",
+				"MEMBER": "",
+				"NAME": "_findmydevice"
+			},
+			{
+				"GROUP ID": "257",
+				"MEMBER": "",
+				"NAME": "_datadetectors"
+			},
+			{
+				"GROUP ID": "258",
+				"MEMBER": "",
+				"NAME": "_captiveagent"
+			},
+			{
+				"GROUP ID": "259",
+				"MEMBER": "",
+				"NAME": "_ctkd"
+			},
+			{
+				"GROUP ID": "260",
+				"MEMBER": "",
+				"NAME": "_applepay"
+			},
+			{
+				"GROUP ID": "261",
+				"MEMBER": "",
+				"NAME": "_hidd"
+			},
+			{
+				"GROUP ID": "262",
+				"MEMBER": "",
+				"NAME": "_cmiodalassistants"
+			},
+			{
+				"GROUP ID": "263",
+				"MEMBER": "_analyticsd",
+				"NAME": "_analyticsd"
+			},
+			{
+				"GROUP ID": "264",
+				"MEMBER": "",
+				"NAME": "_webdeveloper"
+			},
+			{
+				"GROUP ID": "265",
+				"MEMBER": "_fpsd",
+				"NAME": "_fpsd"
+			},
+			{
+				"GROUP ID": "266",
+				"MEMBER": "",
+				"NAME": "_timed"
+			},
+			{
+				"GROUP ID": "268",
+				"MEMBER": "_nearbyd",
+				"NAME": "_nearbyd"
+			},
+			{
+				"GROUP ID": "269",
+				"MEMBER": "_reportmemoryexception",
+				"NAME": "_reportmemoryexception"
+			},
+			{
+				"GROUP ID": "270",
+				"MEMBER": "_driverkit",
+				"NAME": "_driverkit"
+			},
+			{
+				"GROUP ID": "271",
+				"MEMBER": "_diskimagesiod",
+				"NAME": "_diskimagesiod"
+			},
+			{
+				"GROUP ID": "272",
+				"MEMBER": "_logd",
+				"NAME": "_logd"
+			},
+			{
+				"GROUP ID": "273",
+				"MEMBER": "_appinstalld",
+				"NAME": "_appinstalld"
+			},
+			{
+				"GROUP ID": "274",
+				"MEMBER": "_installcoordinationd",
+				"NAME": "_installcoordinationd"
+			},
+			{
+				"GROUP ID": "275",
+				"MEMBER": "_demod",
+				"NAME": "_demod"
+			},
+			{
+				"GROUP ID": "277",
+				"MEMBER": "_rmd",
+				"NAME": "_rmd"
+			},
+			{
+				"GROUP ID": "278",
+				"MEMBER": "_accessoryupdater",
+				"NAME": "_accessoryupdater"
+			},
+			{
+				"GROUP ID": "279",
+				"MEMBER": "_knowledgegraphd",
+				"NAME": "_knowledgegraphd"
+			},
+			{
+				"GROUP ID": "280",
+				"MEMBER": "_coreml",
+				"NAME": "_coreml"
+			},
+			{
+				"GROUP ID": "281",
+				"MEMBER": "_sntpd,_timed",
+				"NAME": "_sntpd"
+			},
+			{
+				"GROUP ID": "282",
+				"MEMBER": "_trustd",
+				"NAME": "_trustd"
+			},
+			{
+				"GROUP ID": "283",
+				"MEMBER": "_mmaintenanced",
+				"NAME": "_mmaintenanced"
+			},
+			{
+				"GROUP ID": "284",
+				"MEMBER": "_darwindaemon",
+				"NAME": "_darwindaemon"
+			},
+			{
+				"GROUP ID": "285",
+				"MEMBER": "",
+				"NAME": "_notification_proxy"
+			},
+			{
+				"GROUP ID": "288",
+				"MEMBER": "_avphidbridge",
+				"NAME": "_avphidbridge"
+			},
+			{
+				"GROUP ID": "289",
+				"MEMBER": "_biome",
+				"NAME": "_biome"
+			},
+			{
+				"GROUP ID": "291",
+				"MEMBER": "_backgroundassets",
+				"NAME": "_backgroundassets"
+			},
+			{
+				"GROUP ID": "293",
+				"MEMBER": "",
+				"NAME": "_mobilegestalthelper"
+			},
+			{
+				"GROUP ID": "294",
+				"MEMBER": "",
+				"NAME": "_audiomxd"
+			},
+			{
+				"GROUP ID": "295",
+				"MEMBER": "",
+				"NAME": "_terminusd"
+			},
+			{
+				"GROUP ID": "296",
+				"MEMBER": "_neuralengine",
+				"NAME": "_neuralengine"
+			},
+			{
+				"GROUP ID": "297",
+				"MEMBER": "_eligibilityd",
+				"NAME": "_eligibilityd"
+			},
+			{
+				"GROUP ID": "298",
+				"MEMBER": "_systemstatusd",
+				"NAME": "_systemstatusd"
+			},
+			{
+				"GROUP ID": "300",
+				"MEMBER": "_aonsensed",
+				"NAME": "_aonsensed"
+			},
+			{
+				"GROUP ID": "301",
+				"MEMBER": "_modelmanagerd",
+				"NAME": "_modelmanagerd"
+			},
+			{
+				"GROUP ID": "302",
+				"MEMBER": "_reportsystemmemory",
+				"NAME": "_reportsystemmemory"
+			},
+			{
+				"GROUP ID": "303",
+				"MEMBER": "_swtransparencyd",
+				"NAME": "_swtransparencyd"
+			},
+			{
+				"GROUP ID": "304",
+				"MEMBER": "_naturallanguaged",
+				"NAME": "_naturallanguaged"
+			},
+			{
+				"GROUP ID": "305",
+				"MEMBER": "_spinandd",
+				"NAME": "_spinandd"
+			},
+			{
+				"GROUP ID": "306",
+				"MEMBER": "_corespeechd",
+				"NAME": "_corespeechd"
+			},
+			{
+				"GROUP ID": "307",
+				"MEMBER": "_diagnosticservicesd",
+				"NAME": "_diagnosticservicesd"
+			},
+			{
+				"GROUP ID": "308",
+				"MEMBER": "_mds_stores",
+				"NAME": "_mds_stores"
+			},
+			{
+				"GROUP ID": "395",
+				"MEMBER": "",
+				"NAME": "com.apple.access_ftp"
+			},
+			{
+				"GROUP ID": "396",
+				"MEMBER": "",
+				"NAME": "com.apple.access_disabled"
+			},
+			{
+				"GROUP ID": "397",
+				"MEMBER": "",
+				"NAME": "com.apple.access_sessionkey"
+			},
+			{
+				"GROUP ID": "398",
+				"MEMBER": "",
+				"NAME": "com.apple.access_screensharing"
+			},
+			{
+				"GROUP ID": "399",
+				"MEMBER": "",
+				"NAME": "com.apple.access_ssh"
+			},
+			{
+				"GROUP ID": "400",
+				"MEMBER": "",
+				"NAME": "com.apple.access_remote_ae"
+			},
+			{
+				"GROUP ID": "441",
+				"MEMBER": "_oahd",
+				"NAME": "_oahd"
+			}
+		],
+		"LOCAL USERS": [
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "nobody",
+				"NAME": "nobody",
+				"SHELL": "/usr/bin/false"
+			},
+			{
+				"GROUP ID": "0",
+				"HOME": "/var/root",
+				"LOGIN": "root",
+				"NAME": "root",
+				"SHELL": "/bin/sh",
+				"USER ID": "0"
+			},
+			{
+				"GROUP ID": "1",
+				"HOME": "/var/root",
+				"LOGIN": "daemon",
+				"NAME": "daemon",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "1"
+			},
+			{
+				"GROUP ID": "4",
+				"HOME": "/var/spool/uucp",
+				"LOGIN": "_uucp",
+				"NAME": "_uucp",
+				"SHELL": "/usr/sbin/uucico",
+				"USER ID": "4"
+			},
+			{
+				"GROUP ID": "13",
+				"HOME": "/var/empty",
+				"LOGIN": "_taskgated",
+				"NAME": "_taskgated",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "13"
+			},
+			{
+				"GROUP ID": "24",
+				"HOME": "/var/networkd",
+				"LOGIN": "_networkd",
+				"NAME": "_networkd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "24"
+			},
+			{
+				"GROUP ID": "25",
+				"HOME": "/var/empty",
+				"LOGIN": "_installassistant",
+				"NAME": "_installassistant",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "25"
+			},
+			{
+				"GROUP ID": "26",
+				"HOME": "/var/spool/cups",
+				"LOGIN": "_lp",
+				"NAME": "_lp",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "26"
+			},
+			{
+				"GROUP ID": "27",
+				"HOME": "/var/spool/postfix",
+				"LOGIN": "_postfix",
+				"NAME": "_postfix",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "27"
+			},
+			{
+				"GROUP ID": "31",
+				"HOME": "/var/empty",
+				"LOGIN": "_scsd",
+				"NAME": "_scsd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "31"
+			},
+			{
+				"GROUP ID": "32",
+				"HOME": "/var/empty",
+				"LOGIN": "_ces",
+				"NAME": "_ces",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "32"
+			},
+			{
+				"GROUP ID": "33",
+				"HOME": "/var/db/appstore",
+				"LOGIN": "_appstore",
+				"NAME": "_appstore",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "33"
+			},
+			{
+				"GROUP ID": "54",
+				"HOME": "/var/empty",
+				"LOGIN": "_mcxalr",
+				"NAME": "_mcxalr",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "54"
+			},
+			{
+				"GROUP ID": "55",
+				"HOME": "/var/empty",
+				"LOGIN": "_appleevents",
+				"NAME": "_appleevents",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "55"
+			},
+			{
+				"GROUP ID": "56",
+				"HOME": "/var/db/geod",
+				"LOGIN": "_geod",
+				"NAME": "_geod",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "56"
+			},
+			{
+				"GROUP ID": "59",
+				"HOME": "/var/empty",
+				"LOGIN": "_devdocs",
+				"NAME": "_devdocs",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "59"
+			},
+			{
+				"GROUP ID": "60",
+				"HOME": "/var/empty",
+				"LOGIN": "_sandbox",
+				"NAME": "_sandbox",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "60"
+			},
+			{
+				"GROUP ID": "65",
+				"HOME": "/var/empty",
+				"LOGIN": "_mdnsresponder",
+				"NAME": "_mdnsresponder",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "65"
+			},
+			{
+				"GROUP ID": "67",
+				"HOME": "/var/empty",
+				"LOGIN": "_ard",
+				"NAME": "_ard",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "67"
+			},
+			{
+				"GROUP ID": "70",
+				"HOME": "/Library/WebServer",
+				"LOGIN": "_www",
+				"NAME": "_www",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "70"
+			},
+			{
+				"GROUP ID": "71",
+				"HOME": "/var/empty",
+				"LOGIN": "_eppc",
+				"NAME": "_eppc",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "71"
+			},
+			{
+				"GROUP ID": "72",
+				"HOME": "/var/empty",
+				"LOGIN": "_cvs",
+				"NAME": "_cvs",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "72"
+			},
+			{
+				"GROUP ID": "73",
+				"HOME": "/var/empty",
+				"LOGIN": "_svn",
+				"NAME": "_svn",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "73"
+			},
+			{
+				"GROUP ID": "74",
+				"HOME": "/var/empty",
+				"LOGIN": "_mysql",
+				"NAME": "_mysql",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "74"
+			},
+			{
+				"GROUP ID": "75",
+				"HOME": "/var/empty",
+				"LOGIN": "_sshd",
+				"NAME": "_sshd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "75"
+			},
+			{
+				"GROUP ID": "76",
+				"HOME": "/var/empty",
+				"LOGIN": "_qtss",
+				"NAME": "_qtss",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "76"
+			},
+			{
+				"GROUP ID": "6",
+				"HOME": "/var/imap",
+				"LOGIN": "_cyrus",
+				"NAME": "_cyrus",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "77"
+			},
+			{
+				"GROUP ID": "78",
+				"HOME": "/var/empty",
+				"LOGIN": "_mailman",
+				"NAME": "_mailman",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "78"
+			},
+			{
+				"GROUP ID": "79",
+				"HOME": "/var/empty",
+				"LOGIN": "_appserver",
+				"NAME": "_appserver",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "79"
+			},
+			{
+				"GROUP ID": "82",
+				"HOME": "/var/virusmails",
+				"LOGIN": "_clamav",
+				"NAME": "_clamav",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "82"
+			},
+			{
+				"GROUP ID": "83",
+				"HOME": "/var/virusmails",
+				"LOGIN": "_amavisd",
+				"NAME": "_amavisd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "83"
+			},
+			{
+				"GROUP ID": "84",
+				"HOME": "/var/empty",
+				"LOGIN": "_jabber",
+				"NAME": "_jabber",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "84"
+			},
+			{
+				"GROUP ID": "87",
+				"HOME": "/var/empty",
+				"LOGIN": "_appowner",
+				"NAME": "_appowner",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "87"
+			},
+			{
+				"GROUP ID": "88",
+				"HOME": "/var/empty",
+				"LOGIN": "_windowserver",
+				"NAME": "_windowserver",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "88"
+			},
+			{
+				"GROUP ID": "89",
+				"HOME": "/var/empty",
+				"LOGIN": "_spotlight",
+				"NAME": "_spotlight",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "89"
+			},
+			{
+				"GROUP ID": "91",
+				"HOME": "/var/empty",
+				"LOGIN": "_tokend",
+				"NAME": "_tokend",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "91"
+			},
+			{
+				"GROUP ID": "92",
+				"HOME": "/var/db/securityagent",
+				"LOGIN": "_securityagent",
+				"NAME": "_securityagent",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "92"
+			},
+			{
+				"GROUP ID": "93",
+				"HOME": "/var/empty",
+				"LOGIN": "_calendar",
+				"NAME": "_calendar",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "93"
+			},
+			{
+				"GROUP ID": "94",
+				"HOME": "/var/teamsserver",
+				"LOGIN": "_teamsserver",
+				"NAME": "_teamsserver",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "94"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_update_sharing",
+				"NAME": "_update_sharing",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "95"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_installer",
+				"NAME": "_installer",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "96"
+			},
+			{
+				"GROUP ID": "97",
+				"HOME": "/var/empty",
+				"LOGIN": "_atsserver",
+				"NAME": "_atsserver",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "97"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_ftp",
+				"NAME": "_ftp",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "98"
+			},
+			{
+				"GROUP ID": "99",
+				"HOME": "/var/empty",
+				"LOGIN": "_unknown",
+				"NAME": "_unknown",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "99"
+			},
+			{
+				"GROUP ID": "200",
+				"HOME": "/var/db/softwareupdate",
+				"LOGIN": "_softwareupdate",
+				"NAME": "_softwareupdate",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "200"
+			},
+			{
+				"GROUP ID": "202",
+				"HOME": "/var/empty",
+				"LOGIN": "_coreaudiod",
+				"NAME": "_coreaudiod",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "202"
+			},
+			{
+				"GROUP ID": "203",
+				"HOME": "/var/empty",
+				"LOGIN": "_screensaver",
+				"NAME": "_screensaver",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "203"
+			},
+			{
+				"GROUP ID": "205",
+				"HOME": "/var/db/locationd",
+				"LOGIN": "_locationd",
+				"NAME": "_locationd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "205"
+			},
+			{
+				"GROUP ID": "208",
+				"HOME": "/var/empty",
+				"LOGIN": "_trustevaluationagent",
+				"NAME": "_trustevaluationagent",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "208"
+			},
+			{
+				"GROUP ID": "210",
+				"HOME": "/var/empty",
+				"LOGIN": "_timezone",
+				"NAME": "_timezone",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "210"
+			},
+			{
+				"GROUP ID": "211",
+				"HOME": "/var/empty",
+				"LOGIN": "_lda",
+				"NAME": "_lda",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "211"
+			},
+			{
+				"GROUP ID": "212",
+				"HOME": "/var/empty",
+				"LOGIN": "_cvmsroot",
+				"NAME": "_cvmsroot",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "212"
+			},
+			{
+				"GROUP ID": "213",
+				"HOME": "/var/db/lockdown",
+				"LOGIN": "_usbmuxd",
+				"NAME": "_usbmuxd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "213"
+			},
+			{
+				"GROUP ID": "6",
+				"HOME": "/var/empty",
+				"LOGIN": "_dovecot",
+				"NAME": "_dovecot",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "214"
+			},
+			{
+				"GROUP ID": "215",
+				"HOME": "/var/empty",
+				"LOGIN": "_dpaudio",
+				"NAME": "_dpaudio",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "215"
+			},
+			{
+				"GROUP ID": "216",
+				"HOME": "/var/empty",
+				"LOGIN": "_postgres",
+				"NAME": "_postgres",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "216"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_krbtgt",
+				"NAME": "_krbtgt",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "217"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_kadmin_admin",
+				"NAME": "_kadmin_admin",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "218"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_kadmin_changepw",
+				"NAME": "_kadmin_changepw",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "219"
+			},
+			{
+				"GROUP ID": "220",
+				"HOME": "/var/empty",
+				"LOGIN": "_devicemgr",
+				"NAME": "_devicemgr",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "220"
+			},
+			{
+				"GROUP ID": "221",
+				"HOME": "/var/empty",
+				"LOGIN": "_webauthserver",
+				"NAME": "_webauthserver",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "221"
+			},
+			{
+				"GROUP ID": "222",
+				"HOME": "/var/empty",
+				"LOGIN": "_netbios",
+				"NAME": "_netbios",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "222"
+			},
+			{
+				"GROUP ID": "224",
+				"HOME": "/var/empty",
+				"LOGIN": "_warmd",
+				"NAME": "_warmd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "224"
+			},
+			{
+				"GROUP ID": "227",
+				"HOME": "/var/empty",
+				"LOGIN": "_dovenull",
+				"NAME": "_dovenull",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "227"
+			},
+			{
+				"GROUP ID": "228",
+				"HOME": "/var/empty",
+				"LOGIN": "_netstatistics",
+				"NAME": "_netstatistics",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "228"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_avbdeviced",
+				"NAME": "_avbdeviced",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "229"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_krb_krbtgt",
+				"NAME": "_krb_krbtgt",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "230"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_krb_kadmin",
+				"NAME": "_krb_kadmin",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "231"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_krb_changepw",
+				"NAME": "_krb_changepw",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "232"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_krb_kerberos",
+				"NAME": "_krb_kerberos",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "233"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_krb_anonymous",
+				"NAME": "_krb_anonymous",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "234"
+			},
+			{
+				"GROUP ID": "235",
+				"HOME": "/var/empty",
+				"LOGIN": "_assetcache",
+				"NAME": "_assetcache",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "235"
+			},
+			{
+				"GROUP ID": "236",
+				"HOME": "/var/empty",
+				"LOGIN": "_coremediaiod",
+				"NAME": "_coremediaiod",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "236"
+			},
+			{
+				"GROUP ID": "239",
+				"HOME": "/var/empty",
+				"LOGIN": "_launchservicesd",
+				"NAME": "_launchservicesd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "239"
+			},
+			{
+				"GROUP ID": "240",
+				"HOME": "/var/empty",
+				"LOGIN": "_iconservices",
+				"NAME": "_iconservices",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "240"
+			},
+			{
+				"GROUP ID": "241",
+				"HOME": "/var/empty",
+				"LOGIN": "_distnote",
+				"NAME": "_distnote",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "241"
+			},
+			{
+				"GROUP ID": "242",
+				"HOME": "/var/db/nsurlsessiond",
+				"LOGIN": "_nsurlsessiond",
+				"NAME": "_nsurlsessiond",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "242"
+			},
+			{
+				"GROUP ID": "244",
+				"HOME": "/var/empty",
+				"LOGIN": "_displaypolicyd",
+				"NAME": "_displaypolicyd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "244"
+			},
+			{
+				"GROUP ID": "245",
+				"HOME": "/var/db/astris",
+				"LOGIN": "_astris",
+				"NAME": "_astris",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "245"
+			},
+			{
+				"HOME": "/var/empty",
+				"LOGIN": "_krbfast",
+				"NAME": "_krbfast",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "246"
+			},
+			{
+				"GROUP ID": "247",
+				"HOME": "/var/empty",
+				"LOGIN": "_gamecontrollerd",
+				"NAME": "_gamecontrollerd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "247"
+			},
+			{
+				"GROUP ID": "248",
+				"HOME": "/var/setup",
+				"LOGIN": "_mbsetupuser",
+				"NAME": "_mbsetupuser",
+				"SHELL": "/bin/bash",
+				"USER ID": "248"
+			},
+			{
+				"GROUP ID": "249",
+				"HOME": "/var/db/ondemand",
+				"LOGIN": "_ondemand",
+				"NAME": "_ondemand",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "249"
+			},
+			{
+				"GROUP ID": "251",
+				"HOME": "/var/empty",
+				"LOGIN": "_xserverdocs",
+				"NAME": "_xserverdocs",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "251"
+			},
+			{
+				"GROUP ID": "252",
+				"HOME": "/var/empty",
+				"LOGIN": "_wwwproxy",
+				"NAME": "_wwwproxy",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "252"
+			},
+			{
+				"GROUP ID": "253",
+				"HOME": "/var/ma",
+				"LOGIN": "_mobileasset",
+				"NAME": "_mobileasset",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "253"
+			},
+			{
+				"GROUP ID": "254",
+				"HOME": "/var/db/findmydevice",
+				"LOGIN": "_findmydevice",
+				"NAME": "_findmydevice",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "254"
+			},
+			{
+				"GROUP ID": "257",
+				"HOME": "/var/db/datadetectors",
+				"LOGIN": "_datadetectors",
+				"NAME": "_datadetectors",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "257"
+			},
+			{
+				"GROUP ID": "258",
+				"HOME": "/var/empty",
+				"LOGIN": "_captiveagent",
+				"NAME": "_captiveagent",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "258"
+			},
+			{
+				"GROUP ID": "259",
+				"HOME": "/var/db/ctkd",
+				"LOGIN": "_ctkd",
+				"NAME": "_ctkd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "259"
+			},
+			{
+				"GROUP ID": "260",
+				"HOME": "/var/db/applepay",
+				"LOGIN": "_applepay",
+				"NAME": "_applepay",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "260"
+			},
+			{
+				"GROUP ID": "261",
+				"HOME": "/var/db/hidd",
+				"LOGIN": "_hidd",
+				"NAME": "_hidd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "261"
+			},
+			{
+				"GROUP ID": "262",
+				"HOME": "/var/db/cmiodalassistants",
+				"LOGIN": "_cmiodalassistants",
+				"NAME": "_cmiodalassistants",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "262"
+			},
+			{
+				"GROUP ID": "263",
+				"HOME": "/var/db/analyticsd",
+				"LOGIN": "_analyticsd",
+				"NAME": "_analyticsd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "263"
+			},
+			{
+				"GROUP ID": "265",
+				"HOME": "/var/db/fpsd",
+				"LOGIN": "_fpsd",
+				"NAME": "_fpsd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "265"
+			},
+			{
+				"GROUP ID": "266",
+				"HOME": "/var/db/timed",
+				"LOGIN": "_timed",
+				"NAME": "_timed",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "266"
+			},
+			{
+				"GROUP ID": "268",
+				"HOME": "/var/db/nearbyd",
+				"LOGIN": "_nearbyd",
+				"NAME": "_nearbyd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "268"
+			},
+			{
+				"GROUP ID": "269",
+				"HOME": "/var/db/reportmemoryexception",
+				"LOGIN": "_reportmemoryexception",
+				"NAME": "_reportmemoryexception",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "269"
+			},
+			{
+				"GROUP ID": "270",
+				"HOME": "/var/empty",
+				"LOGIN": "_driverkit",
+				"NAME": "_driverkit",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "270"
+			},
+			{
+				"GROUP ID": "271",
+				"HOME": "/var/db/diskimagesiod",
+				"LOGIN": "_diskimagesiod",
+				"NAME": "_diskimagesiod",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "271"
+			},
+			{
+				"GROUP ID": "272",
+				"HOME": "/var/db/diagnostics",
+				"LOGIN": "_logd",
+				"NAME": "_logd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "272"
+			},
+			{
+				"GROUP ID": "273",
+				"HOME": "/var/db/appinstalld",
+				"LOGIN": "_appinstalld",
+				"NAME": "_appinstalld",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "273"
+			},
+			{
+				"GROUP ID": "274",
+				"HOME": "/var/db/installcoordinationd",
+				"LOGIN": "_installcoordinationd",
+				"NAME": "_installcoordinationd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "274"
+			},
+			{
+				"GROUP ID": "275",
+				"HOME": "/var/empty",
+				"LOGIN": "_demod",
+				"NAME": "_demod",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "275"
+			},
+			{
+				"GROUP ID": "277",
+				"HOME": "/var/db/rmd",
+				"LOGIN": "_rmd",
+				"NAME": "_rmd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "277"
+			},
+			{
+				"GROUP ID": "278",
+				"HOME": "/var/db/accessoryupdater",
+				"LOGIN": "_accessoryupdater",
+				"NAME": "_accessoryupdater",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "278"
+			},
+			{
+				"GROUP ID": "279",
+				"HOME": "/var/db/knowledgegraphd",
+				"LOGIN": "_knowledgegraphd",
+				"NAME": "_knowledgegraphd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "279"
+			},
+			{
+				"GROUP ID": "280",
+				"HOME": "/var/db/coreml",
+				"LOGIN": "_coreml",
+				"NAME": "_coreml",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "280"
+			},
+			{
+				"GROUP ID": "281",
+				"HOME": "/var/empty",
+				"LOGIN": "_sntpd",
+				"NAME": "_sntpd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "281"
+			},
+			{
+				"GROUP ID": "282",
+				"HOME": "/var/empty",
+				"LOGIN": "_trustd",
+				"NAME": "_trustd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "282"
+			},
+			{
+				"GROUP ID": "283",
+				"HOME": "/var/db/mmaintenanced",
+				"LOGIN": "_mmaintenanced",
+				"NAME": "_mmaintenanced",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "283"
+			},
+			{
+				"GROUP ID": "284",
+				"HOME": "/var/db/darwindaemon",
+				"LOGIN": "_darwindaemon",
+				"NAME": "_darwindaemon",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "284"
+			},
+			{
+				"GROUP ID": "285",
+				"HOME": "/var/empty",
+				"LOGIN": "_notification_proxy",
+				"NAME": "_notification_proxy",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "285"
+			},
+			{
+				"GROUP ID": "288",
+				"HOME": "/var/empty",
+				"LOGIN": "_avphidbridge",
+				"NAME": "_avphidbridge",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "288"
+			},
+			{
+				"GROUP ID": "289",
+				"HOME": "/var/db/biome",
+				"LOGIN": "_biome",
+				"NAME": "_biome",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "289"
+			},
+			{
+				"GROUP ID": "291",
+				"HOME": "/var/empty",
+				"LOGIN": "_backgroundassets",
+				"NAME": "_backgroundassets",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "291"
+			},
+			{
+				"GROUP ID": "293",
+				"HOME": "/var/empty",
+				"LOGIN": "_mobilegestalthelper",
+				"NAME": "_mobilegestalthelper",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "293"
+			},
+			{
+				"GROUP ID": "294",
+				"HOME": "/var/db/audiomxd",
+				"LOGIN": "_audiomxd",
+				"NAME": "_audiomxd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "294"
+			},
+			{
+				"GROUP ID": "295",
+				"HOME": "/var/db/terminus",
+				"LOGIN": "_terminusd",
+				"NAME": "_terminusd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "295"
+			},
+			{
+				"GROUP ID": "296",
+				"HOME": "/var/db/neuralengine",
+				"LOGIN": "_neuralengine",
+				"NAME": "_neuralengine",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "296"
+			},
+			{
+				"GROUP ID": "297",
+				"HOME": "/var/db/eligibilityd",
+				"LOGIN": "_eligibilityd",
+				"NAME": "_eligibilityd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "297"
+			},
+			{
+				"GROUP ID": "298",
+				"HOME": "/var/empty",
+				"LOGIN": "_systemstatusd",
+				"NAME": "_systemstatusd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "298"
+			},
+			{
+				"GROUP ID": "300",
+				"HOME": "/var/db/aonsensed",
+				"LOGIN": "_aonsensed",
+				"NAME": "_aonsensed",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "300"
+			},
+			{
+				"GROUP ID": "301",
+				"HOME": "/var/db/modelmanagerd",
+				"LOGIN": "_modelmanagerd",
+				"NAME": "_modelmanagerd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "301"
+			},
+			{
+				"GROUP ID": "302",
+				"HOME": "/var/empty",
+				"LOGIN": "_reportsystemmemory",
+				"NAME": "_reportsystemmemory",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "302"
+			},
+			{
+				"GROUP ID": "303",
+				"HOME": "/var/db/swtransparencyd",
+				"LOGIN": "_swtransparencyd",
+				"NAME": "_swtransparencyd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "303"
+			},
+			{
+				"GROUP ID": "304",
+				"HOME": "/var/db/com.apple.naturallanguaged",
+				"LOGIN": "_naturallanguaged",
+				"NAME": "_naturallanguaged",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "304"
+			},
+			{
+				"GROUP ID": "305",
+				"HOME": "/var/empty",
+				"LOGIN": "_spinandd",
+				"NAME": "_spinandd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "305"
+			},
+			{
+				"GROUP ID": "306",
+				"HOME": "/var/empty",
+				"LOGIN": "_corespeechd",
+				"NAME": "_corespeechd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "306"
+			},
+			{
+				"GROUP ID": "307",
+				"HOME": "/var/empty",
+				"LOGIN": "_diagnosticservicesd",
+				"NAME": "_diagnosticservicesd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "307"
+			},
+			{
+				"GROUP ID": "308",
+				"HOME": "/var/empty",
+				"LOGIN": "_mds_stores",
+				"NAME": "_mds_stores",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "308"
+			},
+			{
+				"GROUP ID": "441",
+				"HOME": "/var/empty",
+				"LOGIN": "_oahd",
+				"NAME": "_oahd",
+				"SHELL": "/usr/bin/false",
+				"USER ID": "441"
+			}
+		],
+		"MEMORIES": [],
+		"MONITORS": [
+			{
+				"CAPTION": "spdisplays_display",
+				"MANUFACTURED ON (WEEK/YEAR)": "0",
+				"MANUFACTURER": "756e6b6e",
+				"SERIAL NUMBER": "",
+				"TYPE": "1920 x 1080 @ 60.00Hz"
+			}
+		],
+		"NETWORKS": [
+			{
+				"DESCRIPTION": "lo0",
+				"IP ADDRESS": "127.0.0.1",
+				"MTU": "16384",
+				"NETMASK": "0xff000000"
+			},
+			{
+				"DESCRIPTION": "gif0",
+				"MTU": "1280"
+			},
+			{
+				"DESCRIPTION": "stf0",
+				"MTU": "1280"
+			},
+			{
+				"DESCRIPTION": "anpi0",
+				"MAC ADDRESS": "06:ac:1c:00:1c:80",
+				"MTU": "1500",
+				"STATUS": "inactive",
+				"TYPE": "none\n"
+			},
+			{
+				"DESCRIPTION": "anpi1",
+				"MAC ADDRESS": "06:ac:1c:00:1c:81",
+				"MTU": "1500",
+				"STATUS": "inactive",
+				"TYPE": "none\n"
+			},
+			{
+				"DESCRIPTION": "en0",
+				"IP ADDRESS": "192.25.34.223",
+				"MAC ADDRESS": "18:4a:53:00:fc:55",
+				"MTU": "1500",
+				"NETMASK": "0xffffff00",
+				"SPEED": "1000baseT",
+				"STATUS": "active",
+				"TYPE": "autoselect"
+			},
+			{
+				"DESCRIPTION": "en4",
+				"MAC ADDRESS": "06:ac:1c:00:1c:60",
+				"MTU": "1500",
+				"STATUS": "inactive",
+				"TYPE": "none\n"
+			},
+			{
+				"DESCRIPTION": "en5",
+				"MAC ADDRESS": "06:ac:1c:00:1c:61",
+				"MTU": "1500",
+				"STATUS": "inactive",
+				"TYPE": "none\n"
+			},
+			{
+				"DESCRIPTION": "en2",
+				"MAC ADDRESS": "36:67:93:f3:6e:c0",
+				"MTU": "1500",
+				"STATUS": "inactive",
+				"TYPE": "autoselect"
+			},
+			{
+				"DESCRIPTION": "en3",
+				"MAC ADDRESS": "36:67:93:f3:6e:c4",
+				"MTU": "1500",
+				"STATUS": "inactive",
+				"TYPE": "autoselect"
+			},
+			{
+				"DESCRIPTION": "bridge0",
+				"MAC ADDRESS": "36:67:93:f3:6e:c0",
+				"MTU": "1500",
+				"STATUS": "inactive",
+				"TYPE": "<unknown"
+			},
+			{
+				"DESCRIPTION": "ap1",
+				"MAC ADDRESS": "7a:ce:e3:5a:d2:b2",
+				"MTU": "1500",
+				"TYPE": "autoselect"
+			},
+			{
+				"DESCRIPTION": "en1",
+				"IP ADDRESS": "192.25.34.107",
+				"MAC ADDRESS": "de:0a:78:41:95:b8",
+				"MTU": "1500",
+				"NETMASK": "0xffffff00",
+				"STATUS": "active",
+				"TYPE": "autoselect\n"
+			},
+			{
+				"DESCRIPTION": "awdl0",
+				"MAC ADDRESS": "b2:ce:7d:8f:f3:2d",
+				"MTU": "1500",
+				"STATUS": "active",
+				"TYPE": "autoselect\n"
+			},
+			{
+				"DESCRIPTION": "llw0",
+				"MAC ADDRESS": "b2:ce:7d:8f:f3:2d",
+				"MTU": "1500",
+				"TYPE": "autoselect"
+			},
+			{
+				"DESCRIPTION": "utun0",
+				"MTU": "1500"
+			},
+			{
+				"DESCRIPTION": "utun1",
+				"MTU": "1380"
+			},
+			{
+				"DESCRIPTION": "utun2",
+				"MTU": "2000"
+			},
+			{
+				"DESCRIPTION": "utun3",
+				"MTU": "1000"
+			}
+		],
+		"PORTS": [],
+		"PRINTERS": [
+			{
+				"DESCRIPTION": " HP LaserJet 500 colorMFP M570dn (A634B0)",
+				"NAME": " HP_LaserJet_500_colorMFP_M570dn__A634B0_",
+				"PORT": " dnssd://HP%20LaserJet%20500%20colorMFP%20M570dn%20(A634B0)._pdl-datastream._tcp.local./?bidi"
+			}
+		],
+		"REPOSITORY": [],
+		"SLOTS": [],
+		"SOFTWARES": [
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "2",
+				"NAME": "Folder Actions Setup",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "11",
+				"MINOR": "0",
+				"NAME": "Keychain Access",
+				"PUBLISHER": "Apple",
+				"VERSION": "11.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "4",
+				"MINOR": "1",
+				"NAME": "Ticket Viewer",
+				"PUBLISHER": "Apple",
+				"VERSION": "4.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "11",
+				"MINOR": "0",
+				"NAME": "Wireless Diagnostics",
+				"PUBLISHER": "Apple",
+				"VERSION": "11.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "iOS App Installer",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "1",
+				"NAME": "Finder",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "1",
+				"NAME": "AirDrop",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "1",
+				"NAME": "Computer",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "1",
+				"NAME": "Network",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "1",
+				"NAME": "Recents",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "1",
+				"NAME": "iCloud Drive",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "3",
+				"NAME": "Dictionary",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.3.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "36",
+				"NAME": "FaceTime",
+				"PUBLISHER": "Apple",
+				"VERSION": "36"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "4",
+				"MINOR": "0",
+				"NAME": "Find My",
+				"PUBLISHER": "Apple",
+				"VERSION": "4.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "11",
+				"MINOR": "0",
+				"NAME": "Font Book",
+				"PUBLISHER": "Apple",
+				"VERSION": "11.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "4",
+				"MINOR": "1",
+				"NAME": "Freeform",
+				"PUBLISHER": "Apple",
+				"VERSION": "4.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Games",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "0",
+				"NAME": "Home",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "8",
+				"MINOR": "0",
+				"NAME": "Image Capture",
+				"PUBLISHER": "Apple",
+				"VERSION": "8.0"
+			},
+			{
+				"ARCHITECTURE": "Apple Silicon",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Image Playground",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "0",
+				"NAME": "Journal",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "16",
+				"MINOR": "0",
+				"NAME": "Mail",
+				"PUBLISHER": "Apple",
+				"VERSION": "16.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "0",
+				"NAME": "Maps",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "0",
+				"NAME": "Messages",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "2",
+				"NAME": "Mission Control",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Music 1.6.1.44, © 2019–2025 Apple Inc. All rights reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "6",
+				"NAME": "Music",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.6.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "11",
+				"MINOR": "1",
+				"NAME": "News",
+				"PUBLISHER": "Apple",
+				"VERSION": "11.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "4",
+				"MINOR": "13",
+				"NAME": "Notes",
+				"PUBLISHER": "Apple",
+				"VERSION": "4.13"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Copyright © 2013 Apple Inc.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3060",
+				"MINOR": "0",
+				"NAME": "CoreLocationAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "3060.0.18"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Copyright © 2009 Apple Inc.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "369",
+				"NAME": "CoreServicesUIAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "369"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Coverage Details",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Database Events",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0.6"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Diagnostics Reporter",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "DiscHelper",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "DiskImageMounter",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Dock 1.8",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "8",
+				"NAME": "Dock",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.8"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Dwell Control",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Enhanced Logging",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Erase Assistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "EscrowSecurityAlert",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Family",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "FamilyExtensionHost",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "FileProvider-Feedback",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "FolderActionsDispatcher",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Game Center",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "GameOverlayUI",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "820",
+				"MINOR": "1",
+				"NAME": "Games",
+				"PUBLISHER": "Apple",
+				"VERSION": "820.1.14"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "IOUIAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "1",
+				"NAME": "Image Events",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.1.6"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2416",
+				"NAME": "Install Command Line Developer Tools",
+				"PUBLISHER": "Apple",
+				"VERSION": "2416"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "0",
+				"NAME": "Install in Progress",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Installer Progress",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "2",
+				"NAME": "Installer",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.2.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "326",
+				"NAME": "JavaLauncher",
+				"PUBLISHER": "Apple",
+				"VERSION": "326"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"NAME": "KeyboardAccessAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "KeyboardSetupAssistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Keychain Circle Notification",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Language Chooser",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "MDMMigrationTrampoline",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "311",
+				"MINOR": "2",
+				"NAME": "MTLReplayer",
+				"PUBLISHER": "Apple",
+				"VERSION": "311.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "18",
+				"MINOR": "0",
+				"NAME": "ManagedClient",
+				"PUBLISHER": "Apple",
+				"VERSION": "18.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "5",
+				"NAME": "Memory Slot Utility",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.5.3"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Music Recognition",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "2",
+				"NAME": "NetAuthAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Notification Centre",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "NowPlayingTouchUI",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "7.0.0, Copyright © 2002-2018 Apple Inc. All rights reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "9",
+				"MINOR": "0",
+				"NAME": "OBEXAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "9.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "1.9 (190.2), Copyright © 2007-2009 Apple Inc. All Rights Reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "9",
+				"NAME": "ODSAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.9"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "OSDUIHelper",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "0",
+				"NAME": "PIPAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "7",
+				"MINOR": "1",
+				"NAME": "Paired Devices",
+				"PUBLISHER": "Apple",
+				"VERSION": "7.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Pass Viewer",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"NAME": "PassViewer",
+				"PUBLISHER": "Apple"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "PeopleMessageService",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Contacts",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "PosterBoard",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "PowerChime",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "16",
+				"MINOR": "0",
+				"NAME": "PreviewShell",
+				"PUBLISHER": "Apple",
+				"VERSION": "16.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "211",
+				"MINOR": "25",
+				"NAME": "Pro Display Calibrator",
+				"PUBLISHER": "Apple",
+				"VERSION": "211.25"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "13",
+				"NAME": "Problem Reporter",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.13"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Profile Installer",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "7",
+				"MINOR": "1",
+				"NAME": "RapportUIAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "7.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "200",
+				"NAME": "RegisterPluginIMApp",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.200"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "9",
+				"NAME": "ARDAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.9.8"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "9",
+				"NAME": "Remote Desktop Message",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.9.8"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "9",
+				"NAME": "SSMenuAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.9.8"
+			},
+			{
+				"ARCHITECTURE": "Apple Silicon",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Rosetta 2 Updater",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "0",
+				"NAME": "Screen Time",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "5",
+				"MINOR": "0",
+				"NAME": "ScreenSaverEngine",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "0",
+				"NAME": "App Store",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Apps",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "Automator",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "8",
+				"MINOR": "1",
+				"NAME": "Books",
+				"PUBLISHER": "Apple",
+				"VERSION": "8.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "12",
+				"MINOR": "0",
+				"NAME": "Calculator",
+				"PUBLISHER": "Apple",
+				"VERSION": "12.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "16",
+				"MINOR": "0",
+				"NAME": "Calendar",
+				"PUBLISHER": "Apple",
+				"VERSION": "16.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "3.18, Copyright 2003–2024 Apple Inc.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "18",
+				"NAME": "Chess",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.18"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "1",
+				"NAME": "Clock",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "14",
+				"MINOR": "0",
+				"NAME": "Contacts",
+				"PUBLISHER": "Apple",
+				"VERSION": "14.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "7",
+				"NAME": "SystemUIServer",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.7"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "TextInputMenuAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "1",
+				"NAME": "TextInputSwitcher",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "ThermalTrap",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "13",
+				"NAME": "TMHelperAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "13"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Tips",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "UIKitSystem",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "7",
+				"MINOR": "0",
+				"NAME": "UniversalAccessControl",
+				"PUBLISHER": "Apple",
+				"VERSION": "7.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Universal Control",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "5",
+				"MINOR": "0",
+				"NAME": "UnmountAssistantAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "82",
+				"NAME": "UserNotificationCenter",
+				"PUBLISHER": "Apple",
+				"VERSION": "82"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"NAME": "VoiceOver",
+				"PUBLISHER": "Apple",
+				"VERSION": "10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Wallpaper",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Watch Face Help",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "WiFiAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "WidgetKit Simulator",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "WindowManager",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "341",
+				"MINOR": "1",
+				"NAME": "WindowManager",
+				"PUBLISHER": "Apple",
+				"VERSION": "341.1.4"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "WindowManagerShowDesktopEducation",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "WindowManagerShowDesktopEducation",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "WorkoutAlert-Mac",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "iCloud+",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "iCloud",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"NAME": "liquiddetectiond",
+				"PUBLISHER": "Apple"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "9",
+				"MINOR": "0",
+				"NAME": "loginwindow",
+				"PUBLISHER": "Apple",
+				"VERSION": "9.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "362",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "362",
+				"NAME": "rcd",
+				"PUBLISHER": "Apple",
+				"VERSION": "362"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "screencaptureui",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "1",
+				"NAME": "Passwords",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Phone",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "13",
+				"MINOR": "1",
+				"NAME": "Photo Booth",
+				"PUBLISHER": "Apple",
+				"VERSION": "13.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "11",
+				"MINOR": "0",
+				"NAME": "Photos",
+				"PUBLISHER": "Apple",
+				"VERSION": "11.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "1",
+				"NAME": "Podcasts",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "11",
+				"MINOR": "0",
+				"NAME": "Preview",
+				"PUBLISHER": "Apple",
+				"VERSION": "11.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "10.5, Copyright © 2009-2025 Apple Inc. All Rights Reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "5",
+				"NAME": "QuickTime Player",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.5"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "7",
+				"MINOR": "0",
+				"NAME": "Reminders",
+				"PUBLISHER": "Apple",
+				"VERSION": "7.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "7",
+				"MINOR": "0",
+				"NAME": "Shortcuts",
+				"PUBLISHER": "Apple",
+				"VERSION": "7.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Siri",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "3",
+				"NAME": "Stickies",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.3"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "8",
+				"MINOR": "1",
+				"NAME": "Stocks",
+				"PUBLISHER": "Apple",
+				"VERSION": "8.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "15",
+				"MINOR": "0",
+				"NAME": "System Settings",
+				"PUBLISHER": "Apple",
+				"VERSION": "15.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "TV 1.6.1.44, © 2019–2025 Apple Inc. All rights reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "6",
+				"NAME": "TV",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.6.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "20",
+				"NAME": "TextEdit",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.20"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "3",
+				"NAME": "Time Machine",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.3"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "1",
+				"NAME": "Tips",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "14",
+				"NAME": "Activity Monitor",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.14"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "6.3.9, Copyright 2001 -2025 Apple Inc.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "3",
+				"NAME": "AirPort Utility",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.3.9"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "3.7, Copyright 2002–2025 Apple Inc.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "7",
+				"NAME": "Audio MIDI Setup",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.7"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "7.0.0, Copyright © 2002-2018 Apple Inc. All rights reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "9",
+				"MINOR": "0",
+				"NAME": "Bluetooth File Exchange",
+				"PUBLISHER": "Apple",
+				"VERSION": "9.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "1",
+				"NAME": "Boot Camp Assistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "12",
+				"MINOR": "2",
+				"NAME": "ColorSync Utility",
+				"PUBLISHER": "Apple",
+				"VERSION": "12.2.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "1",
+				"NAME": "Console",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "10",
+				"NAME": "Digital Colour Meter",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "22",
+				"MINOR": "7",
+				"NAME": "Disk Utility",
+				"PUBLISHER": "Apple",
+				"VERSION": "22.7"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "8",
+				"NAME": "Grapher",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.8"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Magnifier",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "1",
+				"NAME": "Migration Assistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Print Centre",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "1",
+				"NAME": "Screen Sharing",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Screenshot",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "11",
+				"NAME": "Script Editor",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.11"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "11",
+				"MINOR": "0",
+				"NAME": "System Information",
+				"PUBLISHER": "Apple",
+				"VERSION": "11.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "15",
+				"NAME": "Terminal",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.15"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"NAME": "VoiceOver Utility",
+				"PUBLISHER": "Apple",
+				"VERSION": "10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "2",
+				"NAME": "Voice Memos",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "0",
+				"NAME": "Weather",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "5",
+				"NAME": "iPhone Mirroring",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.5"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "About This Mac",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "15",
+				"NAME": "Archive Utility",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.15"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "0",
+				"NAME": "DVD Player",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "0",
+				"NAME": "Desk View",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "7",
+				"MINOR": "0",
+				"NAME": "Directory Utility",
+				"PUBLISHER": "Apple",
+				"VERSION": "7.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "0",
+				"NAME": "Expansion Slot Utility",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "5",
+				"MINOR": "1",
+				"NAME": "Feedback Assistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "26",
+				"MINOR": "200",
+				"NAME": "PluginIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.200"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "PressAndHold",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "104",
+				"NAME": "SCIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "104"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "104",
+				"NAME": "TCIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "104"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "104",
+				"NAME": "TYIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "104"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Tamil Input Method 1.5",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "6",
+				"NAME": "TamilIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.6"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "TrackpadIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "TransliterationIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "VietnameseIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "ShortcutDroplet",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Shortcuts Events",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"NAME": "ShortcutsActions",
+				"PUBLISHER": "Apple"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3505",
+				"MINOR": "11",
+				"NAME": "Siri",
+				"PUBLISHER": "Apple",
+				"VERSION": "3505.11.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Software Update version 4.0, Copyright © 2000-2009, Apple Inc. All rights reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"NAME": "Software Update",
+				"PUBLISHER": "Apple",
+				"VERSION": "6"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "SpacesTouchBarAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Spotlight",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "StageManagerOnboarding",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "StageManagerOnboarding",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "3",
+				"NAME": "System Events",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.3.6"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "SystemIntents",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"NAME": "Script Menu",
+				"PUBLISHER": "Apple",
+				"VERSION": "1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "ScriptMonitor",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "10",
+				"NAME": "Setup Assistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AOSUIPrefPaneLauncher",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1400",
+				"MINOR": "10",
+				"NAME": "AVB Configuration",
+				"PUBLISHER": "Apple",
+				"VERSION": "1400.10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Accessibility Reader",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AccessibilityUIServer",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "607",
+				"NAME": "AddPrinter",
+				"PUBLISHER": "Apple",
+				"VERSION": "607"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "14",
+				"MINOR": "0",
+				"NAME": "AddressBookUrlForwarder",
+				"PUBLISHER": "Apple",
+				"VERSION": "14.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "0",
+				"NAME": "AirPlayUIAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "2.2.1 (221.12), Copyright © 2006 -2024 Apple Inc. All Rights Reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "2",
+				"NAME": "AirPort Base Station Agent",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.2.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Apple Diagnostics",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "1",
+				"NAME": "AppleScript Utility",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.1.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "3",
+				"NAME": "Automator Application Stub",
+				"PUBLISHER": "Unknown",
+				"VERSION": "1.3"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "Automator Installer",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Batteries",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "9.0 (1)",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "9",
+				"MINOR": "0",
+				"NAME": "Bluetooth Setup Assistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "9.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "kBluetoothCFBundleGetInfoString",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "9",
+				"MINOR": "0",
+				"NAME": "BluetoothUIServer",
+				"PUBLISHER": "Apple",
+				"VERSION": "9.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "BluetoothUIService",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "8",
+				"MINOR": "0",
+				"NAME": "CalendarFileHandler",
+				"PUBLISHER": "Apple",
+				"VERSION": "8.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "5",
+				"MINOR": "0",
+				"NAME": "Captive Network Assistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "5",
+				"MINOR": "0",
+				"NAME": "Certificate Assistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Control Centre",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "ControlStrip",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "ClassroomStudentMenuExtra",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "4.19, Copyright 2014-2024 Apple Computer, Inc.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "4",
+				"MINOR": "19",
+				"NAME": "Display Calibrator",
+				"PUBLISHER": "Apple",
+				"VERSION": "4.19"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "0",
+				"NAME": "IMTransferAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AutoFillPanelService",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AutomationModeUI",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AXVisualSupportAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Accessibility Tutorial",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "DFRHUD",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "universalAccessAuthWarn",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "07",
+				"NAME": "AOSAlertManager",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.07"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "07",
+				"NAME": "AOSHeartbeat",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.07"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "07",
+				"NAME": "AOSPushRelay",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.07"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "4",
+				"MINOR": "1",
+				"NAME": "FindMyMacMessenger",
+				"PUBLISHER": "Apple",
+				"VERSION": "4.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "54",
+				"MINOR": "1",
+				"NAME": "UASharedPasteboardProgressUI",
+				"PUBLISHER": "Apple",
+				"VERSION": "54.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "104",
+				"NAME": "CIMFindInputCodeTool",
+				"PUBLISHER": "Apple",
+				"VERSION": "104"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "0",
+				"NAME": "identityservicesd",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "0",
+				"NAME": "IDSRemoteURLConnectionAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Calibration Assistant",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "iCloudUserNotificationsd",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "10.1, © Copyright 2003-2014 Apple  Inc. All rights reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "1",
+				"NAME": "Build Web Page",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "10.1, © Copyright 2003-2015 Apple Inc. All rights reserved.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "1",
+				"NAME": "MakePDF",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "18",
+				"NAME": "AirScanScanner",
+				"PUBLISHER": "Apple",
+				"VERSION": "18"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "1",
+				"NAME": "50onPaletteServer",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AinuIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "0",
+				"NAME": "Assistive Control",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "0",
+				"NAME": "CharacterPalette",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.0.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "2",
+				"NAME": "Dictation",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.2.41.5"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "EmojiFunctionRowIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "3",
+				"NAME": "JapaneseIM-KanaTyping",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.3"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "6",
+				"MINOR": "3",
+				"NAME": "JapaneseIM-RomajiTyping",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.3"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "KoreanIM",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Live Captions",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "LiveSpeech",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "0",
+				"NAME": "imagent",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "13",
+				"MINOR": "0",
+				"NAME": "eaptlstrust",
+				"PUBLISHER": "Apple",
+				"VERSION": "13.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "storeuid",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"NAME": "VoiceOver Quickstart",
+				"PUBLISHER": "Apple",
+				"VERSION": "10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"NAME": "ScreenReaderUIServer",
+				"PUBLISHER": "Apple",
+				"VERSION": "10"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "9",
+				"MINOR": "0",
+				"NAME": "Speech Downloader",
+				"PUBLISHER": "Apple",
+				"VERSION": "9.0.78"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "9",
+				"MINOR": "0",
+				"NAME": "SpeechRecognitionServer",
+				"PUBLISHER": "Apple",
+				"VERSION": "9.0.78"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "1.0, Copyright Apple Computer Inc. 2004",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "8",
+				"MINOR": "1",
+				"NAME": "Conflict Resolver",
+				"PUBLISHER": "Apple",
+				"VERSION": "8.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "4.0, Copyright Apple Computer Inc. 2004",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "8",
+				"MINOR": "1",
+				"NAME": "syncuid",
+				"PUBLISHER": "Apple",
+				"VERSION": "8.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "privatecloudcomputed",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "2.0, Copyright Apple Inc. 2007-2019",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "4",
+				"MINOR": "1",
+				"NAME": "ParentalControls",
+				"PUBLISHER": "Apple",
+				"VERSION": "4.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "FeedbackRemoteView",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AppSSOAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "KerberosMenuExtra",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "FollowUpUI",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "iCloud Drive",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "STMUIHelper",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "nbagent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "680",
+				"NAME": "DiskImages UI Agent",
+				"PUBLISHER": "Apple",
+				"VERSION": "680"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AskPermissionUI",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AMSEngagementViewService",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "10",
+				"MINOR": "0",
+				"NAME": "IMAutomaticHistoryDeletionAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "10.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AquaAppearanceHelper",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "sociallayerd",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "SoftwareUpdateNotificationManager",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "BackgroundTaskManagementAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "AccessibilityVisualsAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "qlmanage",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "5.0, Copyright Apple Inc. 2007-2013",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "5",
+				"MINOR": "0",
+				"NAME": "quicklookd",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Quick Look Simulator",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "5.0, Copyright Apple Inc. 2007-2013",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "5",
+				"MINOR": "0",
+				"NAME": "QuickLookUIHelper",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Copyright © 2008-2013 Apple Inc.",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "81",
+				"MINOR": "0",
+				"NAME": "FontRegistryUIAgent",
+				"PUBLISHER": "Apple",
+				"VERSION": "81.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "9.2.22",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "9",
+				"MINOR": "2",
+				"NAME": "System Speech",
+				"PUBLISHER": "Apple",
+				"VERSION": "9.2.22"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "SmartCard Pairing",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "14",
+				"MINOR": "0",
+				"NAME": "AddressBookSync",
+				"PUBLISHER": "Apple",
+				"VERSION": "14.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "14",
+				"MINOR": "0",
+				"NAME": "ABAssistantService",
+				"PUBLISHER": "Apple",
+				"VERSION": "14.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "14",
+				"MINOR": "0",
+				"NAME": "AddressBookManager",
+				"PUBLISHER": "Apple",
+				"VERSION": "14.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "14",
+				"MINOR": "0",
+				"NAME": "AddressBookSourceSync",
+				"PUBLISHER": "Apple",
+				"VERSION": "14.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Wish Shell 8.5.9,",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "8",
+				"MINOR": "5",
+				"NAME": "Wish",
+				"PUBLISHER": "Apple",
+				"VERSION": "8.5.9"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "© 2002-2003 Apple",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "8",
+				"MINOR": "1",
+				"NAME": "SyncServer",
+				"PUBLISHER": "Apple",
+				"VERSION": "8.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "CinematicFramingOnboardingUI",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "ContinuityCaptureOnboardingUI",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "LinkedNotesUIService",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "4",
+				"NAME": "AppleSpell",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.4"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Chinese Text Converter 1.1",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "1",
+				"NAME": "ChineseTextConverterService",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "OpenSpell",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "9.2.22",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "9",
+				"MINOR": "2",
+				"NAME": "SpeechService",
+				"PUBLISHER": "Apple",
+				"VERSION": "9.2.22"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "3",
+				"MINOR": "0",
+				"NAME": "Spotlight",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "2",
+				"MINOR": "0",
+				"NAME": "Summary Service",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.0"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"COMMENTS": "3.11.8, © 2001-2023 Python Software Foundation",
+				"INSTALLATION DATE": "3/15/24, 3:26 PM",
+				"MAJOR": "3",
+				"MINOR": "11",
+				"NAME": "IDLE",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "3.11.8"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "3.11.8, © 2001-2023 Python Software Foundation",
+				"INSTALLATION DATE": "3/15/24, 3:26 PM",
+				"MAJOR": "3",
+				"MINOR": "11",
+				"NAME": "Python Launcher",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "3.11.8"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "GarageBand 10.4.8, Copyright © 2004–2023 Apple Inc. All Rights Reserved",
+				"INSTALLATION DATE": "9/12/23, 3:05 PM",
+				"MAJOR": "10",
+				"MINOR": "4",
+				"NAME": "GarageBand",
+				"PUBLISHER": "App Store",
+				"VERSION": "10.4.8"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "9/12/23, 3:06 PM",
+				"MAJOR": "10",
+				"MINOR": "3",
+				"NAME": "iMovie",
+				"PUBLISHER": "App Store",
+				"VERSION": "10.3.6"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "9/12/23, 3:06 PM",
+				"MAJOR": "13",
+				"MINOR": "1",
+				"NAME": "Pages",
+				"PUBLISHER": "App Store",
+				"VERSION": "13.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "9/12/23, 3:07 PM",
+				"MAJOR": "13",
+				"MINOR": "1",
+				"NAME": "Keynote",
+				"PUBLISHER": "App Store",
+				"VERSION": "13.1"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "9/12/23, 3:07 PM",
+				"MAJOR": "13",
+				"MINOR": "1",
+				"NAME": "Numbers",
+				"PUBLISHER": "App Store",
+				"VERSION": "13.1"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "12/4/23, 9:37 AM",
+				"NAME": "group.is.workflow",
+				"PUBLISHER": "Unknown"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "11/25/25, 6:20 PM",
+				"MAJOR": "1",
+				"MINOR": "93",
+				"NAME": "MRT",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.93"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "11/25/25, 6:20 PM",
+				"MAJOR": "156",
+				"NAME": "XProtect",
+				"PUBLISHER": "Apple",
+				"VERSION": "156"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "12/4/23, 9:41 AM",
+				"NAME": "com.apple.ctcategories",
+				"PUBLISHER": "Unknown"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Recursive File Processing Droplet",
+				"PUBLISHER": "Unknown",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Droplet with Settable Properties",
+				"PUBLISHER": "Unknown",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Recursive Image File Processing Droplet",
+				"PUBLISHER": "Unknown",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "Cocoa-AppleScript Applet",
+				"PUBLISHER": "Unknown",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "11/25/25, 9:25 AM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "OCSNG",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.10.3"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "5",
+				"MINOR": "0",
+				"NAME": "AppleMobileSync",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "607",
+				"NAME": "AirScanLegacyDiscovery",
+				"PUBLISHER": "Apple",
+				"VERSION": "607"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "5/15/21, 1:46 AM",
+				"MAJOR": "1",
+				"MINOR": "1",
+				"NAME": "pinentry-mac",
+				"PUBLISHER": "Unknown",
+				"VERSION": "1.1.1.1"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "2/6/24, 5:23 PM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "OCSNG",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.10.1"
+			},
+			{
+				"ARCHITECTURE": "Apple Silicon",
+				"INSTALLATION DATE": "2/6/24, 5:32 PM",
+				"MAJOR": "2",
+				"MINOR": "1",
+				"NAME": "ocs_macosx_agent_packager",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.1"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "2/27/24, 3:34 PM",
+				"NAME": "com",
+				"PUBLISHER": "Unknown"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "2/27/24, 5:01 PM",
+				"NAME": "org.eclipse",
+				"PUBLISHER": "Unknown"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "2/27/24, 5:01 PM",
+				"NAME": "org.eclipse",
+				"PUBLISHER": "Unknown"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "11/27/25, 5:00 PM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "OCSNG",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.10.4"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "3.12.2, (c) 2001-2023 Python Software Foundation.",
+				"INSTALLATION DATE": "3/11/24, 3:30 PM",
+				"MAJOR": "3",
+				"MINOR": "12",
+				"NAME": "Python",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "3.12.2"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"COMMENTS": "3.12.2, © 2001-2023 Python Software Foundation",
+				"INSTALLATION DATE": "3/11/24, 3:30 PM",
+				"MAJOR": "3",
+				"MINOR": "12",
+				"NAME": "IDLE",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "3.12.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "3.12.2, © 2001-2023 Python Software Foundation",
+				"INSTALLATION DATE": "3/11/24, 3:30 PM",
+				"MAJOR": "3",
+				"MINOR": "12",
+				"NAME": "Python Launcher",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "3.12.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "Firefox 143.0.4",
+				"INSTALLATION DATE": "10/6/25, 11:17 AM",
+				"MAJOR": "143",
+				"MINOR": "0",
+				"NAME": "Firefox",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "143.0.4"
+			},
+			{
+				"ARCHITECTURE": "iOS",
+				"INSTALLATION DATE": "4/4/25, 10:53 AM",
+				"MAJOR": "3",
+				"MINOR": "4",
+				"NAME": "GitHub Desktop",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "3.4.2"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "4/4/25, 10:53 AM",
+				"NAME": "GitHub Desktop",
+				"PUBLISHER": "Unknown"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "8/22/22, 3:29 PM",
+				"MAJOR": "2",
+				"MINOR": "1",
+				"NAME": "ocs_macosx_agent_packager",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.1"
+			},
+			{
+				"ARCHITECTURE": "32-bit (Unsupported)",
+				"INSTALLATION DATE": "6/19/15, 11:29 PM",
+				"MAJOR": "1",
+				"MINOR": "3",
+				"NAME": "Iceberg",
+				"PUBLISHER": "Unknown",
+				"VERSION": "1.3.1"
+			},
+			{
+				"ARCHITECTURE": "iOS",
+				"INSTALLATION DATE": "6/25/24, 5:27 PM",
+				"MAJOR": "3",
+				"MINOR": "4",
+				"NAME": "GitHub Desktop",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "3.4.2"
+			},
+			{
+				"ARCHITECTURE": "Apple Silicon",
+				"INSTALLATION DATE": "5/31/24, 5:18 PM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "test",
+				"PUBLISHER": "Unknown",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "5/14/24, 4:40 PM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "OCSNG",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.10.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "5/7/24, 11:22 AM",
+				"MAJOR": "9",
+				"MINOR": "1",
+				"NAME": "Insomnia",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "9.1.1"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "11/27/25, 5:00 PM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "OCSNG",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.10.4"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "11/27/25, 5:06 PM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "OCSNG",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.10.4"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "12/13/25, 3:37 AM",
+				"MAJOR": "26",
+				"MINOR": "2",
+				"NAME": "Xcode",
+				"PUBLISHER": "App Store",
+				"VERSION": "26.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "12/13/25, 3:37 AM",
+				"MAJOR": "26",
+				"MINOR": "0",
+				"NAME": "Simulator",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "12/13/25, 3:37 AM",
+				"MAJOR": "6",
+				"MINOR": "2",
+				"NAME": "Create ML",
+				"PUBLISHER": "Apple",
+				"VERSION": "6.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "12/13/25, 3:37 AM",
+				"MAJOR": "26",
+				"MINOR": "2",
+				"NAME": "Instruments",
+				"PUBLISHER": "Apple",
+				"VERSION": "26.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "12/13/25, 3:37 AM",
+				"MAJOR": "2",
+				"MINOR": "11",
+				"NAME": "FileMerge",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.11"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "12/13/25, 3:37 AM",
+				"MAJOR": "1",
+				"MINOR": "2",
+				"NAME": "Icon Composer",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "12/13/25, 3:37 AM",
+				"MAJOR": "2",
+				"MINOR": "0",
+				"NAME": "Reality Composer Pro",
+				"PUBLISHER": "Apple",
+				"VERSION": "2.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "12/13/25, 3:37 AM",
+				"MAJOR": "5",
+				"MINOR": "0",
+				"NAME": "Accessibility Inspector",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "6/18/24, 1:04 PM",
+				"MAJOR": "4",
+				"MINOR": "0",
+				"NAME": "Tunnelblick",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "4.0.1 (build 5971)"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "8/22/22, 3:29 PM",
+				"MAJOR": "2",
+				"MINOR": "1",
+				"NAME": "ocs_macosx_agent_packager",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.1"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "8/22/22, 3:29 PM",
+				"MAJOR": "2",
+				"MINOR": "1",
+				"NAME": "ocs_macosx_agent_packager",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.1"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "10/11/24, 3:58 PM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "OCSNG",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.10.3"
+			},
+			{
+				"ARCHITECTURE": "Apple Silicon",
+				"INSTALLATION DATE": "6/21/24, 4:16 PM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "OCS Inventory Agent",
+				"PUBLISHER": "Unknown",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "11/24/25, 5:35 PM",
+				"MAJOR": "1",
+				"MINOR": "2",
+				"NAME": "Packages",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "1.2.11"
+			},
+			{
+				"ARCHITECTURE": "Other",
+				"INSTALLATION DATE": "6/18/24, 10:01 AM",
+				"NAME": "NewApp",
+				"PUBLISHER": "Unknown"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "3.9.6, (c) 2001-2020 Python Software Foundation.",
+				"INSTALLATION DATE": "7/29/25, 1:35 AM",
+				"MAJOR": "3",
+				"MINOR": "9",
+				"NAME": "Python",
+				"PUBLISHER": "Apple",
+				"VERSION": "3.9.6"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "5",
+				"MINOR": "0",
+				"NAME": "AppleMobileDeviceHelper",
+				"PUBLISHER": "Apple",
+				"VERSION": "5.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "10/29/25, 2:21 AM",
+				"MAJOR": "1",
+				"MINOR": "0",
+				"NAME": "MobileDeviceUpdater",
+				"PUBLISHER": "Apple",
+				"VERSION": "1.0"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"INSTALLATION DATE": "11/19/25, 6:12 PM",
+				"MAJOR": "1",
+				"MINOR": "106",
+				"NAME": "Visual Studio Code-3",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "1.106.2"
+			},
+			{
+				"ARCHITECTURE": "Universal",
+				"COMMENTS": "3.11.8, (c) 2001-2023 Python Software Foundation.",
+				"INSTALLATION DATE": "3/15/24, 3:26 PM",
+				"MAJOR": "3",
+				"MINOR": "11",
+				"NAME": "Python",
+				"PUBLISHER": "Identified Developer",
+				"VERSION": "3.11.8"
+			},
+			{
+				"ARCHITECTURE": "Intel",
+				"INSTALLATION DATE": "7/4/24, 2:22 PM",
+				"MAJOR": "2",
+				"MINOR": "10",
+				"NAME": "OCSNG",
+				"PUBLISHER": "Unknown",
+				"VERSION": "2.10.2"
+			}
+		],
+		"SOUNDS": [
+			{
+				"DESCRIPTION": "coreaudio_default_audio_system_device",
+				"MANUFACTURER": "Apple Inc.",
+				"NAME": "Mac mini Speakers"
+			}
+		],
+		"STORAGES": [],
+		"USB DEVICES": [],
+		"VIDEOS": [],
+		"VIRTUAL MACHINES": []
+	}
+}
