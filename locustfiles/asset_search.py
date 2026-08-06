@@ -40,7 +40,7 @@ class AssetSearchAPITest(HttpUser):
                 "Authorization": f"Token {self.token}",
                 "Content-Type": "application/json",
             },
-            data=json.dumps(search),
+            data=json.dumps({"search_data": search}),
         )
 
         if response.status_code in (200, 201):
@@ -95,7 +95,7 @@ class AssetSearchAPITest(HttpUser):
                 "Authorization": f"Token {self.token}",
                 "Content-Type": "application/json",
             },
-            data=json.dumps(search),
+            data=json.dumps({"search_data": search}),
         )
 
         if response.status_code in (200, 201):
@@ -144,7 +144,7 @@ class AssetSearchAPITest(HttpUser):
                 "Authorization": f"Token {self.token}",
                 "Content-Type": "application/json",
             },
-            data=json.dumps(search),
+            data=json.dumps({"search_data": search}),
         )
 
         if response.status_code in (200, 201):
