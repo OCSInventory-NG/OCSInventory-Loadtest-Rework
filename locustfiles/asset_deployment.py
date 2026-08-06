@@ -3,6 +3,191 @@ from common.auth import Auth
 import json
 import random
 
+# Realistic enterprise deployment catalog (software installs, patches,
+# scripts, configuration files), grouped by target OS, so generated
+# packages read like an actual IT deployment flow instead of
+# "Dummy Package NNNNN".
+#
+# Each package also carries the ONE deployment action a real admin would
+# attach to it, covering the 3 action types the agent understands (see
+# OCSInventory-Agent-Rework/lib/core/deployment.dart::executeActions):
+#   - EXEC  : run a shell/PowerShell command as-is, no file involved.
+#   - STORE : download "file" and drop it at the "command" path (used as
+#             a destination directory), no execution.
+#   - LAUNCH: download "file" and execute it via "command". $PACKAGE is
+#             the agent's per-package download directory (see
+#             Deployment.executeCommand's variable substitution).
+# "file" is (filename, content) for STORE/LAUNCH; omitted for EXEC.
+DEPLOYMENT_PACKAGES = {
+    "WIN": [
+        {
+            "name": "Deploiement - 7-Zip 23.01",
+            "description": "Installation de l'utilitaire d'archivage 7-Zip",
+            "action": {
+                "name": "Installation silencieuse de 7-Zip",
+                "type": "LAUNCH",
+                "command": "$PACKAGE/7z2301-x64.exe /S",
+                "file": ("7z2301-x64.exe", b"REM stub installer - 7-Zip 23.01 x64 silent setup\n"),
+            },
+        },
+        {
+            "name": "Deploiement - Google Chrome Enterprise",
+            "description": "Installation du navigateur Google Chrome (MSI Enterprise)",
+            "action": {
+                "name": "Installation silencieuse de Chrome Enterprise",
+                "type": "LAUNCH",
+                "command": "msiexec /i $PACKAGE/GoogleChromeEnterpriseBundle.msi /quiet /norestart",
+                "file": ("GoogleChromeEnterpriseBundle.msi", b"stub MSI - Google Chrome Enterprise Bundle\n"),
+            },
+        },
+        {
+            "name": "Deploiement - Microsoft Office 365",
+            "description": "Installation de la suite bureautique Microsoft Office 365",
+            "action": {
+                "name": "Deploiement d'Office 365 via ODT",
+                "type": "LAUNCH",
+                "command": "$PACKAGE/setup.exe /configure $PACKAGE/configuration.xml",
+                "file": ("setup.exe", b"stub - Office Deployment Tool\n"),
+            },
+        },
+        {
+            "name": "Mise a jour - Adobe Acrobat Reader DC",
+            "description": "Mise a jour de securite d'Adobe Acrobat Reader DC",
+            "action": {
+                "name": "Mise a jour silencieuse d'Acrobat Reader DC",
+                "type": "LAUNCH",
+                "command": "$PACKAGE/AcroRdrDCUpd.exe /sAll /rs /msi EULA_ACCEPT=YES",
+                "file": ("AcroRdrDCUpd.exe", b"stub - Adobe Acrobat Reader DC updater\n"),
+            },
+        },
+        {
+            "name": "Patch - Windows Security Update KB5034441",
+            "description": "Application du correctif de securite Windows KB5034441",
+            "action": {
+                "name": "Application du correctif KB5034441",
+                "type": "EXEC",
+                "command": "wusa.exe C:\\Windows\\Temp\\KB5034441.msu /quiet /norestart",
+            },
+        },
+        {
+            "name": "Script - Nettoyage disque C:",
+            "description": "Execution du script de nettoyage de l'espace disque",
+            "action": {
+                "name": "Nettoyage automatique du disque C:",
+                "type": "EXEC",
+                "command": "cleanmgr.exe /sagerun:1",
+            },
+        },
+        {
+            "name": "Configuration - Proxy entreprise v2",
+            "description": "Deploiement du fichier de configuration du proxy du parc bureautique",
+            "action": {
+                "name": "Depot du fichier de configuration proxy",
+                "type": "STORE",
+                "command": "C:\\ProgramData\\Entreprise\\Proxy",
+                "file": (
+                    "proxy.pac",
+                    b'function FindProxyForURL(url, host) { return "PROXY proxy.entreprise.local:8080; DIRECT"; }\n',
+                ),
+            },
+        },
+    ],
+    "LIN": [
+        {
+            "name": "Deploiement - OpenJDK 25",
+            "description": "Installation du runtime Java OpenJDK 25",
+            "action": {
+                "name": "Installation d'OpenJDK 25 via APT",
+                "type": "EXEC",
+                "command": "apt-get install -y openjdk-25-jre-headless",
+            },
+        },
+        {
+            "name": "Deploiement - Docker Engine",
+            "description": "Installation du moteur de conteneurisation Docker",
+            "action": {
+                "name": "Installation du moteur Docker",
+                "type": "EXEC",
+                "command": "curl -fsSL https://get.docker.com | sh",
+            },
+        },
+        {
+            "name": "Mise a jour - Paquets de securite (APT)",
+            "description": "Application des mises a jour de securite via apt-get",
+            "action": {
+                "name": "Mise a jour des paquets systeme",
+                "type": "EXEC",
+                "command": "apt-get update && apt-get -y upgrade",
+            },
+        },
+        {
+            "name": "Script - Purge des journaux applicatifs",
+            "description": "Execution du script de purge des logs applicatifs",
+            "action": {
+                "name": "Purge des journaux applicatifs",
+                "type": "EXEC",
+                "command": "find /var/log -name '*.log' -mtime +30 -delete",
+            },
+        },
+        {
+            "name": "Configuration - Agent de supervision Zabbix",
+            "description": "Deploiement du fichier de configuration de l'agent de supervision",
+            "action": {
+                "name": "Depot du fichier de configuration Zabbix",
+                "type": "STORE",
+                "command": "/etc/zabbix",
+                "file": (
+                    "zabbix_agentd.conf",
+                    b"Server=zabbix.entreprise.local\nServerActive=zabbix.entreprise.local\nHostname=Agent\n",
+                ),
+            },
+        },
+    ],
+    "MAC": [
+        {
+            "name": "Deploiement - Google Chrome",
+            "description": "Installation du navigateur Google Chrome",
+            "action": {
+                "name": "Installation de Google Chrome",
+                "type": "LAUNCH",
+                "command": "installer -pkg $PACKAGE/googlechrome.pkg -target /",
+                "file": ("googlechrome.pkg", b"stub - Google Chrome installer package\n"),
+            },
+        },
+        {
+            "name": "Mise a jour - macOS Security Update",
+            "description": "Application de la mise a jour de securite macOS",
+            "action": {
+                "name": "Application de la mise a jour de securite macOS",
+                "type": "EXEC",
+                "command": "softwareupdate -ia --agree-to-license",
+            },
+        },
+        {
+            "name": "Configuration - Profil VPN entreprise",
+            "description": "Deploiement du profil de configuration VPN",
+            "action": {
+                "name": "Depot du profil de configuration VPN",
+                "type": "STORE",
+                "command": "/Library/Managed Preferences",
+                "file": (
+                    "vpn-entreprise.mobileconfig",
+                    b'<?xml version="1.0" encoding="UTF-8"?>\n<!-- stub VPN configuration profile -->\n',
+                ),
+            },
+        },
+        {
+            "name": "Script - Nettoyage du cache utilisateur",
+            "description": "Execution du script de nettoyage du cache utilisateur",
+            "action": {
+                "name": "Nettoyage du cache utilisateur",
+                "type": "EXEC",
+                "command": "rm -rf ~/Library/Caches/*",
+            },
+        },
+    ],
+}
+
 
 class AssetDeploymentAPITest(HttpUser):
     wait_time = between(1, 5)
@@ -73,7 +258,7 @@ class AssetDeploymentAPITest(HttpUser):
                     "Authorization": f"Token {self.token}",
                     "Content-Type": "application/json",
                 },
-                data=json.dumps(search),
+                data=json.dumps({"search_data": search}),
             )
 
             if response.status_code in (200, 201):
@@ -119,6 +304,53 @@ class AssetDeploymentAPITest(HttpUser):
 
         else:
             print("Token not available, request not executed")
+
+    def create_package_action(self, package_id, action_def):
+        """
+        POST /deployment/actions/
+
+        Attaches the one action from DEPLOYMENT_PACKAGES to the package
+        just created, so it shows up as a real deployment (EXEC/STORE/
+        LAUNCH) instead of an empty package. EXEC needs no file, so it's
+        posted as plain JSON; STORE/LAUNCH need a file, so they're posted
+        as multipart/form-data (the "uploaded_file" field the backend's
+        FileUploadMixin expects) - the priority value is required by the
+        serializer but overwritten server-side (see ActionSerializer.create).
+        """
+        if not package_id:
+            return
+
+        fields = {
+            "package": package_id,
+            "name": action_def["name"],
+            "priority": 1,
+            "action_type": action_def["type"],
+            "command": action_def["command"],
+        }
+
+        if action_def["type"] == "EXEC":
+            response = self.client.post(
+                "/deployment/actions/",
+                headers={
+                    "Authorization": f"Token {self.token}",
+                    "Content-Type": "application/json",
+                },
+                data=json.dumps(fields),
+            )
+        else:
+            file_name, file_content = action_def["file"]
+            response = self.client.post(
+                "/deployment/actions/",
+                headers={"Authorization": f"Token {self.token}"},
+                data=fields,
+                files={"uploaded_file": (file_name, file_content, "application/octet-stream")},
+            )
+
+        if response.status_code not in (200, 201):
+            print(
+                "An error occured when attempt to POST deployment action : ",
+                response.text,
+            )
 
     def create_asset_result(self):
         """
@@ -222,17 +454,19 @@ class AssetDeploymentAPITest(HttpUser):
             random_number = f"{random.randint(1, 99999):05}"
             ostarget = random.choice(self.os_options)
             self.osname = random.choice(self.link_osname_osopt[ostarget])
+            package_def = random.choice(DEPLOYMENT_PACKAGES[ostarget])
+            package_name = f"{package_def['name']} ({random_number})"
 
             # Data preparation with dynamic incrementation
             data = {
-                "name": f"Dummy Asset Package {random_number}",
-                "description": "Dummy Package for API test",
+                "name": package_name,
+                "description": package_def["description"],
                 "target_os": ostarget,
                 "actions_list": [],
                 "result": []
             }
-            
-            self.package_name = f"Dummy Asset Package {random_number}"
+
+            self.package_name = package_name
 
             # Sending the POST request with the authentication token
             response = self.client.post(
@@ -245,6 +479,7 @@ class AssetDeploymentAPITest(HttpUser):
             )
 
             if response.status_code in (200, 201):
+                self.create_package_action(response.json().get("id"), package_def["action"])
                 self.create_asset_result()
             else:
                 print(
@@ -265,17 +500,19 @@ class AssetDeploymentAPITest(HttpUser):
             random_number = f"{random.randint(1, 99999):05}"
             ostarget = random.choice(self.os_options)
             self.osname = random.choice(self.link_osname_osopt[ostarget])
+            package_def = random.choice(DEPLOYMENT_PACKAGES[ostarget])
+            package_name = f"{package_def['name']} ({random_number})"
 
             # Data preparation with dynamic incrementation
             data = {
-                "name": f"Dummy Group Package {random_number}",
-                "description": "Dummy Package for API test",
+                "name": package_name,
+                "description": package_def["description"],
                 "target_os": ostarget,
                 "actions_list": [],
                 "result": []
             }
 
-            self.package_name = f"Dummy Group Package {random_number}"
+            self.package_name = package_name
 
             # Sending the POST request with the authentication token
             response = self.client.post(
@@ -288,6 +525,7 @@ class AssetDeploymentAPITest(HttpUser):
             )
             
             if response.status_code in (200, 201):
+                self.create_package_action(response.json().get("id"), package_def["action"])
                 self.create_group_result()
             else:
                 print(
