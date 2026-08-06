@@ -19,6 +19,7 @@ ADMINDATA_LOCK = Semaphore()
 ADMINDATA_INITIALIZED = False
 
 ASSET_OBJECT_SLUG = "inventory_base.inventorybase"
+IPDISCOVER_OBJECT_SLUG = "netdevice.netdevice"
 
 # TAG (free text) and Location (SELECT) both derive from the same site,
 # so an asset tagged "PAR-..." is consistently located in "Paris" - see
@@ -294,15 +295,15 @@ def _random_tag(asset_id, site_code, type_value):
     return f"{site_code}-{code}-{asset_id:05d}"
 
 
-def _fetch_asset_configs(client, headers):
+def _fetch_configs(client, headers, datatarget):
     """
-    Fetch the ASSET-target configs (TAG / Type / Is active ? / Location)
-    with their possible values, keyed by config name.
+    Fetch the configs for one accountinfo datatarget (ASSET or
+    IPDISCOVER) with their possible values, keyed by config name.
     """
     response = client.get(
         "/accountinfo/config/",
         headers=headers,
-        params={"datatarget": "ASSET", "expand": "accountinfo_values"},
+        params={"datatarget": datatarget, "expand": "accountinfo_values"},
     )
 
     if response.status_code != 200:
@@ -351,11 +352,32 @@ def _fetch_all_assets(client, headers):
     return results
 
 
-def _find_existing_accountinfo_data(client, headers, asset_id):
+def _fetch_all_netdevices(client, headers):
+    """
+    Fetch every IPDiscover device currently on the platform.
+    """
+    response = client.get("/netdevices/", headers=headers)
+
+    if response.status_code != 200:
+        print("Could not fetch netdevices for the fleet job : ", response.text)
+        return []
+
+    try:
+        results = response.json()
+    except Exception:
+        return []
+
+    if isinstance(results, dict):
+        results = results.get("results", [])
+
+    return results
+
+
+def _find_existing_accountinfo_data(client, headers, object_slug, object_id):
     response = client.get(
         "/accountinfo/data/",
         headers=headers,
-        params={"object_slug": ASSET_OBJECT_SLUG, "object_id": asset_id},
+        params={"object_slug": object_slug, "object_id": object_id},
     )
 
     if response.status_code != 200:
@@ -429,20 +451,71 @@ def _build_random_accountdata(configs, asset_id):
     return accountdata
 
 
-def _upsert_accountinfo_data(client, headers, asset_id, accountdata):
+def _infer_device_type(netname, type_values):
     """
-    Regenerate the admin data of one asset: overwrite it if it already
-    exists (so re-running the test refreshes the random values instead of
-    piling up duplicate rows), create it otherwise.
+    Guess a device's "Type" from its netname (set by ipd_netgroup.py /
+    ipd_netdevice.py as e.g. "PAR-LAN-SWITCH-01" or "Device 00042") when
+    it plainly names one of the possible values, so a switch's admin data
+    actually says "Switch" instead of a coin-flip between Switch/Printer/
+    Server. Falls back to None (caller rolls a random value) otherwise.
+    """
+    netname_upper = (netname or "").upper()
+    for value in type_values:
+        if value["value"].upper() in netname_upper:
+            return value
+    return None
+
+
+def _build_random_ipdiscover_accountdata(configs, netdevice):
+    """
+    Build a random, business-representative accountdata payload for one
+    IPDiscover device: a TAG reusing its own netname, a Type inferred
+    from that netname when possible, and a weighted "Internal or
+    external ?" (a demo fleet behind netgroups/networks we made up is
+    overwhelmingly internal equipment).
+    """
+    accountdata = {}
+
+    type_cfg = configs.get("Type")
+    if type_cfg and type_cfg["values"]:
+        chosen_type = _infer_device_type(
+            netdevice.get("netname"), type_cfg["values"]
+        ) or random.choice(type_cfg["values"])
+        accountdata[str(type_cfg["id"])] = {
+            "value": chosen_type["id"],
+            "text": chosen_type["value"],
+        }
+
+    tag_cfg = configs.get("TAG")
+    if tag_cfg:
+        accountdata[str(tag_cfg["id"])] = netdevice.get("netname") or (
+            f"DEV-{netdevice['id']:05d}"
+        )
+
+    internal_cfg = configs.get("Internal or external ?")
+    if internal_cfg and internal_cfg["values"]:
+        weights = [9 if v["value"] == "Internal" else 1 for v in internal_cfg["values"]]
+        chosen_internal = random.choices(internal_cfg["values"], weights=weights, k=1)[0]
+        accountdata[str(internal_cfg["id"])] = [chosen_internal["id"]]
+
+    return accountdata
+
+
+def _upsert_accountinfo_data(client, headers, object_slug, object_id, accountdata):
+    """
+    Regenerate the admin data of one object (asset or netdevice):
+    overwrite it if it already exists (so re-running the test refreshes
+    the random values instead of piling up duplicate rows), create it
+    otherwise.
 
     Returns "created", "updated" or "error", so the caller can report
     progress/a summary.
     """
-    existing = _find_existing_accountinfo_data(client, headers, asset_id)
+    existing = _find_existing_accountinfo_data(client, headers, object_slug, object_id)
 
     payload = {
-        "object_id": asset_id,
-        "object_slug": ASSET_OBJECT_SLUG,
+        "object_id": object_id,
+        "object_slug": object_slug,
         "accountdata": accountdata,
     }
 
@@ -466,7 +539,7 @@ def _upsert_accountinfo_data(client, headers, asset_id, accountdata):
             error_msg = response.json().get("error", response.text)
         except Exception:
             error_msg = response.text
-        print(f"Error upserting admin data for asset {asset_id} : ", error_msg)
+        print(f"Error upserting admin data for {object_slug} {object_id} : ", error_msg)
         return "error"
 
     return outcome
@@ -481,13 +554,49 @@ def _progress_step(total):
     return max(1, min(200, total // 20 or 1))
 
 
+def _regenerate_admindata_for(client, headers, label, object_slug, objects, build_accountdata):
+    """
+    Shared (re)generation loop for one object_slug: build + upsert random
+    admin data for every object in `objects`, printing progress the same
+    way for ASSET and IPDISCOVER.
+    """
+    total = len(objects)
+    print(f"Regenerating admin data for {total} {label}(s)...")
+
+    step = _progress_step(total)
+    counts = {"created": 0, "updated": 0, "error": 0}
+
+    for processed, obj in enumerate(objects, start=1):
+        object_id = obj.get("id")
+        if not object_id:
+            continue
+
+        accountdata = build_accountdata(obj)
+        outcome = _upsert_accountinfo_data(client, headers, object_slug, object_id, accountdata)
+        counts[outcome] += 1
+
+        if processed % step == 0 or processed == total:
+            pct = round(processed / total * 100) if total else 100
+            print(
+                f"[admin data] {label} {processed}/{total} processed ({pct}%) - "
+                f"{counts['created']} created, {counts['updated']} updated, "
+                f"{counts['error']} error(s)"
+            )
+
+    print(
+        f"{label} admin data regeneration completed : {counts['created']} created, "
+        f"{counts['updated']} updated, {counts['error']} error(s) out of {total}."
+    )
+
+
 @events.test_stop.add_listener
 def regenerate_fleet_admindata(environment, **kwargs):
     """
-    Runs once, when the load test stops : (re)generates ASSET admin data
-    (TAG / Type / Is active ? / Location) with random values for every
-    asset on the platform, so each run refreshes the whole fleet instead of relying on
-    per-user, partial injection during the run.
+    Runs once, when the load test stops : (re)generates admin data with
+    random values for every asset (TAG / Type / Is active ? / Location)
+    AND every IPDiscover device (TAG / Type / Internal or external ?) on
+    the platform, so each run refreshes the whole fleet instead of
+    relying on per-user, partial injection during the run.
 
     Guarded to run on the master (or local/non-distributed) process only,
     so it executes exactly once even with several worker processes.
@@ -512,36 +621,30 @@ def regenerate_fleet_admindata(environment, **kwargs):
         "Content-Type": "application/json",
     }
 
-    configs = _fetch_asset_configs(client, headers)
-    if not configs:
-        print("Fleet admin data regeneration skipped : reference configs not found")
-        return
+    asset_configs = _fetch_configs(client, headers, "ASSET")
+    if not asset_configs:
+        print("Asset admin data regeneration skipped : reference configs not found")
+    else:
+        assets = _fetch_all_assets(client, headers)
+        _regenerate_admindata_for(
+            client,
+            headers,
+            "asset",
+            ASSET_OBJECT_SLUG,
+            assets,
+            lambda asset: _build_random_accountdata(asset_configs, asset["id"]),
+        )
 
-    assets = _fetch_all_assets(client, headers)
-    total = len(assets)
-    print(f"Regenerating admin data for {total} asset(s)...")
-
-    step = _progress_step(total)
-    counts = {"created": 0, "updated": 0, "error": 0}
-
-    for processed, asset in enumerate(assets, start=1):
-        asset_id = asset.get("id")
-        if not asset_id:
-            continue
-
-        accountdata = _build_random_accountdata(configs, asset_id)
-        outcome = _upsert_accountinfo_data(client, headers, asset_id, accountdata)
-        counts[outcome] += 1
-
-        if processed % step == 0 or processed == total:
-            pct = round(processed / total * 100) if total else 100
-            print(
-                f"[admin data] {processed}/{total} asset(s) processed ({pct}%) - "
-                f"{counts['created']} created, {counts['updated']} updated, "
-                f"{counts['error']} error(s)"
-            )
-
-    print(
-        f"Fleet admin data regeneration completed : {counts['created']} created, "
-        f"{counts['updated']} updated, {counts['error']} error(s) out of {total}."
-    )
+    ipdiscover_configs = _fetch_configs(client, headers, "IPDISCOVER")
+    if not ipdiscover_configs:
+        print("IPDiscover admin data regeneration skipped : reference configs not found")
+    else:
+        netdevices = _fetch_all_netdevices(client, headers)
+        _regenerate_admindata_for(
+            client,
+            headers,
+            "netdevice",
+            IPDISCOVER_OBJECT_SLUG,
+            netdevices,
+            lambda netdevice: _build_random_ipdiscover_accountdata(ipdiscover_configs, netdevice),
+        )
