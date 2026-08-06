@@ -147,7 +147,7 @@ class AssetGroupAPITest(HttpUser):
         r = self.client.post(
             "/search/",
             headers=self._headers(),
-            data=json.dumps(search),
+            data=json.dumps({"search_data": search}),
         )
 
         if r.status_code not in (200, 201):
