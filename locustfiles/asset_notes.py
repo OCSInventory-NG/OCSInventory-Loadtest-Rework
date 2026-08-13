@@ -6,7 +6,7 @@ from locust.runners import WorkerRunner
 
 from common.auth import Auth
 from common.batch_client import BatchUser
-from common.users import pick_owner_id, resolve_user_ids
+from common.users import get_user_ids, pick_owner_id
 
 # ==========================
 # END-OF-RUN FLEET-WIDE ASSET NOTES
@@ -121,7 +121,7 @@ def generate_fleet_notes(environment, **kwargs):
         "Content-Type": "application/json",
     }
 
-    user_ids = resolve_user_ids(client, headers)
+    user_ids = get_user_ids(client, headers)
 
     assets = _fetch_all_assets(client, headers)
     total = len(assets)

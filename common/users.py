@@ -97,10 +97,41 @@ def resolve_user_ids_with_retry(client, headers, attempts=5, delay=2):
     return {}
 
 
-def pick_owner_id(user_ids, fallback=1):
+_USER_IDS = {}
+
+
+def set_user_ids(user_ids):
+    """Publish the roster resolved by the provisioning step."""
+    _USER_IDS.clear()
+    _USER_IDS.update(user_ids or {})
+
+
+def get_user_ids(client, headers):
     """
-    Random demo-user id to attribute ownership/creation to, or `fallback`
-    (admin, id 1 on a fresh platform) if the roster isn't seeded yet.
+    The {username: id} roster. Already resolved by user_provisioning.py on
+    test_start; the lookup is the distributed path only, where seeding ran on
+    the master and this worker starts with an empty cache.
+    """
+    if _USER_IDS:
+        return dict(_USER_IDS)
+
+    user_ids = resolve_user_ids_with_retry(client, headers)
+    set_user_ids(user_ids)
+    return user_ids
+
+
+# The `admin` superuser the backend's user/migrations/0001_initial.py
+# creates, and the account every locustfile authenticates as.
+ADMIN_USER_ID = 1
+
+
+def pick_owner_id(user_ids, fallback=ADMIN_USER_ID):
+    """
+    Random demo-user id to attribute ownership to, or `fallback` (admin).
+
+    Only for objects nothing modifies afterwards: RestrictVisibilityViewSet
+    lets only the creator update a public object, so anything a locustfile
+    keeps refreshing must stay owned by the account doing the refreshing.
     """
     if not user_ids:
         return fallback

@@ -4,7 +4,7 @@ from locust import HttpUser, task, between
 from gevent.lock import Semaphore
 
 from common.auth import Auth
-from common.users import pick_owner_id, resolve_user_ids_with_retry
+from common.users import get_user_ids, pick_owner_id
 
 # ==========================
 # GLOBAL SHARED STATE
@@ -232,7 +232,7 @@ class SavedSearchAPITest(HttpUser):
             if SAVED_SEARCH_INITIALIZED:
                 return
 
-            user_ids = resolve_user_ids_with_retry(self.client, self._headers())
+            user_ids = get_user_ids(self.client, self._headers())
 
             for search_def in SAVED_SEARCHES:
                 if self.find_existing_search(search_def["name"]):

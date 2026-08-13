@@ -1,6 +1,6 @@
 from locust import HttpUser, task, between
 from common.auth import Auth
-from common.users import pick_owner_id, resolve_user_ids_with_retry
+from common.users import ADMIN_USER_ID, get_user_ids, pick_owner_id
 import json
 import random
 from gevent.lock import Semaphore
@@ -69,10 +69,7 @@ class AssetGroupAPITest(HttpUser):
             for osname in self.os_options:
                 GROUP_ASSETS_BY_OS.setdefault(osname, set())
 
-        # Retries a few times : locustfiles/user_provisioning.py seeds the
-        # roster on its own schedule, with no ordering guarantee relative
-        # to this class, so a bare one-shot lookup often just misses it.
-        self.user_ids = resolve_user_ids_with_retry(self.client, self._headers())
+        self.user_ids = get_user_ids(self.client, self._headers())
 
         for osname in self.os_options:
             self.ensure_group_for_os(osname)
@@ -149,7 +146,9 @@ class AssetGroupAPITest(HttpUser):
             "description": "Dummy group for API test",
             "is_dynamic": True,
             "search": search,
-            "user": pick_owner_id(self.user_ids),
+            # Not pick_owner_id() : refresh_group_assets() keeps PATCHing
+            # this group as admin, and only the creator may modify it.
+            "user": ADMIN_USER_ID,
             "groups": [],
             "assets": [],
         }
@@ -188,10 +187,9 @@ class AssetGroupAPITest(HttpUser):
     def find_role_group_id(self, role_name: str):
         """
         Look up one of the Django auth Groups seeded by
-        locustfiles/user_provisioning.py, to scope a "private_group"
-        static group's visibility to it. Returns None if it doesn't exist
-        yet (provisioning hasn't run in this process/run) - caller falls
-        back to a plain "private_personal" group instead.
+        locustfiles/user_provisioning.py, to scope a "private_group" static
+        group's visibility to it. Returns None only if provisioning failed -
+        the caller then falls back to "private_personal".
         """
         r = self.client.get(
             "/groups/",
