@@ -5,6 +5,11 @@ import random
 
 
 class NetdeviceAPITest(HttpUser):
+    """
+    Simulates ongoing IPDiscover scan traffic : creates extra netdevices
+    on top of the fixed topology seeded by locustfiles/ipd_netgroup.py.
+    """
+
     wait_time = between(1, 5)
     token = None
     networks = None
@@ -12,9 +17,32 @@ class NetdeviceAPITest(HttpUser):
 
     def on_start(self):
         """
-        Retrieve auth token at startup
+        Retrieve auth token at startup, then fetch the available networks
+        right away so post_netdevice doesn't have to wait for get_network
+        to be picked at random first.
         """
         self.token = Auth.get_token(self)
+        if self.token:
+            self.refresh_networks()
+
+    def refresh_networks(self):
+        response = self.client.get(
+            "/networks/", headers={"Authorization": f"Token {self.token}"}
+        )
+
+        if response.status_code in (200, 201):
+            self.networks = response.json()
+            network_count = (
+                len(self.networks)
+                if isinstance(self.networks, list)
+                else self.networks.get("count", "Networks not available")
+            )
+            print(f"Number of retrieved networks : {network_count}")
+        else:
+            print(
+                "An error occured when attempt to retrieve network : ",
+                response.text,
+            )
 
     def generate_mac_address(self):
         """Generate a realistic MAC address"""
@@ -78,26 +106,10 @@ class NetdeviceAPITest(HttpUser):
     @task
     def get_network(self):
         """
-        GET /networks/
+        GET /networks/ (keeps the network list fresh during the run)
         """
         if self.token:
-            response = self.client.get(
-                "/networks/", headers={"Authorization": f"Token {self.token}"}
-            )
-
-            if response.status_code in (200, 201):
-                self.networks = response.json()
-                network_count = (
-                    len(self.networks)
-                    if isinstance(self.networks, list)
-                    else self.networks.get("count", "Networks not available")
-                )
-                print(f"Number of retrieved networks : {network_count}")
-            else:
-                print(
-                    "An error occured when attempt to retrieve network : ",
-                    response.text,
-                )
+            self.refresh_networks()
         else:
             print("Token not available, request not executed")
 
